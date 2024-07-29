@@ -80,6 +80,8 @@ ul{
     margin-bottom: 15px;
     font-family: S-CoreDream-5Medium;
     font-size: 19px; /*크기 조절시 변경 해야함 */
+    overflow-x:auto;
+    white-space:nowrap;
 }
 
 .navbar .ui li {
@@ -87,6 +89,7 @@ ul{
     vertical-align: middle;   /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
     text-align: center;
 }
+
 
 .nav-logo img {
     max-height: 40px;

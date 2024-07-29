@@ -49,6 +49,8 @@ body {
     margin-bottom: 15px;
     font-family: S-CoreDream-5Medium;
     font-size: 19px; /*크기 조절시 변경 해야함 */
+    overflow-x:auto;
+    white-space:nowrap;
 }
 
 .navbar .ui li {
