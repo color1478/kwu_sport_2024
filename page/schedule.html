@@ -6,6 +6,12 @@
     <title>2024 광운대학교 연촌체전</title>
     <link rel="stylesheet" href="../css/schedule.css">
     <link href="../image/padong.png" rel="icon" type="image">
+    <script src="https://kit.fontawesome.com/3a115195d8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
 </head>
 
 <body>
@@ -34,9 +40,113 @@
         <p>진행되는 경기 일정을 확인해보세요!</p>
     </div>
 
-    <div class="contain"></div>
+    <div class="contain">
+     <nav class="sche-nav">
+         <div class="sche-nav-container">
+             <ul class="sche-nav-links">
+                 <li>
+                     <a href="#" class="sport-link active" data-sport="" onclick="filterBySport('')">
+                     <img src="../image/풋살픽토그램.png" alt="Football">
+                     <p>전체</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="풋살" onclick="filterBySport('풋살')">
+                         <img src="../image/풋살픽토그램.png" alt="Football">
+                         <p>풋살</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="농구" onclick="filterBySport('농구')">
+                         <img src="../image/농구픽토그램.png" alt="Football">
+                         <p>농구</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="피구" onclick="filterBySport('피구')">
+                         <img src="../image/피구픽토그램.png" alt="Football">
+                         <p>피구</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="볼링" onclick="filterBySport('볼링')">
+                         <img src="../image/볼링픽토그램.png" alt="Football">
+                         <p>볼링</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="족구" onclick="filterBySport('족구')">
+                         <img src="../image/족구픽토그램.png" alt="Football">
+                         <p>족구</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="탁구" onclick="filterBySport('탁구')">
+                         <img src="../image/탁구픽토그램.png" alt="Football">
+                         <p>탁구</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="8자 줄넘기" onclick="filterBySport('8자 줄넘기')">
+                         <img src="../image/8자줄넘기픽토그램.png" alt="Football">
+                         <p>8자 줄넘기</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="LOL" onclick="filterBySport('LOL')">
+                         <img src="../image/롤픽토그램.png" alt="Football">
+                         <p>LOL</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="TFT" onclick="filterBySport('TFT')">
+                         <img src="../image/TFT픽토그램.png" alt="Football">
+                         <p>TFT</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="#" class="sport-link" data-sport="FC 온라인" onclick="filterBySport('FC 온라인')">
+                         <img src="../image/FC온라인픽토그램.png" alt="Football">
+                         <p>FC 온라인</p>
+                     </a>
+                 </li>
+             </ul>
+         </div>
+     </nav>
+        <div class="date-selector">
+            <span id="date1" class="date-item"></span>
+            <span id="prev" class="arrow-prev"></span>
+            <span id="date2"></span>
+            <button type="text" name="birthday" id="selectDate" class="icon-button"><i class="fa-regular fa-calendar"></i></button>
 
-
+            <span id="next" class="arrow-next"></span>
+            <span id="date3" class="date-item"></span>
+        </div>
+        <div>
+            <div class="date-and-team-select">
+                <div id="todayDate" class="today-date"></div>
+                <div class="team-select">
+                    <select id="affiliation-select">
+                        <option value="">단과 대학</option>
+                        <option value="전자정보공과대학">전자정보공과대학</option>
+                        <option value="인공지능융합대학">인공지능융합대학</option>
+                        <option value="공과대학">공과대학</option>
+                        <option value="자연과학대학">자연과학대학</option>
+                        <option value="경영대학">경영대학</option>
+                        <option value="인문사회과학대학">인문사회과학대학</option>
+                        <option value="정책법학대학">정책법학대학</option>
+                    </select>
+                </div>
+                <div class="team-select">
+                    <select id="team-select" disabled>
+                        <option value="">학과/학부</option>
+                    </select>
+                </div>
+            </div>
+            <p id="current-game"></p>
+        </div>
+     <script src="../js/schedule.js"></script>
+     </div>
     <!-- 푸터 -->
     <footer class="footer">
         <div class="footer-container">
