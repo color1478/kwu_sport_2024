@@ -177,7 +177,7 @@ main {
     justify-items: center;
 }
 
-.category {
+.category{
     display: flex;
     flex-direction: column;
     align-items: center;
