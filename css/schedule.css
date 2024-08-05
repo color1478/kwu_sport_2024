@@ -204,7 +204,39 @@ ul{
     width: 100%;
     padding: 0px;
 }
-
+.sport-link-all:hover img {
+    content: url('../image/전체-hover픽토그램.png'); /* 전체 호버 이미지 */
+}
+.sport-link-football:hover img {
+    content: url('../image/풋살-hover픽토그램.png'); /* 풋살 호버 이미지 */
+}
+.sport-link-basketball:hover img {
+    content: url('../image/농구-hover픽토그램.png'); /* 농구 호버 이미지 */
+}
+.sport-link-dodgeball:hover img {
+    content: url('../image/피구-hover픽토그램.png'); /* 전체 호버 이미지 */
+}
+.sport-link-bowling:hover img {
+    content: url('../image/볼링-hover픽토그램.png'); /* 풋살 호버 이미지 */
+}
+.sport-link-footvolleyball:hover img {
+    content: url('../image/족구-hover픽토그램.png'); /* 농구 호버 이미지 */
+}
+.sport-link-tabletennis:hover img {
+    content: url('../image/탁구-hover픽토그램.png'); /* 전체 호버 이미지 */
+}
+.sport-link-jumprope:hover img {
+    content: url('../image/8자 줄넘기-hover픽토그램.png'); /* 풋살 호버 이미지 */
+}
+.sport-link-lol:hover img {
+    content: url('../image/LOL-hover픽토그램.png'); /* 농구 호버 이미지 */
+}
+.sport-link-tft:hover img {
+    content: url('../image/TFT-hover픽토그램.png'); /* 풋살 호버 이미지 */
+}
+.sport-link-FConline:hover img {
+    content: url('../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
+}
 /* calendar */
 .hidden {
     display: none;

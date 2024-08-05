@@ -413,6 +413,42 @@ function filterBySport(sport) {
     const teamSelect = document.getElementById('team-select').value;
     const affiliationSelect = document.getElementById('affiliation-select').value;
 
+    // 모든 이미지를 선택
+    var allImages = document.querySelectorAll('.sche-nav-links img');
+
+    // 모든 이미지를 기본 이미지로 설정
+    allImages.forEach(function (img) {
+        if (img.id === 'sport-image-전체') {
+            img.src = '../image/전체-default픽토그램.png';
+        } else if (img.id === 'sport-image-풋살') {
+            img.src = '../image/풋살-default픽토그램.png';
+        } else if (img.id === 'sport-image-농구') {
+            img.src = '../image/농구-default픽토그램.png';
+        } else if (img.id === 'sport-image-피구') {
+            img.src = '../image/피구-default픽토그램.png';
+        } else if (img.id === 'sport-image-볼링') {
+            img.src = '../image/볼링-default픽토그램.png';
+        } else if (img.id === 'sport-image-족구') {
+            img.src = '../image/족구-default픽토그램.png';
+        } else if (img.id === 'sport-image-탁구') {
+            img.src = '../image/탁구-default픽토그램.png';
+        } else if (img.id === 'sport-image-8자 줄넘기') {
+            img.src = '../image/8자 줄넘기-default픽토그램.png';
+        } else if (img.id === 'sport-image-LOL') {
+            img.src = '../image/LOL-default픽토그램.png';
+        } else if (img.id === 'sport-image-TFT') {
+            img.src = '../image/TFT-default픽토그램.png';
+        } else if (img.id === 'sport-image-FC 온라인') {
+            img.src = '../image/FC 온라인-default픽토그램.png';
+        }
+    });
+    if(sport === '')
+        sport = '전체';
+    // 선택된 스포츠의 활성화 이미지로 변경
+    var image = document.querySelector(`img[id^='sport-image-${sport}']`);
+    if (image) {
+        image.src = `../image/${sport}픽토그램.png`; // 활성화 이미지 경로
+    }
     // 현재 게임을 표시
     displayCurrentGame(currentSport, teamSelect, affiliationSelect);
 }
@@ -536,3 +572,4 @@ document.querySelectorAll('.sche-nav-links a').forEach(link => {
 
 // 초기 날짜 표시
 updateDisplayedDates();
+filterBySport('');
