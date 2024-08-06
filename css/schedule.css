@@ -338,7 +338,7 @@ ul{
 #current-game, #next-game {
     margin-top: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: #ccc;
     border-radius: 5px;
 }
 
