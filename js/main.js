@@ -482,7 +482,10 @@ document.querySelectorAll('.sche-nav-links a').forEach(link => {
         this.classList.add('active');
     });
 });
-
+document.addEventListener("DOMContentLoaded", function() {
+    const activeLink = document.querySelector('#초기'); // 원하는 a 태그 선택
+    activeLink.classList.add('active'); // 선택한 a 태그에 active 클래스 추가
+});
 // 초기 날짜 표시
 updateDisplayedDates();
 filterBySport('');
