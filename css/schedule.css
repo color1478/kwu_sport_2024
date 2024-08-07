@@ -204,6 +204,9 @@ ul{
     width: 100%;
     padding: 0px;
 }
+.sche-nav-links a.active{
+    pointer-events: none;
+}
 .sport-link-all:hover img {
     content: url('../image/전체-hover픽토그램.png'); /* 전체 호버 이미지 */
 }

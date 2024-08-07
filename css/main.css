@@ -239,6 +239,9 @@ ul{
     color: #002BCB;
     font-family: S-CoreDream-7ExtraBold;
 }
+.sche-nav-links a.active{
+    pointer-events: none;
+}
 .sche-nav-links a::after{
     content: "";
     position: absolute;
