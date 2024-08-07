@@ -19,6 +19,18 @@
     font-style: normal;
 }
 
+@media (max-width: 600px) {
+    .link {
+        width: 100%; /* 모바일에서 링크 너비를 100%로 설정 */
+    }
+}
+
+
+@media (min-width: 601px) {
+    .link {
+        width: 150px; /* 데스크탑에서 링크 너비를 150px로 설정 */
+    }
+}
 
 
 /* main */
