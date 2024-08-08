@@ -10,3 +10,34 @@ document.querySelectorAll('.contain').forEach(item => {
         item.classList.add('selected');
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const offlineSelection = document.getElementById('offline-selection');
+    const onlineSelection = document.getElementById('online-selection');
+
+    const offlineSports = document.querySelectorAll('.sport-contain.offline');
+    const onlineSports = document.querySelectorAll('.sport-contain.online');
+
+    // 오프라인 종목 클릭 시
+    offlineSelection.addEventListener('click', function() {
+        offlineSelection.classList.add('selected');
+        onlineSelection.classList.remove('selected');
+        
+        offlineSports.forEach(sport => sport.style.display = 'block');
+        onlineSports.forEach(sport => sport.style.display = 'none');
+    });
+
+    // 온라인 종목 클릭 시
+    onlineSelection.addEventListener('click', function() {
+        onlineSelection.classList.add('selected');
+        offlineSelection.classList.remove('selected');
+        
+        onlineSports.forEach(sport => sport.style.display = 'block');
+        offlineSports.forEach(sport => sport.style.display = 'none');
+    });
+
+    // 페이지 로드 시 기본 오프라인 종목을 표시
+    offlineSelection.click();
+});
