@@ -5,12 +5,6 @@
     <title>2024 광운대학교 연촌체전</title>
     <link rel="stylesheet" href="../css/schedule.css">
     <link href="../image/padong.png" rel="icon" type="image">
-    <script src="https://kit.fontawesome.com/3a115195d8.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
 </head>
 
 <body>
@@ -116,7 +110,19 @@
             <span id="date1" class="date-item"></span>
             <span id="prev" class="arrow-prev"></span>
             <span id="date2"></span>
-            <button type="text" name="birthday" id="selectDate" class="icon-button"><i class="fa-regular fa-calendar"></i></button>
+            <button id="calendarButton">달력 열기</button>
+            <div id="calendarPopup" class="popup">
+                <div class="popup-content">
+                    <span id="closePopup" class="close">&times;</span>
+                    <div id="calendarControls" class="calendarControls">
+                        <span id="currentYear"></span>
+                        <div id="prevMonth" class="arrow-triangle right"></div>
+                        <span id="currentMonth"></span>
+                        <div id="nextMonth" class="arrow-triangle left"></div>
+                    </div>
+                    <div id="calendar"></div>
+                </div>
+            </div>
             <span id="next" class="arrow-next"></span>
             <span id="date3" class="date-item"></span>
         </div>

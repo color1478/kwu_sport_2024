@@ -42,34 +42,60 @@ body {
 }
 
 .main-view {
-    height:420px;
-    overflow:hidden;
+    height: 420px;
+    overflow: hidden;
 }
 
 .main-view ul {
-    width:calc(100% * 3);
-    display:flex;
-    animation:slide 20s infinite;
-} /* slide를 20초동안 진행하며 무한반복 함 */
+    width: calc(100% * 3);
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+/* slide를 20초동안 진행하며 무한반복 함 */
 
 .main-view li {
-    width:calc(100% / 3);
-    height:300px;
+    width: calc(100% / 3);
+    height: 300px;
 }
-  
-  @keyframes slide {
-    0% {margin-left:0;} /* 0 ~ 10  : 정지 */
-    10% {margin-left:0;} /* 10 ~ 25 : 변이 */
-    25% {margin-left:-100%;} /* 25 ~ 40 : 정지 */
-    40% {margin-left:-100%;} /* 40 ~ 55 : 변이 */
-    55% {margin-left:-200%;}
-    70% {margin-left:-200%;}
-    100% {margin-left:0;}
-  }
 
-ul{
-    list-style:none;
-    padding-left:0px;
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    /* 0 ~ 10  : 정지 */
+    10% {
+        margin-left: 0;
+    }
+
+    /* 10 ~ 25 : 변이 */
+    25% {
+        margin-left: -100%;
+    }
+
+    /* 25 ~ 40 : 정지 */
+    40% {
+        margin-left: -100%;
+    }
+
+    /* 40 ~ 55 : 변이 */
+    55% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
 }
 
 /* nav */
@@ -82,14 +108,17 @@ ul{
     margin-top: 15px;
     margin-bottom: 15px;
     font-family: S-CoreDream-5Medium;
-    font-size: 19px; /*크기 조절시 변경 해야함 */
-    overflow-x:auto;
-    white-space:nowrap;
+    font-size: 19px;
+    /*크기 조절시 변경 해야함 */
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .navbar .ui li {
-    line-height: 30px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
-    vertical-align: middle;   /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
+    line-height: 30px;
+    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
+    vertical-align: middle;
+    /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
     text-align: center;
 }
 
@@ -108,7 +137,8 @@ ul{
 }
 
 .nav-links li {
-    margin: 0 15px; /* 각 항목 간의 간격을 설정 */
+    margin: 0 15px;
+    /* 각 항목 간의 간격을 설정 */
 }
 
 .nav-links a {
@@ -123,12 +153,15 @@ ul{
 }
 
 /* sche-nav */
-.sche-nav{
-    line-height: 15px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
-    vertical-align: middle;   /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
+.sche-nav {
+    line-height: 15px;
+    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
+    vertical-align: middle;
+    /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
     text-align: center;
     margin: 60px 0 44px 0;
 }
+
 .sche-nav-container {
     align-items: center;
     max-width: 1200px;
@@ -136,16 +169,19 @@ ul{
     margin-top: 15px;
     margin-bottom: 15px;
     font-family: S-CoreDream-5Medium;
-    font-size: 10px; /*크기 조절시 변경 해야함 */
-    overflow-x:auto;
-    white-space:nowrap;
+    font-size: 10px;
+    /*크기 조절시 변경 해야함 */
+    overflow-x: auto;
+    white-space: nowrap;
 
 }
+
 .jb-division-line {
     border-top: 1px solid #444444;
     top: 10px;
     margin: 30px 0px;
 }
+
 .sche-nav-links {
     display: flex;
     flex-grow: 1;
@@ -157,7 +193,8 @@ ul{
 }
 
 .sche-nav-links li {
-    margin: 0; /* 각 항목 간의 간격을 설정 */
+    margin: 0;
+    /* 각 항목 간의 간격을 설정 */
 }
 
 .sche-nav-links a {
@@ -169,6 +206,7 @@ ul{
     padding: 0px 0px;
     font-family: S-CoreDream-4Regular;
 }
+
 .sche-nav-links img {
     width: 52px;
     height: 52px;
@@ -181,7 +219,8 @@ ul{
     color: #002BCB;
     font-family: S-CoreDream-7ExtraBold;
 }
-.sche-nav-links a::after{
+
+.sche-nav-links a::after {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -190,87 +229,215 @@ ul{
     width: 0;
     height: 3px;
     background: #002BCB;
-    transition: all .3s ease-out; /* 색상과 두께 변화에 애니메이션 추가 */
+    transition: all .3s ease-out;
+    /* 색상과 두께 변화에 애니메이션 추가 */
 }
-.sche-nav-links a:hover::after{
+
+.sche-nav-links a:hover::after {
     width: 100%;
     padding: 0px;
 }
-.sche-nav-links a:visited::after{
+
+.sche-nav-links a:visited::after {
     width: 100%;
     padding: 0px;
 }
+
 .sche-nav-links a.active::after {
     width: 100%;
     padding: 0px;
 }
-.sche-nav-links a.active{
+
+.sche-nav-links a.active {
     pointer-events: none;
 }
+
 .sport-link-all:hover img {
-    content: url('../image/전체-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../image/전체-hover픽토그램.png');
+    /* 전체 호버 이미지 */
 }
+
 .sport-link-football:hover img {
-    content: url('../image/풋살-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../image/풋살-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-basketball:hover img {
-    content: url('../image/농구-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../image/농구-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 .sport-link-dodgeball:hover img {
-    content: url('../image/피구-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../image/피구-hover픽토그램.png');
+    /* 전체 호버 이미지 */
 }
+
 .sport-link-bowling:hover img {
-    content: url('../image/볼링-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../image/볼링-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-footvolleyball:hover img {
-    content: url('../image/족구-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../image/족구-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 .sport-link-tabletennis:hover img {
-    content: url('../image/탁구-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../image/탁구-hover픽토그램.png');
+    /* 전체 호버 이미지 */
 }
+
 .sport-link-jumprope:hover img {
-    content: url('../image/8자 줄넘기-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../image/8자 줄넘기-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-lol:hover img {
-    content: url('../image/LOL-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../image/LOL-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 .sport-link-tft:hover img {
-    content: url('../image/TFT-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../image/TFT-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-FConline:hover img {
-    content: url('../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../image/FC 온라인-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 /* calendar */
-.hidden {
+.calendarControls {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.popup {
     display: none;
-}
-
-.modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
+    /* 기본적으로 숨김 */
+    position: absolute;
     background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.popup-content {
     padding: 20px;
-    border-radius: 5px;
-    text-align: center;
 }
 
 .close {
     cursor: pointer;
     float: right;
     font-size: 20px;
-    margin-top: -10px;
 }
+
+#calendarButton {
+    margin: 20px;
+}
+
+#calendarControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#calendarControls button {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day,
+.day-name {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    /* 마우스 커서 포인터로 변경 */
+
+}
+
+.day-name {
+    color: gray;
+}
+
+.day:hover {
+    background-color: lightgray;
+    /* 마우스 오버 시 회색으로 변경 */
+    border-radius: 50%;
+
+}
+
+.day.selected {
+    background-color: orange;
+    /* 클릭 시 주황색으로 변경 */
+    border-radius: 50%;
+}
+
+.event-dot {
+    width: 4px;
+    height: 4px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    /* 기본적으로 숨김 */
+}
+
+.arrow-triangle {
+    position: relative;
+    background-color: #333;
+    text-align: left;
+    margin: 10px;
+}
+
+.arrow-triangle:before,
+.arrow-triangle:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+}
+
+.arrow-triangle,
+.arrow-triangle:before,
+.arrow-triangle:after {
+    width: 8px;
+    height: 8px;
+    border-top-right-radius: 30%;
+}
+
+.arrow-triangle.left {
+    transform: rotate(-90deg) skewX(-30deg) scale(1, .866);
+}
+
+.arrow-triangle.right {
+    transform: rotate(-30deg) skewX(-30deg) scale(1, .866);
+    margin-left: 20px;
+}
+
+.arrow-triangle:before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+
+.arrow-triangle:after {
+    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+
 .date-selector {
     display: flex;
     align-items: center;
@@ -283,18 +450,20 @@ ul{
     display: flex;
     align-items: center;
 }
+
 .date-item {
     margin: 0 50px;
     color: #8D9AA3;
 }
+
 .arrow-prev,
 .arrow-next {
     position: relative;
-    float:left;
-    border:none;
-    width:10px;
-    height:10px;
-    margin-right:5px;
+    float: left;
+    border: none;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
 }
 
 .arrow-prev::after {
@@ -302,11 +471,16 @@ ul{
     left: 0;
     top: 0;
     content: '';
-    width: 10px; /* 사이즈 */
-    height: 10px; /* 사이즈 */
-    border-top: 2px solid #000; /* 선 두께 */
-    border-right: 2px solid #000; /* 선 두께 */
-    transform: rotate(225deg); /* 각도 */
+    width: 10px;
+    /* 사이즈 */
+    height: 10px;
+    /* 사이즈 */
+    border-top: 2px solid #000;
+    /* 선 두께 */
+    border-right: 2px solid #000;
+    /* 선 두께 */
+    transform: rotate(225deg);
+    /* 각도 */
 }
 
 .arrow-next::after {
@@ -314,31 +488,44 @@ ul{
     left: 0;
     top: 0;
     content: '';
-    width: 10px; /* 사이즈 */
-    height: 10px; /* 사이즈 */
-    border-top: 2px solid #000; /* 선 두께 */
-    border-right: 2px solid #000; /* 선 두께 */
-    transform: rotate(45deg); /* 각도 */
+    width: 10px;
+    /* 사이즈 */
+    height: 10px;
+    /* 사이즈 */
+    border-top: 2px solid #000;
+    /* 선 두께 */
+    border-right: 2px solid #000;
+    /* 선 두께 */
+    transform: rotate(45deg);
+    /* 각도 */
 }
 
 .icon-button {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px; /* 아이콘 크기 조정 */
-    left: -100px; /* 아이콘과 다른 요소 간의 간격 조정 */
+    font-size: 24px;
+    /* 아이콘 크기 조정 */
+    left: -100px;
+    /* 아이콘과 다른 요소 간의 간격 조정 */
     color: #8D9AA3;
 }
+
 .today-date {
-    font-size: 24px; /* 글씨 크기 조정 */
-    font-weight: bold; /* 글씨 두께 조정 */
-    margin-top: 20px; /* 위쪽 여백 추가 */
-    text-align: left; /* 중앙 정렬 */
+    font-size: 24px;
+    /* 글씨 크기 조정 */
+    font-weight: bold;
+    /* 글씨 두께 조정 */
+    margin-top: 20px;
+    /* 위쪽 여백 추가 */
+    text-align: left;
+    /* 중앙 정렬 */
     justify-content: flex-start;
     color: #002BCB;
 }
 
-#current-game, #next-game {
+#current-game,
+#next-game {
     margin-top: 20px;
     padding: 10px;
     border: #ccc;
@@ -348,20 +535,23 @@ ul{
 /*filter*/
 .date-and-team-select {
     display: flex;
-    justify-content: space-between; /* 양쪽 끝으로 정렬 */
+    justify-content: space-between;
+    /* 양쪽 끝으로 정렬 */
     align-items: center;
     margin-bottom: 20px;
 }
 
 .today-date {
-    flex: 1; /* 왼쪽에 공간을 차지하도록 설정 */
+    flex: 1;
+    /* 왼쪽에 공간을 차지하도록 설정 */
 }
 
 .team-select {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 20px; /* 간격 추가 */
+    margin-left: 20px;
+    /* 간격 추가 */
 }
 
 .team-select label {
@@ -369,7 +559,8 @@ ul{
 }
 
 .team-select select {
-    width: 200px; /* 고정된 너비 설정 */
+    width: 200px;
+    /* 고정된 너비 설정 */
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -382,12 +573,13 @@ ul{
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /* contain */
 
-.banner
-{
+.banner {
     height: 240px;
-    background-color: rgba(176, 218, 255, 0.25); /* Add a background color to see the container */
+    background-color: rgba(176, 218, 255, 0.25);
+    /* Add a background color to see the container */
 }
 
 .banner {
@@ -398,13 +590,13 @@ ul{
     text-align: center;
 }
 
-.banner h1{
+.banner h1 {
     font-family: S-CoreDream-7ExtraBold;
     font-size: 28px;
     color: #3F474D;
 }
 
-.banner p{
+.banner p {
     font-family: S-CoreDream-4Regular;
     font-size: 20px;
     color: #3F474D;
@@ -417,21 +609,31 @@ ul{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    font-weight: bold;
 }
-.game-item p, .game-item .team, .game-item .score {
+
+.game-item p,
+.game-item .team,
+.game-item .score {
     margin: 0 10px;
+    display: inline-block;
+    color: black;
 }
+
 .game-item p {
     flex: 1;
 }
+
 .game-item .team {
     flex: 2;
     display: flex;
     align-items: center;
 }
+
 .game-item .score {
     flex: 1;
 }
+
 /* 전체 게임 리스트 스타일 */
 
 
@@ -440,11 +642,12 @@ ul{
     padding: 10px;
     border: 0px solid;
     border-radius: 10px;
-    box-shadow : 1px 1px 1px 1px rgb(200, 200, 200);
+    box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
 }
 
 .game-item:last-child {
-    border-bottom: none; /* 마지막 항목의 경계선 제거 */
+    border-bottom: none;
+    /* 마지막 항목의 경계선 제거 */
 }
 
 /* 팀 정보 스타일 */
@@ -455,7 +658,8 @@ ul{
 
 /* 팀 이미지 스타일 */
 .team img {
-    border-radius: 50%; /* 이미지 둥글게 만들기 */
+    border-radius: 50%;
+    /* 이미지 둥글게 만들기 */
 }
 
 /* 점수 스타일 */
@@ -476,21 +680,26 @@ ul{
 /* 화면 크기에 따라 반응형 디자인 */
 @media (max-width: 600px) {
     .game-item {
-        flex-direction: column; /* 작은 화면에서 세로 배치 */
+        flex-direction: column;
+        /* 작은 화면에서 세로 배치 */
         align-items: flex-start;
     }
+
     .score {
-        margin: 5px 0; /* 점수 위아래 간격 조정 */
+        margin: 5px 0;
+        /* 점수 위아래 간격 조정 */
     }
 }
 
 
 /* footer */
 .footer {
-    background-color: #EDEFF1; /* 배경색 설정 */
+    background-color: #EDEFF1;
+    /* 배경색 설정 */
     padding: 35px 35px;
-    color: #8D9AA3; /* 텍스트 색상 설정 */
-    
+    color: #8D9AA3;
+    /* 텍스트 색상 설정 */
+
 }
 
 .footer-container {
@@ -503,7 +712,7 @@ ul{
 
 .footer-container span.ingredient {
     font-family: S-coreDream-5Medium;
-  }
+}
 
 
 .footer-logo img {
@@ -517,7 +726,7 @@ ul{
 
 .footer-text p {
     line-height: 250%;
-    letter-spacing:0.2px;
+    letter-spacing: 0.2px;
 }
 
 .footer-title {

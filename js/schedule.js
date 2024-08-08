@@ -1,7 +1,3 @@
-const calendarIcon = document.getElementById('icon-button');
-const modal = document.getElementById('calendar-modal');
-const closeModal = document.querySelector('.close');
-
 const date1 = document.getElementById('date1');
 const date2 = document.getElementById('date2');
 const date3 = document.getElementById('date3');
@@ -12,13 +8,13 @@ const todayDateDisplay = document.getElementById('todayDate');
 const affiliationSelect = document.getElementById('affiliation-select');
 const teamSelect = document.getElementById('team-select');
 const teamsByAffiliation = {
-    "전자정보공과대학": ["전자공학과", "전자통신공학과","전자융합공학과","전자재료공학과","전기공학과"],
-    "인공지능융합대학": ["소프트웨어학부","컴퓨터정보공학부","정보융합학부","로봇학부"],
+    "전자정보공과대학": ["전자공학과", "전자통신공학과", "전자융합공학과", "전자재료공학과", "전기공학과"],
+    "인공지능융합대학": ["소프트웨어학부", "컴퓨터정보공학부", "정보융합학부", "로봇학부"],
     "공과대학": ["화학공학과", "환경공학과", "건축공학과", "건축학과"],
-    "자연과학대학": ["수학과","화학과","전자바이오물리학과","스포츠융합과학과"],
-    "경영대학": ["경영학부","국제통상학부"],
-    "인문사회과학대학":["국어국문학과","영어산업학과","산업심리학과","미디어커뮤니케이션학부","동북아문화산업학부"],
-    "정책법학대학":["행정학과","법학부","국제학부"]
+    "자연과학대학": ["수학과", "화학과", "전자바이오물리학과", "스포츠융합과학과"],
+    "경영대학": ["경영학부", "국제통상학부"],
+    "인문사회과학대학": ["국어국문학과", "영어산업학과", "산업심리학과", "미디어커뮤니케이션학부", "동북아문화산업학부"],
+    "정책법학대학": ["행정학과", "법학부", "국제학부"]
 };
 const sportsAndLocations = {
     1: { sport: '풋살', location: '풋살장' },
@@ -387,22 +383,11 @@ function updateDisplayedDates() {
 
     todayDateDisplay.textContent = formatDate(today, false); // 오늘 날짜에 연도 포함x
 
-    console.log(today);
-    console.log(currentDate);
     displayCurrentGame();
 }
 
 // 날짜 선택 버튼 클릭 시 알림창 표시
 
-
-$(function() {
-    $('button[name="birthday"]').daterangepicker({
-        singleDatePicker: true
-    }, function(start, end, label) {
-        currentDate = start._d;
-        updateDisplayedDates();
-    });
-});
 
 let currentSport = null; // 현재 선택된 스포츠
 let currentTeam = null; // 현재 선택된 팀
@@ -442,7 +427,7 @@ function filterBySport(sport) {
             img.src = '../image/FC 온라인-default픽토그램.png';
         }
     });
-    if(sport === '')
+    if (sport === '')
         sport = '전체';
     // 선택된 스포츠의 활성화 이미지로 변경
     var image = document.querySelector(`img[id^='sport-image-${sport}']`);
@@ -488,47 +473,55 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
             const sportInfo = sportsAndLocations[game.sportId];
             const gameItem = document.createElement('div');
             gameItem.className = 'game-item';
-
+    
+            // 점수 비교
+            const homeScore = game.home_score;
+            const awayScore = game.away_score;
+    
+            // 이긴 쪽의 점수에 파란색 스타일 적용
+            const homeScoreStyle = homeScore > awayScore ? 'color: blue;' : 'color: gray;';
+            const awayScoreStyle = awayScore > homeScore ? 'color: blue;' : 'color: gray;';
+    
             gameItem.innerHTML = `
                 <p>${game.time}</p>
-                <p>${sportInfo.sport}</p>
+                <p style="color: gray;">${sportInfo.sport}</p>
                 <div class="team">
                     <p style="text-align: right;">${game.home.team}</p>
                     <img src="${game.home.image}" alt="${game.home.team} 사진" style="width: 30px; height: 30px; margin-right: 5px;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
                 </div>
                 <div class="score">
-                    <p>${game.home_score} - ${game.away_score}</p>
+                    <p style="${homeScoreStyle}">${homeScore}</p>
+                    <p> - </p>
+                    <p style="${awayScoreStyle}">${awayScore}</p>
                 </div>
                 <div class="team">
                     <img src="${game.away.image}" alt="${game.away.team} 사진" style="width: 30px; height: 30px; margin-right: 5px;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
                     <p style="text-align: left;">${game.away.team}</p>
                 </div>
-                <p>${sportInfo.location}</p>
+                <p style="color: gray;">${sportInfo.location}</p>
                 <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
             `;
-
+    
             currentGameElement.appendChild(gameItem);
         });
     } else {
         currentGameElement.innerHTML = '<p>오늘 경기 정보가 없습니다.</p>';
     }
-
-    console.log(today);
-    console.log(currentGames);
+    
 }
 
 // 팀 선택 및 소속 선택 시 현재 선택된 소속과 팀 업데이트
-document.getElementById('affiliation-select').addEventListener('change', function() {
+document.getElementById('affiliation-select').addEventListener('change', function () {
     currentAffiliation = this.value;
     // 팀 선택 활성화 로직 추가
 });
 
-document.getElementById('team-select').addEventListener('change', function() {
+document.getElementById('team-select').addEventListener('change', function () {
     currentTeam = this.value;
 });
 
 
-affiliationSelect.addEventListener('change', function() {
+affiliationSelect.addEventListener('change', function () {
     const selectedAffiliation = this.value;
     teamSelect.innerHTML = '<option value="">팀 선택</option>'; // 초기화
     if (selectedAffiliation) {
@@ -560,7 +553,7 @@ teamSelect.addEventListener('change', () => {
     displayCurrentGame();
 });
 document.querySelectorAll('.sche-nav-links a').forEach(link => {
-    link.addEventListener('click', function() {
+    link.addEventListener('click', function () {
         // 모든 링크에서 active 클래스 제거
         document.querySelectorAll('.sche-nav-links a').forEach(item => {
             item.classList.remove('active');
@@ -569,10 +562,137 @@ document.querySelectorAll('.sche-nav-links a').forEach(link => {
         this.classList.add('active');
     });
 });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const activeLink = document.querySelector('#초기'); // 원하는 a 태그 선택
     activeLink.classList.add('active'); // 선택한 a 태그에 active 클래스 추가
 });
+
+let currentYear;
+let currentMonth;
+
+const events = [
+    { year: 2024, month: 8, day: 5 }, // 예시 일정
+    { year: 2024, month: 8, day: 10 },
+];
+
+document.getElementById('calendarButton').addEventListener('click', function () {
+    const popup = document.getElementById('calendarPopup');
+    popup.style.display = 'block';
+    const rect = this.getBoundingClientRect();
+    popup.style.top = `${rect.bottom + window.scrollY}px`;
+    popup.style.left = `${rect.left}px`;
+
+    const today = new Date();
+    currentYear = today.getFullYear();
+    currentMonth = today.getMonth();
+
+    loadCalendar();
+});
+
+document.getElementById('closePopup').addEventListener('click', function () {
+    document.getElementById('calendarPopup').style.display = 'none';
+});
+
+document.getElementById('prevMonth').addEventListener('click', function () {
+    if (currentMonth === 0) {
+        currentMonth = 11;
+        currentYear--;
+    } else {
+        currentMonth--;
+    }
+    loadCalendar();
+});
+
+document.getElementById('nextMonth').addEventListener('click', function () {
+    if (currentMonth === 11) {
+        currentMonth = 0;
+        currentYear++;
+    } else {
+        currentMonth++;
+    }
+    loadCalendar();
+});
+
+function loadCalendar() {
+    const calendarElement = document.getElementById('calendar');
+    const YearElement = document.getElementById('currentYear');
+    const monthElement = document.getElementById('currentMonth');
+    calendarElement.innerHTML = '';
+
+    YearElement.textContent = `${currentYear}`;
+    monthElement.textContent = `${currentMonth + 1}`;
+
+    const daysOfWeek = ['일', '월', '화', '수', '목', '금', '토'];
+    daysOfWeek.forEach(day => {
+        const dayNameElement = document.createElement('div');
+        dayNameElement.className = 'day-name';
+        dayNameElement.textContent = day;
+        calendarElement.appendChild(dayNameElement);
+    });
+
+    const firstDay = new Date(currentYear, currentMonth, 1);
+    const lastDay = new Date(currentYear, currentMonth + 1, 0);
+
+    const startingDay = firstDay.getDay();
+    for (let i = 0; i < startingDay; i++) {
+        const emptyDay = document.createElement('div');
+        calendarElement.appendChild(emptyDay);
+    }
+
+    for (let day = 1; day <= lastDay.getDate(); day++) {
+        const dayRow = document.createElement('div');
+        dayRow.className = 'day-row';
+        const dayElement = document.createElement('div');
+        dayElement.className = 'day';
+        dayElement.textContent = day;
+        dayElement.style.position = 'relative';
+        const eventDot = document.createElement('div');
+        eventDot.className = 'event-dot';
+        eventDot.style.display = 'none'; // 기본적으로 점을 숨김
+        const formattedDate = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        const hasEvent = games.some(event =>
+            event.date === formattedDate
+        );
+
+        if (hasEvent) {
+            eventDot.style.display = 'block';
+        }
+
+        dayElement.addEventListener('mouseover', function () {
+            this.style.backgroundColor = 'lightgray';
+        });
+
+        dayElement.addEventListener('mouseout', function () {
+            if (!this.classList.contains('selected')) {
+                this.style.backgroundColor = '';
+            }
+        });
+
+        dayElement.addEventListener('click', function () {
+            const allDays = document.querySelectorAll('.day');
+            allDays.forEach(d => {
+                d.classList.remove('selected');
+                d.style.backgroundColor = '';
+                d.style.color = 'black';
+            });
+
+            this.classList.add('selected');
+            this.style.backgroundColor = 'orange';
+            this.style.color = 'white';
+            const select_date = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(this.textContent).padStart(2, '0')}`;
+            const dateObject = new Date(select_date);
+            currentDate.setDate(dateObject.getDate(dateObject));
+            console.log(currentDate);
+            updateDisplayedDates();
+        });
+
+        calendarElement.appendChild(dayElement);
+        dayElement.appendChild(eventDot);
+        dayRow.appendChild(dayElement);
+        calendarElement.appendChild(dayRow);
+    }
+}
+
 // 초기 날짜 표시
 updateDisplayedDates();
 filterBySport('');
