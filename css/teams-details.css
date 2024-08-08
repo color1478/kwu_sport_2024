@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* main */
+body {
+    font-family: S-CoreDream-4Regular;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    /* 위 패딩을 사용하여 양쪽에 여백을 추가하여 그리드 아이템이 컨테이너에 붙지 않도록 합니다 */
+}
+
+.main-view {
+    margin: auto;
+    text-align: center;
+}
+
+.main-view {
+    height:420px;
+    overflow:hidden;
+}
+
+.main-view ul {
+    width:calc(100% * 3);
+    display:flex;
+    animation:slide 20s infinite;
+} /* slide를 20초동안 진행하며 무한반복 함 */
+
+.main-view li {
+    width:calc(100% / 3);
+    height:300px;
+}
+  
+  @keyframes slide {
+    0% {margin-left:0;} /* 0 ~ 10  : 정지 */
+    10% {margin-left:0;} /* 10 ~ 25 : 변이 */
+    25% {margin-left:-100%;} /* 25 ~ 40 : 정지 */
+    40% {margin-left:-100%;} /* 40 ~ 55 : 변이 */
+    55% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+    100% {margin-left:0;}
+  }
+
+ul{
+    list-style:none;
+    padding-left:0px;
+}
+
+/* nav */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: S-CoreDream-5Medium;
+    font-size: 19px; /*크기 조절시 변경 해야함 */
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.navbar .ui li {
+    line-height: 30px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
+    vertical-align: middle;   /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
+    text-align: center;
+}
+
+.nav-logo img {
+    max-height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px; /* 각 항목 간의 간격을 설정 */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #383D42;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #002BCB;
+    font-family: S-CoreDream-7ExtraBold;
+}
+
+
+/* contain */
+
+.banner
+{
+    height: 472px;
+    background-color: rgba(176, 218, 255, 0.25); /* Add a background color to see the container */
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-contain{
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: warp;
+}
+
+.banner-tag{
+    margin-top: 49px;
+    margin-bottom: 45px;
+}
+
+.banner-tag a{
+    font-family: S-CoreDream-5Medium;
+    font-size: 20px;
+    color: #25282C;
+    padding-left: 2%;
+    padding-right: 89.6%;
+    text-decoration-line: none;
+}
+
+.banner-contain img{
+    width: 282px;
+    height: 282px;
+    padding-left: 96px;
+    padding-right: 80px;
+}
+
+.banner-message h1{
+    margin:0%;
+    font-family: S-CoreDream-5Medium;
+    font-size: 20px;
+    color: #000000;
+    padding-top: 21px;
+}
+
+.banner-message h2{
+    margin:0%;
+    font-family: S-CoreDream-5Medium;
+    font-size: 30px;
+    color: #000000;
+    padding-top: 8px;
+}
+
+.banner-message p{
+background-size: 24px;
+    margin:0%;
+    font-family: S-CoreDream-5Medium;
+    font-size: 50px;
+    color: #0B2FA4;
+
+}
+
+.banner-message h3{
+    margin:0%;
+    font-family: S-CoreDream-5Medium;
+    font-size: 19px;
+    color: #5A666F;
+    padding-top: 21px;
+    margin-top: -50px;
+}
+
+
+
+/* main */
+
+
+
+/* footer */
+.footer {
+    background-color: #EDEFF1; /* 배경색 설정 */
+    padding: 35px 35px;
+    color: #8D9AA3; /* 텍스트 색상 설정 */
+    margin-top: 200px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container span.ingredient {
+    font-family: S-coreDream-5Medium;
+  }
+
+
+.footer-logo img {
+    width: 75px;
+    height: 50px;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-text p {
+    line-height: 250%;
+    letter-spacing:0.2px;
+}
+
+.footer-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: S-CoreDream-5Medium;
+    margin: 0;
+}
+
+.footer-role {
+    font-size: 14px;
+    margin: 35px 0 35px 0;
+}
+
+.footer-contact {
+    font-size: 14px;
+    font-family: S-CoreDream-4Regular;
+    margin: auto;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-family: S-CoreDream-4Regular;
+    margin: auto;
+}
