@@ -334,9 +334,6 @@ ul {
     font-size: 20px;
 }
 
-#calendarButton {
-    margin: 20px;
-}
 
 #calendarControls {
     display: flex;
@@ -562,12 +559,13 @@ ul {
     width: 200px;
     /* 고정된 너비 설정 */
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #002BCB;
     border-radius: 4px;
     font-size: 14px;
 }
-
-
+.team-select option{
+    box-sizing: 10px;
+}
 .daybyday {
     align-items: center;
     max-width: 1200px;
@@ -622,18 +620,50 @@ ul {
 
 .game-item p {
     flex: 1;
+    display: inline-block;
 }
 
 .game-item .team {
     flex: 2;
-    display: flex;
     align-items: center;
 }
 
 .game-item .score {
     flex: 1;
+    display: inline-block;
 }
 
+.game-item .teamDrop{
+    border: none;
+    display: inline-block;
+}
+.game-item .teamDrop {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.game-item .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.game-item .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.game-item .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.game-item .teamDrop:hover .dropdown-content {
+    display: block;
+}
 /* 전체 게임 리스트 스타일 */
 
 

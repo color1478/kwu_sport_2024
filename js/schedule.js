@@ -150,7 +150,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 2,
         home: {
@@ -167,7 +167,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 1,
         home: {
@@ -184,7 +184,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 2,
         home: {
@@ -201,7 +201,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 3,
         home: {
@@ -218,7 +218,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 4,
         home: {
@@ -235,7 +235,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 5,
         home: {
@@ -252,7 +252,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 6,
         home: {
@@ -269,7 +269,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 7,
         home: {
@@ -286,7 +286,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 8,
         home: {
@@ -303,24 +303,26 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 9,
-        home: {
-            affiliation: "공과대학",
-            team: "전기전자공학과"
-        },
-        away: {
-            affiliation: "경영대학",
-            team: "마케팅학과"
-        },
+        teams: [
+            { affiliation: "인공지능융합대학", team: "소프트웨어학부", rank: 1 },
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 2 },
+            { affiliation: "팀C 소속", team: "팀C", rank: 3 },
+            { affiliation: "팀D 소속", team: "팀D", rank: 4 },
+            { affiliation: "팀E 소속", team: "팀E", rank: 5 },
+            { affiliation: "팀F 소속", team: "팀F", rank: 6 },
+            { affiliation: "팀G 소속", team: "팀G", rank: 7 },
+            { affiliation: "팀H 소속", team: "팀H", rank: 8 }
+        ],
         home_score: 3,
         away_score: 2,
         result: "홈팀 승",
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 10,
         home: {
@@ -337,7 +339,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-06",
+        date: "2024-08-09",
         time: "10:00",
         sportId: 2,
         home: {
@@ -364,8 +366,8 @@ function formatDate(date, showYear = true) {
     const weekday = date.toLocaleDateString('ko-KR', { weekday: 'short' });
 
     return showYear
-        ? `${date.getFullYear()}년 ${month}월 ${day}일 (${weekday})`
-        : `${month}월 ${day}일 (${weekday})`;
+        ? `${date.getFullYear()}년 ${String(month).padStart(2, '0')}월 ${String(day).padStart(2, '0')}일 (${weekday})`
+        : `${String(month).padStart(2, '0')}월 ${String(day).padStart(2, '0')}일 (${weekday})`;
 }
 
 function updateDisplayedDates() {
@@ -382,7 +384,17 @@ function updateDisplayedDates() {
     date3.textContent = formatDate(tomorrow, false); // 연도 없이 표시
 
     todayDateDisplay.textContent = formatDate(today, false); // 오늘 날짜에 연도 포함x
-
+    const now = new Date();
+    if (currentDate.getDate() === now.getDate() &&
+        currentDate.getMonth() === now.getMonth() &&
+        currentDate.getFullYear() === now.getFullYear()) {
+        todayDateDisplay.style.color = 'blue';
+        todayDateDisplay.textContent += ' 오늘';
+    } else {
+        todayDateDisplay.style.color = 'black';
+    }
+    const popup = document.getElementById('calendarPopup');
+    popup.style.display = 'none';
     displayCurrentGame();
 }
 
@@ -452,17 +464,24 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
 
     // 소속 필터링
     if (affiliationFilter) {
-        currentGames = currentGames.filter(game =>
-            game.home.affiliation === affiliationFilter || game.away.affiliation === affiliationFilter
-        );
+        currentGames = currentGames.filter(game => {
+            if (game.sportId == 9) {
+                return game.team.some(team => team.affiliation == affiliationFilter);
+            } else {
+                return (game.home.affiliation == affiliationFilter || game.away.affiliation == affiliationFilter);
+            }
+        });
     }
 
     // 팀 필터링
     if (teamFilter) {
-        currentGames = currentGames.filter(game =>
-            game.home.affiliation === teamFilter || game.away.affiliation === teamFilter ||
-            game.home.team === teamFilter || game.away.team === teamFilter
-        );
+        currentGames = currentGames.filter(game => {
+            if (game.sportId == 9) {
+                return game.team.some(team => teams.team == teamFilter);
+            } else {
+                return (game.home.team == teamFilter || game.away.team == teamFilter);
+            }
+        });
     }
 
     const currentGameElement = document.getElementById('current-game');
@@ -473,42 +492,80 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
             const sportInfo = sportsAndLocations[game.sportId];
             const gameItem = document.createElement('div');
             gameItem.className = 'game-item';
-    
+
             // 점수 비교
             const homeScore = game.home_score;
             const awayScore = game.away_score;
-    
+
             // 이긴 쪽의 점수에 파란색 스타일 적용
             const homeScoreStyle = homeScore > awayScore ? 'color: blue;' : 'color: gray;';
             const awayScoreStyle = awayScore > homeScore ? 'color: blue;' : 'color: gray;';
-    
-            gameItem.innerHTML = `
-                <p>${game.time}</p>
-                <p style="color: gray;">${sportInfo.sport}</p>
-                <div class="team">
-                    <p style="text-align: right;">${game.home.team}</p>
-                    <img src="${game.home.image}" alt="${game.home.team} 사진" style="width: 30px; height: 30px; margin-right: 5px;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
-                </div>
-                <div class="score">
-                    <p style="${homeScoreStyle}">${homeScore}</p>
-                    <p> - </p>
-                    <p style="${awayScoreStyle}">${awayScore}</p>
-                </div>
-                <div class="team">
-                    <img src="${game.away.image}" alt="${game.away.team} 사진" style="width: 30px; height: 30px; margin-right: 5px;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
-                    <p style="text-align: left;">${game.away.team}</p>
-                </div>
-                <p style="color: gray;">${sportInfo.location}</p>
-                <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
-            `;
-    
+
+            // 특정 스포츠 형식 적용
+            if (sportInfo.sport === 'TFT') {
+                let highestRankTeam = game.teams[0]; // 초기값 설정
+
+                // rank가 가장 높은 팀 찾기
+                game.teams.forEach(t => {
+                    if (t.rank < highestRankTeam.rank) {
+                        highestRankTeam = t; // rank가 더 낮은 팀으로 업데이트
+                    }
+                });
+
+                gameItem.innerHTML = `
+                    <p>${game.time}</p>
+                    <p style="color: gray;">${sportInfo.sport}</p>
+                    <div style="width: 600px; height: 35px;">
+                        <div class="team">
+                                <p>${highestRankTeam.team}</p>
+                        </div>
+                        <div class="teamDrop">
+                            <div class="score">
+                                <p style="font-size:15px;">외 7개 학과<p/>
+                            </div>
+                            <div class="dropdown-content">
+                            ${game.teams
+                            .filter(t => t.team !== highestRankTeam.team) // 가장 높은 팀 제외
+                            .map(t => `<a href="#" value="${t.team}">${t.team}</a>`)
+                            .join('')}
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: gray;">${sportInfo.location}</p>
+                    <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
+                `;
+            } else {
+                // 다른 스포츠의 기본 형식
+                gameItem.innerHTML = `
+                    <p>${game.time}</p>
+                    <p style="color: gray;">${sportInfo.sport}</p>
+                    <div style="width: 600px; height: 35px;">
+                        <div class="team">
+                            <p style="text-align: right;">${game.home.team}</p>
+                            <img src="${game.home.image}" style="width: 30px; height: 30px; margin-right: 5px;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
+                        </div>
+                        <div class="score">
+                            <p style="${homeScoreStyle}">${homeScore}</p>
+                            <p> - </p>
+                            <p style="${awayScoreStyle}">${awayScore}</p>
+                        </div>
+                        <div class="team">
+                            <img src="${game.away.image}" style="width: 30px; height: 30px; margin-right: 5px;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
+                            <p style="text-align: left;">${game.away.team}</p>
+                        </div>
+                    </div>
+                    <p style="color: gray;">${sportInfo.location}</p>
+                    <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
+                `;
+            }
+
             currentGameElement.appendChild(gameItem);
         });
     } else {
         currentGameElement.innerHTML = '<p>오늘 경기 정보가 없습니다.</p>';
     }
-    
 }
+
 
 // 팀 선택 및 소속 선택 시 현재 선택된 소속과 팀 업데이트
 document.getElementById('affiliation-select').addEventListener('change', function () {
@@ -570,23 +627,22 @@ document.addEventListener("DOMContentLoaded", function () {
 let currentYear;
 let currentMonth;
 
-const events = [
-    { year: 2024, month: 8, day: 5 }, // 예시 일정
-    { year: 2024, month: 8, day: 10 },
-];
-
 document.getElementById('calendarButton').addEventListener('click', function () {
     const popup = document.getElementById('calendarPopup');
-    popup.style.display = 'block';
-    const rect = this.getBoundingClientRect();
-    popup.style.top = `${rect.bottom + window.scrollY}px`;
-    popup.style.left = `${rect.left}px`;
+    if (popup.style.display === 'none') {
+        popup.style.display = 'block';
+        const rect = this.getBoundingClientRect();
+        popup.style.top = `${rect.bottom + window.scrollY}px`;
+        popup.style.left = `${rect.left}px`;
 
-    const today = new Date();
-    currentYear = today.getFullYear();
-    currentMonth = today.getMonth();
+        const today = new Date();
+        currentYear = today.getFullYear();
+        currentMonth = today.getMonth();
 
-    loadCalendar();
+        loadCalendar();
+    } else {
+        popup.style.display = 'none';
+    }
 });
 
 document.getElementById('closePopup').addEventListener('click', function () {
@@ -620,7 +676,7 @@ function loadCalendar() {
     calendarElement.innerHTML = '';
 
     YearElement.textContent = `${currentYear}`;
-    monthElement.textContent = `${currentMonth + 1}`;
+    monthElement.textContent = `${String(currentMonth + 1).padStart(2, '0')}`;
 
     const daysOfWeek = ['일', '월', '화', '수', '목', '금', '토'];
     daysOfWeek.forEach(day => {
@@ -680,9 +736,7 @@ function loadCalendar() {
             this.style.backgroundColor = 'orange';
             this.style.color = 'white';
             const select_date = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(this.textContent).padStart(2, '0')}`;
-            const dateObject = new Date(select_date);
-            currentDate.setDate(dateObject.getDate(dateObject));
-            console.log(currentDate);
+            currentDate = new Date(select_date);
             updateDisplayedDates();
         });
 
