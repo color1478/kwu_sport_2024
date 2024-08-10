@@ -608,6 +608,7 @@ ul {
     align-items: center;
     margin-bottom: 10px;
     font-weight: bold;
+    font-size:10px;
 }
 
 .game-item p,
@@ -680,17 +681,6 @@ ul {
     /* 마지막 항목의 경계선 제거 */
 }
 
-/* 팀 정보 스타일 */
-.team {
-    display: flex;
-    align-items: center;
-}
-
-/* 팀 이미지 스타일 */
-.team img {
-    border-radius: 50%;
-    /* 이미지 둥글게 만들기 */
-}
 
 /* 점수 스타일 */
 .score {
@@ -698,13 +688,6 @@ ul {
     font-size: 1.2em;
     color: #333;
     text-align: center;
-}
-
-/* 종목과 장소 스타일 */
-.game-item p {
-    margin: 0 10px;
-    font-size: 1em;
-    color: #555;
 }
 
 /* 화면 크기에 따라 반응형 디자인 */

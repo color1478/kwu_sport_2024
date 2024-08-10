@@ -150,7 +150,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 2,
         home: {
@@ -167,12 +167,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 1,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -184,12 +184,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 2,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -201,12 +201,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 3,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -218,12 +218,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 4,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -235,12 +235,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 5,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -252,12 +252,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 6,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -269,12 +269,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 7,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -286,12 +286,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 8,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -303,7 +303,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 9,
         teams: [
@@ -322,12 +322,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 10,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -339,12 +339,12 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-09",
+        date: "2024-08-10",
         time: "10:00",
         sportId: 2,
         home: {
             affiliation: "공과대학",
-            team: "전기전자공학과"
+            team: "미디어커뮤니케이션학부"
         },
         away: {
             affiliation: "경영대학",
@@ -513,22 +513,23 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                 });
 
                 gameItem.innerHTML = `
-                    <p>${game.time}</p>
-                    <p style="color: gray;">${sportInfo.sport}</p>
-                    <div style="width: 600px; height: 35px;">
-                        <div class="team">
-                                <p>${highestRankTeam.team}</p>
+                    <div style="width:100px;">
+                        <p>${game.time}</p>
+                    </div>
+                    <div style="width:100px;">
+                        <p style="color: gray;">${sportInfo.sport}</p>
+                    </div>
+
+                    <p style= "margin-left: auto;">${highestRankTeam.team}</p>
+                    <div class="teamDrop">
+                        <div class="score">
+                            <p style="font-size:10px; color: gray;">외 7개 학과<p/>
                         </div>
-                        <div class="teamDrop">
-                            <div class="score">
-                                <p style="font-size:15px;">외 7개 학과<p/>
-                            </div>
-                            <div class="dropdown-content">
+                        <div class="dropdown-content">
                             ${game.teams
                             .filter(t => t.team !== highestRankTeam.team) // 가장 높은 팀 제외
                             .map(t => `<a href="#" value="${t.team}">${t.team}</a>`)
                             .join('')}
-                            </div>
                         </div>
                     </div>
                     <p style="color: gray;">${sportInfo.location}</p>
@@ -537,23 +538,22 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
             } else {
                 // 다른 스포츠의 기본 형식
                 gameItem.innerHTML = `
-                    <p>${game.time}</p>
-                    <p style="color: gray;">${sportInfo.sport}</p>
-                    <div style="width: 600px; height: 35px;">
-                        <div class="team">
-                            <p style="text-align: right;">${game.home.team}</p>
-                            <img src="${game.home.image}" style="width: 30px; height: 30px; margin-right: 5px;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
-                        </div>
-                        <div class="score">
-                            <p style="${homeScoreStyle}">${homeScore}</p>
-                            <p> - </p>
-                            <p style="${awayScoreStyle}">${awayScore}</p>
-                        </div>
-                        <div class="team">
-                            <img src="${game.away.image}" style="width: 30px; height: 30px; margin-right: 5px;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
-                            <p style="text-align: left;">${game.away.team}</p>
-                        </div>
+                    <div style="width:100px;">
+                        <p style="width:100px;">${game.time}</p>
                     </div>
+                    <div style="width:100px;">
+                        <p style="color: gray;">${sportInfo.sport}</p>
+                    </div>
+                        <p style="width: 150px;text-align:right;white-space: nowrap;">${game.home.team}</p>
+                        <img src="${game.home.image}" style="width: 30px; height: 30px; margin-right: 5px;border-radius: 50%;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
+                    <div class="score">
+                        <p style="${homeScoreStyle}">${homeScore}</p>
+                        <p> - </p>
+                        <p style="${awayScoreStyle}">${awayScore}</p>
+                    </div>
+                        <img src="${game.away.image}" style="width: 30px; height: 30px; margin-right: 5px;border-radius: 50%;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
+                        <p style="width: 150px; text-align: left;white-space: nowrap;">${game.away.team}</p>
+
                     <p style="color: gray;">${sportInfo.location}</p>
                     <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
