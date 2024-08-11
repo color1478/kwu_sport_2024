@@ -134,12 +134,12 @@ ul{
 .banner {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .banner-contain{
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: warp;
 }
 
 .banner-tag{
@@ -152,7 +152,7 @@ ul{
     font-size: 20px;
     color: #25282C;
     padding-left: 2%;
-    padding-right: 89.6%;
+    padding-right: 87%;
     text-decoration-line: none;
 }
 
@@ -179,29 +179,188 @@ ul{
     padding-top: 8px;
 }
 
+.ptype {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 .banner-message p{
-background-size: 24px;
     margin:0%;
     font-family: S-CoreDream-5Medium;
     font-size: 50px;
     color: #0B2FA4;
-
+    
 }
 
 .banner-message h3{
+    display: flex;
     margin:0%;
     font-family: S-CoreDream-5Medium;
     font-size: 19px;
     color: #5A666F;
-    padding-top: 21px;
     margin-top: -50px;
+    padding: 21px 11px 0px 30px;
 }
-
-
 
 /* main */
 
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
 
+}
+
+.contain {
+    max-width: 1200px;
+    margin: 0 auto;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.08));
+}
+
+
+/* contain-sport 이미지 및 종목이름 */
+
+
+.contain-sport {
+    display: flex;
+    width: 164px;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contain-sport-1{
+    display: flex;
+    width: 136px;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contain-sport-5{
+    display: flex;
+    width: 210px;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contain-sport img{
+    width: 40px;
+    height: 40px;
+    margin-left: -6px;
+}
+
+.contain-sport-1 img{
+    width: 40px;
+    height: 40px;
+    margin-left: -2px;
+}
+
+.contain-sport-5 img{
+    width: 40px;
+    height: 40px;
+    margin-left: -4px;
+}
+
+.contain-sport h1{
+    font-family: S-CoreDream-5Medium;
+    font-size: 24px;
+    color: #25282C;
+    padding: 0px 6px 0px 20px;
+}
+
+.contain-sport-1 h1{
+    font-family: S-CoreDream-5Medium;
+    font-size: 24px;
+    color: #25282C;
+    padding: 0px 6px 0px 18px;
+}
+
+.contain-sport-5 h1{
+    font-family: S-CoreDream-5Medium;
+    font-size: 24px;
+    color: #25282C;
+    padding: 0px 6px 0px 21px;
+}
+
+
+/* contain-member 주전 후보 선수 이름 */
+
+
+.contain-member {
+    width: 1200px;
+    background-color: #FFFFFF;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.member-first{
+    display: flex;
+    padding: 30px 0px 0px 0px;
+    align-items: center;
+}
+
+.member-second{
+    display: flex;
+    padding: 0px 0px 30px 0px;
+    align-items: center;
+}
+
+.contain-member h2{
+    font-family: S-CoreDream-5Medium;
+    font-size: 19px;
+    color: #383D42;
+    display: block;
+    padding-left: 40px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.contain-member p{
+    padding: 0px 24px 0px 25px;
+    margin: 0px;
+    margin-top: 10px;
+
+}
+
+.contain-member h3{
+    font-family: S-CoreDream-5Medium;
+    font-size: 18px;
+    color: #25282C;
+    margin: 0px;
+    margin-top: 10px;
+
+}
+
+.member-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 28px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* underline 오프라인 온라인 종목 사이 줄 */
+
+
+.underline {
+    border-bottom: 1px solid #D8DCDF;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 1px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
 /* footer */
 .footer {
@@ -260,4 +419,19 @@ background-size: 24px;
     font-size: 14px;
     font-family: S-CoreDream-4Regular;
     margin: auto;
+}
+
+
+/* 폰트 전체 속성 변경 */
+
+h1{
+    font-weight: normal;
+}
+
+h2{
+    font-weight: normal;
+}
+
+h3{
+    font-weight: normal;
 }

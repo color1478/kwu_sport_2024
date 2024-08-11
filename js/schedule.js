@@ -31,7 +31,7 @@ const sportsAndLocations = {
 };
 const games = [
     {
-        date: "2024-08-03",
+        date: "2024-08-12",
         time: "10:00",
         sportId: 2,
         home: {

@@ -57,16 +57,6 @@ body {
     height:300px;
 }
   
-  @keyframes slide {
-    0% {margin-left:0;} /* 0 ~ 10  : 정지 */
-    10% {margin-left:0;} /* 10 ~ 25 : 변이 */
-    25% {margin-left:-100%;} /* 25 ~ 40 : 정지 */
-    40% {margin-left:-100%;} /* 40 ~ 55 : 변이 */
-    55% {margin-left:-200%;}
-    70% {margin-left:-200%;}
-    100% {margin-left:0;}
-  }
-
 ul{
     list-style:none;
     padding-left:0px;
@@ -121,6 +111,42 @@ ul{
     color: #002BCB;
     font-family: S-CoreDream-7ExtraBold;
 }
+
+
+/* main */
+.selection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex; /* 가로로 나란히 배치 */
+    justify-content: center; /* 중앙 정렬 */
+    border-bottom: 1px solid #B5BEC4; /* 기본 border */
+}
+
+/* section */
+.contain {
+    flex: 1; /* 모든 컨테이너가 동일한 비율로 차지하도록 설정 */
+    padding: 16px 0; /* 위아래 여백 */
+    font-family: S-CoreDream-5Medium;
+    font-size: 24px;
+    text-align: center; /* 텍스트 가운데 정렬 */
+    color: #B5BEC4; /* 선택되지 않았을 때 기본 색상 */
+    cursor: pointer; /* 마우스 커서 변경 */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* 색상과 border의 전환 효과 */
+}
+
+/* 선택된 상태의 스타일 */
+.contain.selected {
+    color: #002BCB;
+    border-bottom: 3px solid #002BCB; /* 선택된 상태일 때의 border */
+    cursor: default; /* 선택된 상태에서는 기본 커서로 변경 */
+}
+
+.selection .contain:not(.selected) {
+    border-bottom: 1px solid transparent; /* 선택되지 않은 상태일 때 하단 border를 보이지 않게 설정 */
+}
+
+
 
 
 /* contain */
