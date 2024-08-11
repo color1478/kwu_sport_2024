@@ -203,6 +203,25 @@ ul{
     padding: 21px 11px 0px 30px;
 }
 
+.banner-heart{
+    display: flex;
+    margin-top: 35px;
+}
+
+button.heart{
+    background-color: #002BCB;
+    border-radius: 30px;
+    font-family: S-CoreDream-5Medium;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.banner-heart img{
+    width: 189px;
+    height: 36px;
+    padding-left: 32px;
+}
+
 /* main */
 
 .main{

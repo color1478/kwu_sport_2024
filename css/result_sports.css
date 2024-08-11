@@ -164,7 +164,8 @@ ul{
 .banner
 {
     height: 240px;
-    background-color: rgba(176, 218, 255, 0.25); /* Add a background color to see the container */
+    background-image: url("../image/new배너.png");
+    background-size: cover;
 }
 
 .banner {
@@ -307,8 +308,6 @@ ul{
 .sport-link-FConline:hover img {
     content: url('../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
 }
-
-
 
 
 /* footer */
