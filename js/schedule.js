@@ -31,7 +31,7 @@ const sportsAndLocations = {
 };
 const games = [
     {
-        date: "2024-08-12",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 2,
         home: {
@@ -150,7 +150,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 2,
         home: {
@@ -167,7 +167,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 1,
         home: {
@@ -184,7 +184,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 2,
         home: {
@@ -201,7 +201,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 3,
         home: {
@@ -218,7 +218,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 4,
         home: {
@@ -235,7 +235,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 5,
         home: {
@@ -252,7 +252,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 6,
         home: {
@@ -269,7 +269,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 7,
         home: {
@@ -286,7 +286,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 8,
         home: {
@@ -303,7 +303,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 9,
         teams: [
@@ -322,7 +322,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 10,
         home: {
@@ -339,7 +339,7 @@ const games = [
         rain: false
     },
     {
-        date: "2024-08-10",
+        date: "2024-08-13",
         time: "10:00",
         sportId: 2,
         home: {
@@ -516,45 +516,52 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                     <div style="width:100px;">
                         <p>${game.time}</p>
                     </div>
-                    <div style="width:100px;">
+                    <div style="width:100px;text-align: center;">
                         <p style="color: gray;">${sportInfo.sport}</p>
                     </div>
 
-                    <p style= "margin-left: auto;">${highestRankTeam.team}</p>
+                    <p style= "width:25vw;text-align:right;">${highestRankTeam.team}</p>
                     <div class="teamDrop">
-                        <div class="score">
-                            <p style="font-size:10px; color: gray;">외 7개 학과<p/>
+                        <div style="width:21vw;">
+                            <p style="font-size:10px; color: gray;vertical-align:bottom;">외 7개 학과<p/>
                         </div>
                         <div class="dropdown-content">
                             ${game.teams
                             .filter(t => t.team !== highestRankTeam.team) // 가장 높은 팀 제외
-                            .map(t => `<a href="#" value="${t.team}">${t.team}</a>`)
+                            .map(t => `<p value="${t.team}">${t.team}</p>`)
                             .join('')}
                         </div>
                     </div>
-                    <p style="color: gray;">${sportInfo.location}</p>
+                    <div style="width:10vw;text-align: center;">
+                        <p style="color: gray;">${sportInfo.location}</p>
+                    </div>
                     <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             } else {
                 // 다른 스포츠의 기본 형식
                 gameItem.innerHTML = `
                     <div style="width:100px;">
-                        <p style="width:100px;">${game.time}</p>
+                        <p>${game.time}</p>
                     </div>
-                    <div style="width:100px;">
+                    <div style="width:100px;text-align: center;">
                         <p style="color: gray;">${sportInfo.sport}</p>
                     </div>
-                        <p style="width: 150px;text-align:right;white-space: nowrap;">${game.home.team}</p>
-                        <img src="${game.home.image}" style="width: 30px; height: 30px; margin-right: 5px;border-radius: 50%;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
+                    <div style="text-align:right;width:15vw;">
+                        <p style="white-space: nowrap;">${game.home.team}</p>
+                    </div>
+                    <img src="${game.home.image}" style="width: 3vw; height: 3vw;border-radius: 50%;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
                     <div class="score">
                         <p style="${homeScoreStyle}">${homeScore}</p>
                         <p> - </p>
                         <p style="${awayScoreStyle}">${awayScore}</p>
                     </div>
-                        <img src="${game.away.image}" style="width: 30px; height: 30px; margin-right: 5px;border-radius: 50%;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
-                        <p style="width: 150px; text-align: left;white-space: nowrap;">${game.away.team}</p>
-
-                    <p style="color: gray;">${sportInfo.location}</p>
+                    <img src="${game.away.image}" style="width: 3vw; height: 3vw; border-radius: 50%;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
+                    <div style="text-align: left;width:15vw;">
+                        <p style="white-space: nowrap;">${game.away.team}</p>
+                    </div>
+                    <div style="width:10vw;text-align: center;">
+                        <p style="color: gray;">${sportInfo.location}</p>
+                    </div>
                     <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             }

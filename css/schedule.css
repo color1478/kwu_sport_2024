@@ -609,7 +609,9 @@ ul {
     align-items: center;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size:10px;
+    font-size:0.8em;
+    text-overflow: ellipsis;
+    height:3vw;
 }
 
 .game-item p,
@@ -618,21 +620,6 @@ ul {
     margin: 0 10px;
     display: inline-block;
     color: black;
-}
-
-.game-item p {
-    flex: 1;
-    display: inline-block;
-}
-
-.game-item .team {
-    flex: 2;
-    align-items: center;
-}
-
-.game-item .score {
-    flex: 1;
-    display: inline-block;
 }
 
 .game-item .teamDrop{
@@ -653,14 +640,10 @@ ul {
     z-index: 1;
 }
 
-.game-item .dropdown-content a {
+.game-item .dropdown-content p {
     color: black;
     text-decoration: none;
     display: block;
-}
-
-.game-item .dropdown-content a:hover {
-    background-color: #f1f1f1;
 }
 
 .game-item .teamDrop:hover .dropdown-content {
@@ -677,18 +660,13 @@ ul {
     box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
 }
 
-.game-item:last-child {
-    border-bottom: none;
-    /* 마지막 항목의 경계선 제거 */
-}
-
 
 /* 점수 스타일 */
 .score {
     font-weight: bold;
     font-size: 1.2em;
     color: #333;
-    text-align: center;
+    width: 10vw;
 }
 
 /* 화면 크기에 따라 반응형 디자인 */
