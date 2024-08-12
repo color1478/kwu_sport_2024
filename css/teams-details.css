@@ -209,11 +209,14 @@ ul{
 }
 
 button.heart{
+    display: flex;
     background-color: #002BCB;
     border-radius: 30px;
     font-family: S-CoreDream-5Medium;
     font-size: 16px;
     color: #FFFFFF;
+    height: 46px;
+    align-items: center;
 }
 
 .banner-heart img{

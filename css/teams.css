@@ -255,3 +255,17 @@ ul{
     font-family: S-CoreDream-4Regular;
     margin: auto;
 }
+
+/* 폰트 전체 속성 변경 */
+
+h1{
+    font-weight: normal;
+}
+
+h2{
+    font-weight: normal;
+}
+
+h3{
+    font-weight: normal;
+}
