@@ -311,12 +311,95 @@ ul{
     content: url('../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
 }
 
+.circle {
+    width: 18px;  
+    height: 18px; 
+    border-radius: 50%;
+}
+
+
+.highlight-deepblue {
+    background-color: rgba(176, 218, 255, 0.8);
+}
+
+.highlight-skyblue {
+    background-color: #E7F5FF;
+}
+
+.table-body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.table-container {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 13px;
+}
+
+.legend {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size : 17px;
+    font-family: S-CoreDream-5Medium;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.name {
+    text-align: left;
+}
+
+thead {
+    border-bottom: 1.5px solid #909090;
+}
+
+th {
+    padding: 15px;
+    font-family: S-CoreDream-5Medium;
+    font-size: 16px;
+    text-align: center;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+}
+
+td {
+    padding: 4px;
+    font-family: S-CoreDream-5Medium;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-bottom:none;
+}
+
+.table-body img {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+}
+
+
 
 /* footer */
 .footer {
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;
     color: #8D9AA3; /* 텍스트 색상 설정 */
+    margin-top: 100px;
     
 }
 
