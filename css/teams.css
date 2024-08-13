@@ -138,7 +138,7 @@ ul{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: -40px;
+    margin-bottom: 60px;
 }
 
 .banner h1{
@@ -164,12 +164,12 @@ ul{
 
 .contain h1{
     font-family: S-CoreDream-7ExtraBold;
-    font-size: 32px;
+    font-size: 28px;
     color: #383D42;
     background-color: #F5F6F7;
     border-radius: 20px 20px 0 0;
-    padding: 30px;
-    margin-top: 100px;
+    padding: 20px;
+    margin-top: 50px;
     margin-bottom: 0;
 }
 

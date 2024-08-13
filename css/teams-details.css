@@ -208,15 +208,26 @@ ul{
     margin-top: 35px;
 }
 
-button.heart{
+.banner-button {
     display: flex;
+}
+
+button.heart{
     background-color: #002BCB;
-    border-radius: 30px;
     font-family: S-CoreDream-5Medium;
+    border-radius: 30px;
     font-size: 16px;
     color: #FFFFFF;
     height: 46px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border: none;
+}
+
+button.heart .heart-icon {
+    margin-right: 8px; /* 하트 아이콘과 숫자 간의 간격 */
 }
 
 .banner-heart img{
