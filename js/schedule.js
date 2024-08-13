@@ -466,7 +466,7 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
     if (affiliationFilter) {
         currentGames = currentGames.filter(game => {
             if (game.sportId == 9) {
-                return game.team.some(team => team.affiliation == affiliationFilter);
+                return game.teams.some(team => team.affiliation == affiliationFilter);
             } else {
                 return (game.home.affiliation == affiliationFilter || game.away.affiliation == affiliationFilter);
             }

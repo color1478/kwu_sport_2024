@@ -337,54 +337,77 @@ ul{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    font-weight: bold;
+    font-size:0.8em;
+    text-overflow: ellipsis;
+    height:3vw;
 }
-.game-item p, .game-item .team, .game-item .score {
-    margin: 0 10px;
-}
-.game-item p {
-    flex: 1;
-}
-.game-item .team {
-    flex: 2;
-    display: flex;
-    align-items: center;
-}
+
+.game-item p,
+.game-item .team,
 .game-item .score {
-    flex: 1;
+    margin: 0 10px;
+    display: inline-block;
+    color: black;
 }
+
+.game-item .teamDrop{
+    border: none;
+    display: inline-block;
+}
+.game-item .teamDrop {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.game-item .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.game-item .dropdown-content p {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.game-item .teamDrop:hover .dropdown-content {
+    display: block;
+}
+/* 전체 게임 리스트 스타일 */
+
+
+/* 개별 게임 항목 스타일 */
 .game-item {
     padding: 10px;
     border: 0px solid;
     border-radius: 10px;
-    box-shadow : 1px 1px 1px 1px rgb(200, 200, 200);
+    box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
 }
 
-.game-item:last-child {
-    border-bottom: none; /* 마지막 항목의 경계선 제거 */
-}
-
-/* 팀 정보 스타일 */
-.team {
-    display: flex;
-    align-items: center;
-}
-
-/* 팀 이미지 스타일 */
-.team img {
-    border-radius: 50%; /* 이미지 둥글게 만들기 */
-}
 
 /* 점수 스타일 */
 .score {
     font-weight: bold;
     font-size: 1.2em;
     color: #333;
-    text-align: center;
+    width: 10vw;
 }
 
-/* 종목과 장소 스타일 */
-.game-item p {
-    margin: 0 10px;
-    font-size: 1em;
-    color: #555;
+/* 화면 크기에 따라 반응형 디자인 */
+@media (max-width: 600px) {
+    .game-item {
+        flex-direction: column;
+        /* 작은 화면에서 세로 배치 */
+        align-items: flex-start;
+    }
+
+    .score {
+        margin: 5px 0;
+        /* 점수 위아래 간격 조정 */
+    }
 }
