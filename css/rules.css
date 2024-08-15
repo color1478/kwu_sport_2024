@@ -130,8 +130,6 @@ ul{
     height: 240px;
     background-image: url("../image/new배너.png");
     background-size: cover;
-}
-.banner {
     display: flex;
     flex-direction: column;
     justify-content: center;

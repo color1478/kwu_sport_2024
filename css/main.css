@@ -207,8 +207,8 @@ ul{
     margin-bottom: 15px;
     font-family: S-CoreDream-5Medium;
     font-size: 10px; /*크기 조절시 변경 해야함 */
-    overflow-x:auto;
     white-space:nowrap;
+    /*overflow-x:auto;*/
 
 }
 .jb-division-line {
@@ -398,7 +398,7 @@ ul{
     width: 10vw;
 }
 
-/* 화면 크기에 따라 반응형 디자인 */
+/* 화면 크기에 따라 반응형 디자인 -> 144px 고정이라 수정 요망*/
 @media (max-width: 600px) {
     .game-item {
         flex-direction: column;
@@ -410,4 +410,253 @@ ul{
         margin: 5px 0;
         /* 점수 위아래 간격 조정 */
     }
+}
+
+
+h1 {
+    font-weight: normal;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+.rankNresult {
+    margin-top: 115px;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+/* rank */
+
+.rank {
+    margin: auto 0;
+}
+
+.rank-contain {
+    width: 790px;
+}
+
+.rank-text {
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.recent_result {
+    width: 380px;
+}
+
+.num-contain .number {
+    font-size: 33px;
+    font-family: S-CoreDream-5Medium;
+    color: #0B2FA4;
+}
+
+
+.num-contain .topnum {
+    font-size: 46px;
+    font-family: S-CoreDream-5Medium; 
+    color: #ffffff;
+}
+
+.num-contain .number p {
+    font-family: S-CoreDream-5Medium; 
+    color: #0B2FA4;
+}
+
+.num-contain {
+    margin-left: 20px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.top_mod {
+    font-size: 20px;
+}
+
+.mod {
+    font-size: 16px;
+}
+
+.rankinf{
+    display: flex;
+    align-items: center;
+    background-color: #F5F6F7;
+    margin: 6.5px 0 6.5px 0;
+    border-radius: 13px;
+    height: 79px;
+    overflow: hidden; /* 컨테이너 밖으로 벗어나는 부분을 잘라내기 */
+}
+
+.rankscore {
+    font-size: 33px;
+    font-family: S-CoreDream-5Medium;
+}
+
+#rank1score {
+    font-size: 60px;
+    font-family: S-CoreDream-5Medium;
+}
+
+#rank2score {
+    font-size: 52px;
+    font-family: S-CoreDream-5Medium;
+}
+
+#rank3score {
+    font-size: 46px;
+    font-family: S-CoreDream-5Medium;
+}
+
+.rank1 {
+    background-color: #002BCB;
+    color:#FFFFFF;
+    box-shadow: rgba(255, 0, 0, 0.08) 0 0 15px;
+    height: 132px;
+}
+
+.rank2 {
+    background-color: rgba(0, 48, 208, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 15px;
+    color:#FFFFFF;
+    height: 112px;
+}
+
+.rank3 {
+    background-color: rgba(0, 48, 208, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 15px;
+    color:#FFFFFF;
+    height: 92px;
+}
+
+.rank1 img {
+    height: 204px;
+    width: 204px;
+    
+}
+
+.rank2 img {
+    height: 204px;
+    width: 204px;
+}
+
+.rank3 img {
+    height: 204px;
+    width: 204px;
+}
+.major {
+    margin-right: 35px;
+    width: 265px;
+}
+
+
+.major .major_kor {
+    font-size: 16px;
+}
+
+.major .major_eng {
+    font-size: 12px;
+}
+
+.topmajor .major_kor {
+    font-size: 20px;
+}
+
+.topmajor .major_eng {
+    font-size: 16px;
+}
+
+.recent_result_contain {
+    display: flex;
+}
+
+.result_player {
+    display: flex;
+    align-items: center;
+}
+
+.player_name {
+    display: grid;
+    grid-template-columns: repeat(3,90px); /*수정 요망*/
+}
+
+
+.direct-rule{
+    background-image: url("../image/영상배너.png");
+    background-size: cover;
+    height: 503px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 115px;
+}
+
+.direct-rule h1 {
+    font-size: 20px;
+    font-family: S-CoreDream-4Regular;
+    color: #002BCB;
+    margin-bottom: 20px;
+}
+
+.direct-rule p {
+    font-size: 30px;
+    font-family: S-CoreDream-5Medium;
+    color: #383D42;
+    margin-bottom: 40px;
+}
+
+.direct-rule button {
+    height: 54px;
+    width: 152px;
+    font-size: 18px;
+    font-family: S-CoreDream-5Medium;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #002BCB;
+    border: none;
+}
+
+.SNS_contain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 115px;
+    margin-bottom: 115px;
+}
+
+.SNSbutton {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 15px;
+    border-radius: 20px;
+    display: flex;
+    padding: 20px 37px 20px 37px;
+    text-decoration-line: none;
+
+}
+
+.SNSbutton img {
+    height: 60px;
+    margin-right: 22px;
+}
+
+.SNS_text h1 {
+    font-size: 24px;
+    font-family: S-CoreDream-5Medium;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.SNS_text p {
+    font-size: 16px;
+    font-family: S-CoreDream-5Medium;
+    color: #B5BEC4;
 }
