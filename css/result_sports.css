@@ -189,6 +189,7 @@ ul{
 }
 
 
+/* 네비 바 */
 
 .sche-nav{
     line-height: 15px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
@@ -309,6 +310,35 @@ ul{
     content: url('../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
 }
 
+/* 예선 순위 및 결선 토너먼트 */
+
+.select-2type{
+    max-width: 1200px;
+    margin: 16px auto;
+}
+
+.type-button {
+    width: 100%;
+    display: flex;
+}
+
+.type-button a{
+    font-family: S-CoreDream-7ExtraBold;
+    font-size: 16px;
+    color: #3F474D;
+    text-decoration-line: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding:8px 14px 8px 14px;
+    margin-right: 16px;
+}
+
+#click {
+    color: #002BCB;
+    border: 1px solid #002BCB;
+}
+
+/*  table 모습 */
 
 .circle {
     width: 18px;  
@@ -340,6 +370,8 @@ ul{
     align-items: center;
     font-size : 17px;
     font-family: S-CoreDream-5Medium;
+    margin-top: 28px;
+    margin-bottom: 42px;
 }
 
 table {
@@ -375,6 +407,8 @@ td {
     border-left:none;
     border-top:none;
     border-bottom:none;
+    border-top: 1px solid #909090;
+
 }
 
 .table-body img {

@@ -138,6 +138,7 @@ ul{
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;
     color: #8D9AA3; /* 텍스트 색상 설정 */
+    margin-top: 100px;
     
 }
 
@@ -442,7 +443,18 @@ p {
 .rank-text {
     display: flex;
     margin-bottom: 10px;
+}
 
+.rank-text p {
+    margin-top: auto;
+}
+
+.rank-text a {
+    margin-top: auto;
+    margin-left:auto;
+    font-size: 14px;
+    color: #6F7E88;
+    font-family: S-CoreDream-5Medium;
 }
 
 .recent_result {
@@ -533,26 +545,33 @@ p {
     height: 92px;
 }
 
-.rank1 img {
+.rankinf img {
     height: 204px;
     width: 204px;
-    
+    transform: translate(42%);
+    opacity: 70%;
+}
+
+.rank1 img {
+    transform: translate(15%);
 }
 
 .rank2 img {
-    height: 204px;
-    width: 204px;
+    transform: translate(26%);
 }
 
 .rank3 img {
-    height: 204px;
-    width: 204px;
+    transform: translate(34%);
 }
+
 .major {
     margin-right: 35px;
     width: 265px;
 }
 
+.rankout {
+    margin-right: 66px;
+}
 
 .major .major_kor {
     font-size: 16px;
@@ -581,9 +600,42 @@ p {
 
 .player_name {
     display: grid;
-    grid-template-columns: repeat(3,90px); /*수정 요망*/
+    gap: 11px;
+    grid-template-columns: repeat(3,73px); /*수정 요망*/
 }
 
+.recent_result-text {
+    display: flex;
+    margin-bottom: 9px;
+}
+
+.recent_result-text a{
+    margin-top: auto;
+    margin-left: auto;
+    font-size: 14px;
+    color: #6F7E88;
+    font-family: S-CoreDream-5Medium;
+}
+
+.rank-text h1 {
+    font-size: 36px;
+    font-family: S-CoreDream-5Medium;
+    margin-right: 6px;
+}
+
+.rank-text p {
+    font-size: 16px;
+    font-family: S-CoreDream-5Medium;
+    color: #6F7E88;
+}
+
+
+
+
+.recent_result-text h1{
+    font-size: 36px;
+    font-family: S-CoreDream-5Medium;
+}
 
 .direct-rule{
     background-image: url("../image/영상배너.png");
@@ -596,6 +648,100 @@ p {
     text-align: center;
     margin-top: 115px;
 }
+
+.recent_result_contain {
+    height: 380px;
+    width: 380px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 15px;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.result_left {
+    background-color: #EDEFF1;
+    border-radius: 13px 0 0 13px;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 12.5px;
+}
+
+.result_right {
+    background-color: #ffffff;
+    border-radius: 0 13px 13px 0;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 12.5px;
+}
+
+.reult_score_win {
+    font-size: 48px;
+    font-family: S-CoreDream-7ExtraBold;
+    color: #002BCB;
+    
+}
+.reult_major_win {
+    font-size: 16px;
+    font-family: S-CoreDream-7ExtraBold;
+    color: #002BCB;
+}
+
+
+.reult_score_lose {
+    font-size: 48px;
+    font-family: S-CoreDream-4Regular;
+    color: #B5BEC4;
+}
+.reult_major_lose {
+    font-size: 16px;
+    font-family: S-CoreDream-4Regular;
+    color: #B5BEC4;
+}
+
+
+.recent_result_contain img {
+    height: 250px;
+
+}
+
+.result_left img {
+    margin-top: 27px;
+    transform: translate(-35%);
+    opacity: 40%;
+}
+
+
+.result_right img {
+    margin-top: 27px;
+    transform: translate(10%);
+}
+
+
+#sport {
+    position: absolute;
+    background-color: #B5BEC4;
+    padding: 3px 10px 3px 10px;
+    color: #FFFFFF;
+    border-radius: 0 0 5px 5px;
+}
+
+.result_player {
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 15px;
+    height: 115px;
+    width: 380px;
+    margin-top: 26px;
+}
+
+.result_player img {
+    height: 90px;
+    margin: 12px 19px 12px 17px;
+}
+
+.player_name {
+    font-size: 16px;
+    font-family: S-CoreDream-5Medium;
+}
+
+
 
 .direct-rule h1 {
     font-size: 20px;
@@ -659,4 +805,18 @@ p {
     font-size: 16px;
     font-family: S-CoreDream-5Medium;
     color: #B5BEC4;
+}
+
+
+.company-logo {
+    max-width: 1200px;
+    margin: 165px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:24px;
+}
+
+
+.company-logo img {
+    height: 80px;
 }

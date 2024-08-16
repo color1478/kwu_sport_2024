@@ -123,8 +123,6 @@ ul{
 }
 
 
-
-
 /* main */
 .selection {
     max-width: 1200px;
@@ -191,7 +189,7 @@ ul{
 }
 
 
-/* 순위 및 종목 선택 */
+/* 네비 바 */
 
 .sche-nav{
     line-height: 15px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
@@ -316,7 +314,7 @@ ul{
 
 .select-2type{
     max-width: 1200px;
-    margin: 27px auto;
+    margin: 16px auto;
 }
 
 .type-button {
@@ -348,11 +346,6 @@ ul{
     border-radius: 50%;
 }
 
-
-.highlight-deepblue {
-    background-color: rgba(176, 218, 255, 0.8);
-}
-
 .highlight-skyblue {
     background-color: #E7F5FF;
 }
@@ -361,10 +354,7 @@ ul{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 30px;
+    
 }
 
 .table-container {
@@ -380,6 +370,8 @@ ul{
     align-items: center;
     font-size : 17px;
     font-family: S-CoreDream-5Medium;
+    margin-top: 28px;
+    margin-bottom: 42px;
 }
 
 table {
@@ -425,14 +417,11 @@ td {
     border-radius: 50%;
 }
 
-
-
 /* footer */
 .footer {
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;
     color: #8D9AA3; /* 텍스트 색상 설정 */
-    margin-top: 100px;
     
 }
 
