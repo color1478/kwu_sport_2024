@@ -123,6 +123,8 @@ ul{
 }
 
 
+
+
 /* main */
 .selection {
     max-width: 1200px;
@@ -164,7 +166,7 @@ ul{
 .banner
 {
     height: 240px;
-    background-image: url("../image/new배너.png");
+    background-image: url("../../image/new배너.png");
     background-size: cover;
 }
 
@@ -189,7 +191,7 @@ ul{
 }
 
 
-/* 네비 바 */
+/* 순위 및 종목 선택 */
 
 .sche-nav{
     line-height: 15px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
@@ -277,44 +279,44 @@ ul{
     padding: 0px;
 }
 .sport-link-all:hover img {
-    content: url('../image/전체-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../../image/전체-hover픽토그램.png'); /* 전체 호버 이미지 */
 }
 .sport-link-football:hover img {
-    content: url('../image/풋살-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../../image/풋살-hover픽토그램.png'); /* 풋살 호버 이미지 */
 }
 .sport-link-basketball:hover img {
-    content: url('../image/농구-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../../image/농구-hover픽토그램.png'); /* 농구 호버 이미지 */
 }
 .sport-link-dodgeball:hover img {
-    content: url('../image/피구-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../../image/피구-hover픽토그램.png'); /* 전체 호버 이미지 */
 }
 .sport-link-bowling:hover img {
-    content: url('../image/볼링-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../../image/볼링-hover픽토그램.png'); /* 풋살 호버 이미지 */
 }
 .sport-link-footvolleyball:hover img {
-    content: url('../image/족구-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../../image/족구-hover픽토그램.png'); /* 농구 호버 이미지 */
 }
 .sport-link-tabletennis:hover img {
-    content: url('../image/탁구-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../../image/탁구-hover픽토그램.png'); /* 전체 호버 이미지 */
 }
 .sport-link-jumprope:hover img {
-    content: url('../image/8자 줄넘기-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../../image/8자 줄넘기-hover픽토그램.png'); /* 풋살 호버 이미지 */
 }
 .sport-link-lol:hover img {
-    content: url('../image/LOL-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../../image/LOL-hover픽토그램.png'); /* 농구 호버 이미지 */
 }
 .sport-link-tft:hover img {
-    content: url('../image/TFT-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../../image/TFT-hover픽토그램.png'); /* 풋살 호버 이미지 */
 }
 .sport-link-FConline:hover img {
-    content: url('../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
 }
 
 /* 예선 순위 및 결선 토너먼트 */
 
 .select-2type{
     max-width: 1200px;
-    margin: 16px auto;
+    margin: 21px auto;
 }
 
 .type-button {
@@ -330,12 +332,13 @@ ul{
     border: 1px solid black;
     border-radius: 15px;
     padding:8px 14px 8px 14px;
-    margin-right: 16px;
+    margin-right: 20px;
 }
 
 #click {
     color: #002BCB;
     border: 1px solid #002BCB;
+    background-color: #F3F9FF;
 }
 
 /*  table 모습 */
@@ -346,15 +349,18 @@ ul{
     border-radius: 50%;
 }
 
-.highlight-deepblue {
-    background-color: rgba(176, 218, 255, 0.8);
+.highlight-skyblue {
+    background-color: #E7F5FF;
 }
 
 .table-body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 29px;
 }
 
 .table-container {
@@ -370,8 +376,8 @@ ul{
     align-items: center;
     font-size : 17px;
     font-family: S-CoreDream-5Medium;
-    margin-top: 28px;
-    margin-bottom: 42px;
+    margin-top: 32px;
+    margin-bottom: 27px;
 }
 
 table {
@@ -417,11 +423,14 @@ td {
     border-radius: 50%;
 }
 
+
+
 /* footer */
 .footer {
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;
     color: #8D9AA3; /* 텍스트 색상 설정 */
+    margin-top: 100px;
     
 }
 
