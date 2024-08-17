@@ -416,12 +416,17 @@ td {
     height: 39px;
     border-radius: 50%;
 }
+#rank-table-top {
+    padding: 15px 22px 15px;
+    text-align: left;
+}
 
 /* footer */
 .footer {
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;
     color: #8D9AA3; /* 텍스트 색상 설정 */
+    margin-top: 100px;
     
 }
 

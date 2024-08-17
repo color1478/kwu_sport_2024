@@ -39,10 +39,7 @@ body {
 .main-view {
     margin: auto;
     text-align: center;
-}
-
-.main-view {
-    height:420px;
+    height:auto;
     overflow:hidden;
 }
 
@@ -54,7 +51,7 @@ body {
 
 .main-view li {
     width:calc(100% / 3);
-    height:300px;
+    height:auto;
 }
   
   @keyframes slide {
@@ -224,6 +221,12 @@ ul{
 
 .button {
     margin : 25px;
+    display: flex;
+}
+
+.button img {
+    height: 18px;
+    margin-right: 8px;
 }
 
 .button button {
@@ -237,7 +240,10 @@ ul{
     font-family: S-CoreDream-5Medium;
     border-radius: 20px;
     margin-left: 20px;
-
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
 }
 
 .contain-body p {
