@@ -164,48 +164,45 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                 });
 
                 gameItem.innerHTML = `
-                    <div style="width:100px;">
+                    <div style="width:10vw;">
                         <p>${game.time}</p>
                     </div>
-                    <div style="width:100px;text-align: center;">
+                    <div style="width:10vw;text-align: center;">
                         <p style="color: gray;">${sportInfo.sport}</p>
                     </div>
-
-                    <p style= "width:25vw;text-align:right;">${highestRankTeam.team}</p>
+                    <p style= "width:22vw;text-align:right;">${highestRankTeam.team}</p>
                     <div class="teamDrop">
                         <div style="width:21vw;">
-                            <p style="font-size:10px; color: gray;vertical-align:bottom;">외 7개 학과<p/>
+                            <p style="font-size:1vw; color: gray;vertical-align:bottom;">외 7개 학과<p/>
                         </div>
                         <div class="dropdown-content">
                             ${game.teams
-                            .filter(t => t.team !== highestRankTeam.team) // 가장 높은 팀 제외
-                            .map(t => `<p value="${t.team}">${t.team}</p>`)
-                            .join('')}
+                        .filter(t => t.team !== highestRankTeam.team) // 가장 높은 팀 제외
+                        .map(t => `<p value="${t.team}">${t.team}</p>`)
+                        .join('')}
                         </div>
                     </div>
                     <div style="width:10vw;text-align: center;">
                         <p style="color: gray;">${sportInfo.location}</p>
                     </div>
-                    <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
+                    <p id="status" style="margin-left: 1vw; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             } else {
                 // 다른 스포츠의 기본 형식
                 gameItem.innerHTML = `
-                    <div style="width:100px;">
+                    <div style="width:10vw;">
                         <p>${game.time}</p>
                     </div>
-                    <div style="width:100px;text-align: center;">
+                    <div style="width:10vw;text-align: center;">
                         <p style="color: gray;">${sportInfo.sport}</p>
                     </div>
                     <div style="text-align:right;width:15vw;">
                         <p style="white-space: nowrap;">${game.home.team}</p>
                     </div>
                     <img src="${game.home.image}" style="width: 3vw; height: 3vw;border-radius: 50%;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
-                    <div class="score">
-                        <p style="${homeScoreStyle}">${homeScore}</p>
-                        <p> - </p>
-                        <p style="${awayScoreStyle}">${awayScore}</p>
-                    </div>
+                    <div class="score" style="${homeScoreStyle}">${homeScore}</div>
+                    <div class="score"> - </div>
+                    <div class="score" style="${awayScoreStyle}">${awayScore}</div>
                     <img src="${game.away.image}" style="width: 3vw; height: 3vw; border-radius: 50%;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
                     <div style="text-align: left;width:15vw;">
                         <p style="white-space: nowrap;">${game.away.team}</p>
@@ -213,7 +210,7 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                     <div style="width:10vw;text-align: center;">
                         <p style="color: gray;">${sportInfo.location}</p>
                     </div>
-                    <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
+                    <p id="status" style="margin-left: 1vw; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             }
 
@@ -290,8 +287,8 @@ document.getElementById('calendarButton').addEventListener('click', function () 
     if (popup.style.display === 'none') {
         popup.style.display = 'block';
         const rect = this.getBoundingClientRect();
-        popup.style.top = `${rect.bottom + window.scrollY}px`;
-        popup.style.left = `${rect.left}px`;
+        popup.style.top = `53vw`;
+        popup.style.left = `60vw`;
 
         const today = new Date();
         currentYear = today.getFullYear();

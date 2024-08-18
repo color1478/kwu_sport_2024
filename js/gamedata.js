@@ -22,7 +22,7 @@ var sportsAndLocations = {
 };
 var games = [
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 2,
         home: {
@@ -141,7 +141,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 2,
         home: {
@@ -158,7 +158,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 1,
         home: {
@@ -175,7 +175,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 2,
         home: {
@@ -192,7 +192,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 3,
         home: {
@@ -209,7 +209,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 4,
         home: {
@@ -226,7 +226,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 5,
         home: {
@@ -243,7 +243,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 6,
         home: {
@@ -260,7 +260,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 7,
         home: {
@@ -277,7 +277,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 8,
         home: {
@@ -294,7 +294,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 9,
         teams: [
@@ -313,7 +313,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 10,
         home: {
@@ -330,7 +330,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-08-18",
         time: "10:00",
         sportId: 2,
         home: {

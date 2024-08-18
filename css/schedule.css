@@ -30,7 +30,7 @@ body {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 120vw;
     margin: 0 auto;
     padding: 0;
     /* 위 패딩을 사용하여 양쪽에 여백을 추가하여 그리드 아이템이 컨테이너에 붙지 않도록 합니다 */
@@ -42,7 +42,7 @@ body {
 }
 
 .main-view {
-    height: 420px;
+    height: 42vw;
     overflow: hidden;
 }
 
@@ -56,7 +56,7 @@ body {
 
 .main-view li {
     width: calc(100% / 3);
-    height: 300px;
+    height: 30vw;
 }
 
 @keyframes slide {
@@ -95,7 +95,7 @@ body {
 
 ul {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 /* nav */
@@ -103,27 +103,27 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 120vw;
     margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
     font-family: S-CoreDream-5Medium;
-    font-size: 19px;
+    font-size: 1.9vw;
     /*크기 조절시 변경 해야함 */
     overflow-x: auto;
     white-space: nowrap;
 }
 
 .navbar .ui li {
-    line-height: 30px;
-    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
+    line-height: 3vw;
+    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 3vw로 설정*/
     vertical-align: middle;
     /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
     text-align: center;
 }
 
 .nav-logo img {
-    max-height: 40px;
+    max-height: 4vw;
 }
 
 .nav-links {
@@ -137,7 +137,7 @@ ul {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 1.5vw;
     /* 각 항목 간의 간격을 설정 */
 }
 
@@ -154,22 +154,22 @@ ul {
 
 /* sche-nav */
 .sche-nav {
-    line-height: 15px;
-    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
+    line-height: 1.5vw;
+    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 3vw로 설정*/
     vertical-align: middle;
     /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
     text-align: center;
-    margin: 60px 0 44px 0;
+    margin: 6vw 0 4.4vw 0;
 }
 
 .sche-nav-container {
     align-items: center;
-    max-width: 1200px;
+    max-width: 120vw;
     margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
     font-family: S-CoreDream-5Medium;
-    font-size: 10px;
+    font-size: 1vw;
     /*크기 조절시 변경 해야함 */
     overflow-x: auto;
     white-space: nowrap;
@@ -177,9 +177,9 @@ ul {
 }
 
 .jb-division-line {
-    border-top: 1px solid #444444;
-    top: 10px;
-    margin: 30px 0px;
+    border-top: 0.1vw solid #444444;
+    top: 1vw;
+    margin: 3vw 0;
 }
 
 .sche-nav-links {
@@ -199,19 +199,21 @@ ul {
 
 .sche-nav-links a {
     text-decoration: none;
-    text-underline-offset: 5px;
-    font-size: 15px;
+    text-underline-offset: 0.5vw;
+    font-size: 1.5vw;
     color: #B5BEC4;
     position: relative;
-    padding: 0px 0px;
+    padding: 0 0;
     font-family: S-CoreDream-4Regular;
 }
-
+.sche-nav-links p{
+    font-size: 1vw;
+}
 .sche-nav-links img {
-    width: 52px;
-    height: 52px;
+    width: 3.85vw;
+    height: 3.85vw;
     object-fit: cover;
-    margin: 7px 28.5px 0 28.5px;
+    margin: 0.7vw 2vw 0 2vw;
 }
 
 .sche-nav-links a.active,
@@ -223,11 +225,11 @@ ul {
 .sche-nav-links a::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -1vw;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
-    height: 3px;
+    height: 0.3vw;
     background: #002BCB;
     transition: all .3s ease-out;
     /* 색상과 두께 변화에 애니메이션 추가 */
@@ -235,17 +237,17 @@ ul {
 
 .sche-nav-links a:hover::after {
     width: 100%;
-    padding: 0px;
+    padding: 0;
 }
 
 .sche-nav-links a:visited::after {
     width: 100%;
-    padding: 0px;
+    padding: 0;
 }
 
 .sche-nav-links a.active::after {
     width: 100%;
-    padding: 0px;
+    padding: 0;
 }
 
 .sche-nav-links a.active {
@@ -310,7 +312,7 @@ ul {
 /* calendar */
 .calendarControls {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2.4vw;
 }
 
 .popup {
@@ -318,20 +320,20 @@ ul {
     /* 기본적으로 숨김 */
     position: absolute;
     background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 0.1vw solid #ccc;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    border-radius: 10px;
+    border-radius: 1vw;
 }
 
 .popup-content {
-    padding: 20px;
+    padding: 2vw;
 }
 
 .close {
     cursor: pointer;
     float: right;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 
@@ -339,28 +341,28 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 #calendarControls button {
     cursor: pointer;
-    margin: 0 10px;
-    padding: 10px;
+    margin: 0 1vw;
+    padding: 1vw;
     border: none;
     color: black;
-    font-size: 16px;
+    font-size: 1.6vw;
     background-color: transparent;
 }
 
 #calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
+    gap: 0.5vw;
 }
 
 .day,
 .day-name {
-    padding: 10px;
+    padding: 1vw;
     text-align: center;
     cursor: pointer;
     /* 마우스 커서 포인터로 변경 */
@@ -385,8 +387,8 @@ ul {
 }
 
 .event-dot {
-    width: 4px;
-    height: 4px;
+    width: 0.4vw;
+    height: 0.4vw;
     background-color: orange;
     border-radius: 50%;
     position: absolute;
@@ -400,7 +402,7 @@ ul {
     position: relative;
     background-color: #333;
     text-align: left;
-    margin: 10px;
+    margin: 1vw;
 }
 
 .arrow-triangle:before,
@@ -413,8 +415,8 @@ ul {
 .arrow-triangle,
 .arrow-triangle:before,
 .arrow-triangle:after {
-    width: 8px;
-    height: 8px;
+    width: 0.8vw;
+    height: 0.8vw;
     border-top-right-radius: 30%;
 }
 
@@ -424,7 +426,7 @@ ul {
 
 .arrow-triangle.right {
     transform: rotate(-30deg) skewX(-30deg) scale(1, .866);
-    margin-left: 20px;
+    margin-left: 2vw;
 }
 
 .arrow-triangle:before {
@@ -439,17 +441,18 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2vw;
 }
 
 .date-display {
-    margin: 0 20px;
-    font-size: 24px;
+    margin: 0 2vw;
+    font-size: 2.4vw;
     display: flex;
     align-items: center;
 }
 
 .date-item {
-    margin: 0 50px;
+    margin: 0 5vw;
     color: #8D9AA3;
 }
 
@@ -458,9 +461,9 @@ ul {
     position: relative;
     float: left;
     border: none;
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
+    width: 1vw;
+    height: 1vw;
+    margin-right: 0.5vw;
 }
 
 .arrow-prev::after {
@@ -468,13 +471,13 @@ ul {
     left: 0;
     top: 0;
     content: '';
-    width: 10px;
+    width: 1vw;
     /* 사이즈 */
-    height: 10px;
+    height: 1vw;
     /* 사이즈 */
-    border-top: 2px solid #000;
+    border-top: 0.2vw solid #000;
     /* 선 두께 */
-    border-right: 2px solid #000;
+    border-right: 0.2vw solid #000;
     /* 선 두께 */
     transform: rotate(225deg);
     /* 각도 */
@@ -485,13 +488,13 @@ ul {
     left: 0;
     top: 0;
     content: '';
-    width: 10px;
+    width: 1vw;
     /* 사이즈 */
-    height: 10px;
+    height: 1vw;
     /* 사이즈 */
-    border-top: 2px solid #000;
+    border-top: 0.2vw solid #000;
     /* 선 두께 */
-    border-right: 2px solid #000;
+    border-right: 0.2vw solid #000;
     /* 선 두께 */
     transform: rotate(45deg);
     /* 각도 */
@@ -501,19 +504,19 @@ ul {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 2.4vw;
     /* 아이콘 크기 조정 */
-    left: -100px;
+    left: -10vw;
     /* 아이콘과 다른 요소 간의 간격 조정 */
     color: #8D9AA3;
 }
 
 .today-date {
-    font-size: 24px;
+    font-size: 2.4vw;
     /* 글씨 크기 조정 */
     font-weight: bold;
     /* 글씨 두께 조정 */
-    margin-top: 20px;
+    margin-top: 2vw;
     /* 위쪽 여백 추가 */
     text-align: left;
     /* 중앙 정렬 */
@@ -523,10 +526,10 @@ ul {
 
 #current-game,
 #next-game {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 2vw;
+    padding: 1vw;
     border: #ccc;
-    border-radius: 5px;
+    border-radius: 0.5vw;
 }
 
 /*filter*/
@@ -535,7 +538,7 @@ ul {
     justify-content: space-between;
     /* 양쪽 끝으로 정렬 */
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
 }
 
 .today-date {
@@ -547,28 +550,30 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 20px;
+    margin-left: 2vw;
     /* 간격 추가 */
 }
 
 .team-select label {
-    margin-bottom: 5px;
+    margin-bottom: 0.5vw;
 }
 
 .team-select select {
-    width: 200px;
+    width: 20vw;
     /* 고정된 너비 설정 */
-    padding: 5px;
-    border: 1px solid #002BCB;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 0.5vw;
+    border: 0.1vw solid #002BCB;
+    border-radius: 0.4vw;
+    font-size: 1.4vw;
+    appearance:none;
 }
 .team-select option{
-    box-sizing: 10px;
+    box-sizing: 1vw;
+    font-size: 1.4vw;
 }
 .daybyday {
     align-items: center;
-    max-width: 1200px;
+    max-width: 120vw;
     margin: 0 auto;
 }
 
@@ -576,7 +581,7 @@ ul {
 
 .banner
 {
-    height: 240px;
+    height: 24vw;
     background-image: url("../image/new배너.png");
     background-size: cover;
 }
@@ -591,13 +596,13 @@ ul {
 
 .banner h1 {
     font-family: S-CoreDream-7ExtraBold;
-    font-size: 28px;
+    font-size: 2.8vw;
     color: #3F474D;
 }
 
 .banner p {
     font-family: S-CoreDream-4Regular;
-    font-size: 20px;
+    font-size: 2vw;
     color: #3F474D;
 }
 
@@ -607,17 +612,17 @@ ul {
 .game-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
     font-weight: bold;
-    font-size:0.8em;
+    font-size:1vw;
     text-overflow: ellipsis;
-    height:3vw;
+    height:2vw;
 }
 
 .game-item p,
 .game-item .team,
 .game-item .score {
-    margin: 0 10px;
+    margin: 0 1vw;
     display: inline-block;
     color: black;
 }
@@ -636,7 +641,7 @@ ul {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0.8vw 1.6vw 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -654,33 +659,23 @@ ul {
 
 /* 개별 게임 항목 스타일 */
 .game-item {
-    padding: 10px;
-    border: 0px solid;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
+    padding: 1vw;
+    border: 0 solid;
+    border-radius: 1vw;
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgb(200, 200, 200);
 }
 
 
 /* 점수 스타일 */
 .score {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1vw;
     color: #333;
-    width: 10vw;
+    width: 1vw;
 }
 
-/* 화면 크기에 따라 반응형 디자인 */
-@media (max-width: 600px) {
-    .game-item {
-        flex-direction: column;
-        /* 작은 화면에서 세로 배치 */
-        align-items: flex-start;
-    }
-
-    .score {
-        margin: 5px 0;
-        /* 점수 위아래 간격 조정 */
-    }
+.score p{
+    text-align: center;
 }
 
 
@@ -688,14 +683,14 @@ ul {
 .footer {
     background-color: #EDEFF1;
     /* 배경색 설정 */
-    padding: 35px 35px;
+    padding: 3.5vw 3.5vw;
     color: #8D9AA3;
     /* 텍스트 색상 설정 */
 
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 120vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -708,8 +703,8 @@ ul {
 
 
 .footer-logo img {
-    width: 75px;
-    height: 50px;
+    width: 7.5vw;
+    height: 5vw;
 }
 
 .footer-text {
@@ -718,29 +713,29 @@ ul {
 
 .footer-text p {
     line-height: 250%;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.02vw;
 }
 
 .footer-title {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6vw;
+    line-height: 2vw;
     font-family: S-CoreDream-5Medium;
     margin: 0;
 }
 
 .footer-role {
-    font-size: 14px;
-    margin: 35px 0 35px 0;
+    font-size: 1.4vw;
+    margin: 3.5vw 0 3.5vw 0;
 }
 
 .footer-contact {
-    font-size: 14px;
+    font-size: 1.4vw;
     font-family: S-CoreDream-4Regular;
     margin: auto;
 }
 
 .footer-copyright {
-    font-size: 14px;
+    font-size: 1.4vw;
     font-family: S-CoreDream-4Regular;
     margin: auto;
 }
