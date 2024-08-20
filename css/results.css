@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
     font-family: 'S-CoreDream-4Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
     font-weight: normal;
@@ -179,11 +186,187 @@ ul{
 }
 
 
+.standard p{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30PX;
+    font-family: S-CoreDream-4Regular;
+    font-size: 18px;
+    color: #B5BEC4;
+}
+
+
+.rankNresult {
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* rank */
+
+.rank {
+  margin: auto 0;
+}
+
+.rank-contain {
+  max-width: 1200px;
+}
+
+.num-contain .number {
+  font-size: 33px;
+  font-family: S-CoreDream-5Medium;
+  color: #0B2FA4;
+}
+
+
+.num-contain .topnum {
+  font-size: 46px;
+  font-family: S-CoreDream-5Medium; 
+  color: #ffffff;
+}
+
+.num-contain .number p {
+  font-family: S-CoreDream-5Medium; 
+  color: #0B2FA4;
+}
+
+.num-contain {
+  margin-left: 35px;
+  margin-right: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.top_mod {
+  font-size: 20px;
+}
+
+.mod {
+  font-size: 16px;
+  margin-right: 14px;
+}
+
+.rankinf{
+  display: flex;
+  align-items: center;
+  background-color: #F5F6F7;
+  margin: 10px 0 10px 0;
+  border-radius: 13px;
+  height: 79px;
+  overflow: hidden; /* 컨테이너 밖으로 벗어나는 부분을 잘라내기 */
+}
+
+
+.rank1 {
+  background-color: #002BCB;
+  color:#FFFFFF;
+  box-shadow: rgba(255, 0, 0, 0.08) 0 0 15px;
+  height: 132px;
+}
+
+.rank2 {
+  background-color: rgba(0, 48, 208, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.08) 0 0 15px;
+  color:#FFFFFF;
+  height: 112px;
+}
+
+.rank3 {
+  background-color: rgba(0, 48, 208, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.08) 0 0 15px;
+  color:#FFFFFF;
+  height: 92px;
+}
+
+.rankinf img {
+  height: 260px;
+  width: 260px;
+  transform: translate(30%);
+  opacity: 30%;
+}
+
+.rank1 img {
+  transform: translate(7%);
+}
+
+.rank2 img {
+  transform: translate(7%);
+}
+
+.rank3 img {
+  transform: translate(7%);
+}
+
+.major {
+  width: 365px;
+  margin-right: 35px;
+  line-height: 50%;
+}
+
+
+.major .major_kor {
+  font-size: 16px;
+}
+
+.major .major_eng {
+  font-family: S-CoreDream-3Light;
+  font-size: 12px;
+}
+
+.topmajor .major_kor {
+  font-size: 22px;
+}
+
+.topmajor .major_eng {
+  font-size: 14px;
+}
+
+
+
+.score-contain .score {
+  margin-left: 10px;
+  font-size: 33px;
+  font-family: S-CoreDream-5Medium;
+  color: #0B2FA4;
+}
+
+
+.score-contain .topscore {
+  margin-left: 10px;
+  font-size: 60px;
+  font-family: S-CoreDream-5Medium; 
+  color: #ffffff;
+}
+
+.score-contain .total p {
+  font-family: S-CoreDream-5Medium; 
+  color: #000000;
+}
+
+.score-contain {
+  margin-left: 20px;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.top_total {
+  font-size: 22px;
+}
+
+.total {
+  font-size: 16px;
+}
+
+
+
 /* footer */
 .footer {
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;
     color: #8D9AA3; /* 텍스트 색상 설정 */
+    margin-top: 100px;
     
 }
 
