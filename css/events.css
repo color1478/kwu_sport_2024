@@ -117,7 +117,64 @@ body {
     color: #3F474D;
 }
 
+/* main */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
 
+.contain h2 {
+    text-align: left;
+    color: #333;
+    border-bottom: 1px solid #D8DCDF;
+    padding:60px 0 10px 0;
+    font-family: S-CoreDream-7ExtraBold;
+    font-size: 28px;
+    margin: 0 0 40px 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    justify-content: stretch;
+    justify-items: center;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 388px;
+    height: 388px;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 13px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    background-color: skyblue;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.shortcut p{
+    display: flex;
+    width: 388px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: S-CoreDream-5Medium;
+    font-size: 32px;
+    color: #FFFFFF;
+    border-radius: 0 0 13px 13px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 
 
 /* footer */
@@ -125,6 +182,7 @@ body {
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;
     color: #8D9AA3; /* 텍스트 색상 설정 */
+    margin-top: 100px;
     
 }
 
@@ -177,4 +235,19 @@ body {
     font-size: 14px;
     font-family: S-CoreDream-4Regular;
     margin: auto;
+}
+
+
+/* 폰트 전체 속성 변경 */
+
+h1{
+    font-weight: normal;
+}
+
+h2{
+    font-weight: normal;
+}
+
+h3{
+    font-weight: normal;
 }
