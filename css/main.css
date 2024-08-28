@@ -21,14 +21,16 @@
 
 @media (max-width: 600px) {
     .link {
-        width: 100%; /* 모바일에서 링크 너비를 100%로 설정 */
+        width: 100%;
+        /* 모바일에서 링크 너비를 100%로 설정 */
     }
 }
 
 
 @media (min-width: 601px) {
     .link {
-        width: 150px; /* 데스크탑에서 링크 너비를 150px로 설정 */
+        width: 150px;
+        /* 데스크탑에서 링크 너비를 150px로 설정 */
     }
 }
 
@@ -51,34 +53,60 @@ body {
 .main-view {
     margin: auto;
     text-align: center;
-    overflow:hidden;
+    overflow: hidden;
     height: auto;
     width: auto;
 }
 
 .main-view ul {
-    width:calc(100% * 3);
-    display:flex;
-    animation:slide 20s infinite;
-} /* slide를 20초동안 진행하며 무한반복 함 */
+    width: calc(100% * 3);
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+/* slide를 20초동안 진행하며 무한반복 함 */
 
 .main-view li {
-    width:calc(100% / 3);
+    width: calc(100% / 3);
 }
-  
-  @keyframes slide {
-    0% {margin-left:0;} /* 0 ~ 10  : 정지 */
-    10% {margin-left:0;} /* 10 ~ 25 : 변이 */
-    25% {margin-left:-100%;} /* 25 ~ 40 : 정지 */
-    40% {margin-left:-100%;} /* 40 ~ 55 : 변이 */
-    55% {margin-left:-200%;}
-    70% {margin-left:-200%;}
-    100% {margin-left:0;}
-  }
 
-ul{
-    list-style:none;
-    padding-left:0px;
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    /* 0 ~ 10  : 정지 */
+    10% {
+        margin-left: 0;
+    }
+
+    /* 10 ~ 25 : 변이 */
+    25% {
+        margin-left: -100%;
+    }
+
+    /* 25 ~ 40 : 정지 */
+    40% {
+        margin-left: -100%;
+    }
+
+    /* 40 ~ 55 : 변이 */
+    55% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
 }
 
 /* nav */
@@ -91,14 +119,17 @@ ul{
     margin-top: 15px;
     margin-bottom: 15px;
     font-family: S-CoreDream-5Medium;
-    overflow-x:auto;
-    white-space:nowrap;
-    font-size: 19px; /*크기 조절시 변경 해야함 */
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 19px;
+    /*크기 조절시 변경 해야함 */
 }
 
 .navbar .ui li {
-    line-height: 30px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
-    vertical-align: middle;   /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
+    line-height: 30px;
+    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
+    vertical-align: middle;
+    /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
     text-align: center;
 }
 
@@ -118,7 +149,8 @@ ul{
 }
 
 .nav-links li {
-    margin: 0 15px; /* 각 항목 간의 간격을 설정 */
+    margin: 0 15px;
+    /* 각 항목 간의 간격을 설정 */
 }
 
 .nav-links a {
@@ -135,11 +167,13 @@ ul{
 
 /* footer */
 .footer {
-    background-color: #EDEFF1; /* 배경색 설정 */
+    background-color: #EDEFF1;
+    /* 배경색 설정 */
     padding: 35px 35px;
-    color: #8D9AA3; /* 텍스트 색상 설정 */
+    color: #8D9AA3;
+    /* 텍스트 색상 설정 */
     margin-top: 100px;
-    
+
 }
 
 .footer-container {
@@ -152,7 +186,7 @@ ul{
 
 .footer-container span.ingredient {
     font-family: S-coreDream-5Medium;
-  }
+}
 
 
 .footer-logo img {
@@ -166,7 +200,7 @@ ul{
 
 .footer-text p {
     line-height: 250%;
-    letter-spacing:0.2px;
+    letter-spacing: 0.2px;
 }
 
 .footer-title {
@@ -192,14 +226,18 @@ ul{
     font-family: S-CoreDream-4Regular;
     margin: auto;
 }
+
 /*경기일정*/
-.sche-nav{
-    line-height: 15px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
-    vertical-align: middle;   /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
+.sche-nav {
+    line-height: 15px;
+    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
+    vertical-align: middle;
+    /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
     text-align: center;
     margin-top: 0;
     padding: 0;
 }
+
 .sche-nav-container {
     align-items: center;
     max-width: 1200px;
@@ -207,16 +245,19 @@ ul{
     margin-top: 15px;
     margin-bottom: 15px;
     font-family: S-CoreDream-5Medium;
-    font-size: 10px; /*크기 조절시 변경 해야함 */
-    white-space:nowrap;
+    font-size: 10px;
+    /*크기 조절시 변경 해야함 */
+    white-space: nowrap;
     /*overflow-x:auto;*/
 
 }
+
 .jb-division-line {
     border-top: 1px solid #444444;
     top: 10px;
     margin: 30px 0px;
 }
+
 .sche-nav-links {
     display: flex;
     flex-grow: 1;
@@ -228,7 +269,8 @@ ul{
 }
 
 .sche-nav-links li {
-    margin: 0; /* 각 항목 간의 간격을 설정 */
+    margin: 0;
+    /* 각 항목 간의 간격을 설정 */
 }
 
 .sche-nav-links a {
@@ -240,6 +282,7 @@ ul{
     padding: 0px 0px;
     font-family: S-CoreDream-5Medium;
 }
+
 .sche-nav-links img {
     width: 52px;
     height: 52px;
@@ -247,12 +290,12 @@ ul{
     margin: 7px 28.5px 14px 28.5px;
 }
 
-.sche-nav-links a.active{
+.sche-nav-links a.active {
     color: #002BCB;
     font-family: S-CoreDream-5Medium;
 }
 
-.sche-nav-links a.active::after{
+.sche-nav-links a.active::after {
     color: #002BCB;
     font-family: S-CoreDream-5Medium;
     bottom: -10px;
@@ -265,10 +308,11 @@ ul{
     font-family: S-CoreDream-5Medium;
 }
 
-.sche-nav-links a.active{
+.sche-nav-links a.active {
     pointer-events: none;
 }
-.sche-nav-links a::after{
+
+.sche-nav-links a::after {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -277,63 +321,94 @@ ul{
     width: 0;
     height: 1px;
     background: #B5BEC4;
-    transition: all .3s ease-out; /* 색상과 두께 변화에 애니메이션 추가 */
+    transition: all .3s ease-out;
+    /* 색상과 두께 변화에 애니메이션 추가 */
 }
-.sche-nav-links a:hover::after{
+
+.sche-nav-links a:hover::after {
     width: 100%;
     padding: 0px;
 }
-.sche-nav-links a:visited::after{
+
+.sche-nav-links a:visited::after {
     width: 100%;
     padding: 0px;
 }
+
 .sche-nav-links a.active::after {
     width: 100%;
     padding: 0px;
 }
+
 .sport-link-all:hover img {
-    content: url('../image/전체-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../image/전체-hover픽토그램.png');
+    /* 전체 호버 이미지 */
 }
+
 .sport-link-football:hover img {
-    content: url('../image/풋살-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../image/풋살-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-basketball:hover img {
-    content: url('../image/농구-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../image/농구-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 .sport-link-dodgeball:hover img {
-    content: url('../image/피구-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../image/피구-hover픽토그램.png');
+    /* 전체 호버 이미지 */
 }
+
 .sport-link-bowling:hover img {
-    content: url('../image/볼링-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../image/볼링-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-footvolleyball:hover img {
-    content: url('../image/족구-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../image/족구-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 .sport-link-tabletennis:hover img {
-    content: url('../image/탁구-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../image/탁구-hover픽토그램.png');
+    /* 전체 호버 이미지 */
 }
+
 .sport-link-jumprope:hover img {
-    content: url('../image/8자 줄넘기-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../image/8자 줄넘기-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-lol:hover img {
-    content: url('../image/LOL-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../image/LOL-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 .sport-link-tft:hover img {
-    content: url('../image/TFT-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../image/TFT-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-FConline:hover img {
-    content: url('../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../image/FC 온라인-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
 
 .today-date {
-    font-size: 24px; /* 글씨 크기 조정 */
-    font-weight: bold; /* 글씨 두께 조정 */
-    margin-top: 20px; /* 위쪽 여백 추가 */
-    text-align: left; /* 중앙 정렬 */
+    font-size: 24px;
+    /* 글씨 크기 조정 */
+    font-weight: bold;
+    /* 글씨 두께 조정 */
+    margin-top: 20px;
+    /* 위쪽 여백 추가 */
+    text-align: left;
+    /* 중앙 정렬 */
     justify-content: flex-start;
     color: #002BCB;
-    flex:1;
+    flex: 1;
 }
+
 .daybyday {
     align-items: center;
     max-width: 1200px;
@@ -342,19 +417,21 @@ ul{
 
 .date-and-team-select {
     display: flex;
-    justify-content: space-between; /* 양쪽 끝으로 정렬 */
+    justify-content: space-between;
+    /* 양쪽 끝으로 정렬 */
     align-items: center;
     margin-bottom: 20px;
 }
+
 /*일정*/
 .game-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size:0.8em;
+    font-size: 0.8em;
     text-overflow: ellipsis;
-    height:3vw;
+    height: 3vw;
 }
 
 .game-item p,
@@ -365,10 +442,11 @@ ul{
     color: black;
 }
 
-.game-item .teamDrop{
+.game-item .teamDrop {
     border: none;
     display: inline-block;
 }
+
 .game-item .teamDrop {
     position: relative;
     display: inline-block;
@@ -379,7 +457,7 @@ ul{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -392,6 +470,7 @@ ul{
 .game-item .teamDrop:hover .dropdown-content {
     display: block;
 }
+
 /* 전체 게임 리스트 스타일 */
 
 
@@ -443,6 +522,7 @@ p {
     max-width: 1200px;
     justify-content: space-between;
 }
+
 /* rank */
 
 .rank {
@@ -464,7 +544,7 @@ p {
 
 .rank-text a {
     margin-top: auto;
-    margin-left:auto;
+    margin-left: auto;
     font-size: 14px;
     color: #6F7E88;
     font-family: S-CoreDream-5Medium;
@@ -483,12 +563,12 @@ p {
 
 .num-contain .topnum {
     font-size: 46px;
-    font-family: S-CoreDream-5Medium; 
+    font-family: S-CoreDream-5Medium;
     color: #ffffff;
 }
 
 .num-contain .number p {
-    font-family: S-CoreDream-5Medium; 
+    font-family: S-CoreDream-5Medium;
     color: #0B2FA4;
 }
 
@@ -507,14 +587,15 @@ p {
     font-size: 16px;
 }
 
-.rankinf{
+.rankinf {
     display: flex;
     align-items: center;
     background-color: #F5F6F7;
     margin: 6.5px 0 6.5px 0;
     border-radius: 13px;
     height: 79px;
-    overflow: hidden; /* 컨테이너 밖으로 벗어나는 부분을 잘라내기 */
+    overflow: hidden;
+    /* 컨테이너 밖으로 벗어나는 부분을 잘라내기 */
 }
 
 .rankscore {
@@ -539,7 +620,7 @@ p {
 
 .rank1 {
     background-color: #002BCB;
-    color:#FFFFFF;
+    color: #FFFFFF;
     box-shadow: rgba(255, 0, 0, 0.08) 0 0 15px;
     height: 132px;
 }
@@ -547,14 +628,14 @@ p {
 .rank2 {
     background-color: rgba(0, 48, 208, 0.8);
     box-shadow: rgba(0, 0, 0, 0.08) 0 0 15px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     height: 112px;
 }
 
 .rank3 {
     background-color: rgba(0, 48, 208, 0.6);
     box-shadow: rgba(0, 0, 0, 0.08) 0 0 15px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     height: 92px;
 }
 
@@ -614,7 +695,8 @@ p {
 .player_name {
     display: grid;
     gap: 11px;
-    grid-template-columns: repeat(3,73px); /*수정 요망*/
+    grid-template-columns: repeat(3, 73px);
+    /*수정 요망*/
 }
 
 .recent_result-text {
@@ -622,7 +704,7 @@ p {
     margin-bottom: 9px;
 }
 
-.recent_result-text a{
+.recent_result-text a {
     margin-top: auto;
     margin-left: auto;
     font-size: 14px;
@@ -645,12 +727,12 @@ p {
 
 
 
-.recent_result-text h1{
+.recent_result-text h1 {
     font-size: 36px;
     font-family: S-CoreDream-5Medium;
 }
 
-.direct-rule{
+.direct-rule {
     background-image: url("../image/영상배너.png");
     background-size: cover;
     height: 503px;
@@ -690,8 +772,9 @@ p {
     font-size: 48px;
     font-family: S-CoreDream-7ExtraBold;
     color: #002BCB;
-    
+
 }
+
 .reult_major_win {
     font-size: 16px;
     font-family: S-CoreDream-7ExtraBold;
@@ -704,6 +787,7 @@ p {
     font-family: S-CoreDream-4Regular;
     color: #B5BEC4;
 }
+
 .reult_major_lose {
     font-size: 16px;
     font-family: S-CoreDream-4Regular;
@@ -826,10 +910,157 @@ p {
     margin: 165px auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap:24px;
+    gap: 24px;
 }
 
 
 .company-logo img {
     height: 80px;
+}
+
+
+
+/* 임시 */
+/* slider */
+.slider__wrap {
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__img {
+    /* 이미지 보이는 영역 */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider__inner {
+    /* 이미지를 감싸고 있는 부모 : 움직이는 부분 */
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 8800px; --> js로 이미지 추가되도 전체넓이 가변되게끔! */
+    /* 4000px --> 4800px  : 총이미지가 6개로 변경*/
+    height: auto;
+    position: relative;
+    left: -1200px;
+}
+
+.slider__inner.transition {
+    transition: all 0.2s;
+}
+
+.slider {
+    /* 개별적인 이미지 */
+    position: relative;
+    width: 1200px;
+}
+
+
+@media (max-width: 800px) {
+    .slider__img {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+.slider__dot {
+    position: relative;
+    left: 46%;
+    bottom: 50px;
+
+}
+
+.slider__dot .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 50%;
+    text-indent: -9999px;
+    transition: all 0.3s;
+    margin: 5px;
+}
+
+.slider__dot .dot.active {
+    /* background: #000; */
+    color: white;
+    background: white;
+    /* position: relative; */
+    transition: all 2s ease;
+}
+
+.slider__dot .dot.active {
+    /* background: #000; */
+    position: relative;
+}
+
+.slider__dot .dot.active::after {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    z-index: -1;
+    animation: rotate 3s linear infinite;
+    pointer-events: none;
+}
+
+.slider__dot .dot.active::before {
+    position: absolute;
+    top: 0%;
+    left: 00%;
+    /* transform: translate(-50%, -50%); */
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotate2 7s linear infinite;
+    pointer-events: none;
+}
+
+.slider__dot .dot.active {
+    /* background: #000; */
+    box-shadow: -1px 1px 2px #fff;
+    background: white;
+    /* position: relative; */
+}
+
+.slider__dot .dot.active::after {
+    position: absolute;
+    top: 0%;
+    left: 00%;
+    /* transform: translate(-50%, -50%); */
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: -1;
+    border: 1px solid #fe8d1c;
+    box-shadow: -1px 1px 10px #fe8d1c;
+    animation: rotate 3s linear infinite;
+    pointer-events: none;
+}
+
+.slider__dot .dot.active::before {
+    position: absolute;
+    top: 0%;
+    left: 00%;
+    /* transform: translate(-50%, -50%); */
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
 }

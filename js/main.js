@@ -10,7 +10,101 @@ const todayDateDisplay = document.getElementById('todayDate');
 const affiliationSelect = document.getElementById('affiliation-select');
 const teamSelect = document.getElementById('team-select');
 
+const sliderWrap = document.querySelector(".slider__wrap");
+const sliderImg = document.querySelector(".slider__img");
+const sliderInner = document.querySelector(".slider__inner");
+const sliderDot = document.querySelector(".slider__dot");
+
 let currentDate = new Date();
+let currentIndex = 0;
+let sliderWidth = sliderImg.offsetWidth, // 이미지 가로 값
+    dotIndex = "",
+    interval = 1500, // setInterval 컨트롤 용 (3 초)
+    sliderTimer = ""; // setInterval 컨트롤 용, 빈문자열 변수 선언해놓기
+let sliderLength = document.querySelectorAll(".slider").length;
+function init() {
+    createDot(); // 닷 버튼 생성
+    imgClone(); // 이미지 복사
+}
+init();
+
+window.addEventListener("load", () => {
+    // 창 실행되면 오토플레이 실행시키기 위함. init()에만 쓰면 무한실행
+    autoPlay(); // 자동 플레이
+});
+
+// 닷메뉴 만들기
+function createDot() {
+    for (i = 1; i <= sliderLength; i++) {
+        dotIndex += `<a href='#' class='dot'>이미지${i}</a>`; //이미지갯수만큼 닷 만들기
+    }
+    sliderDot.innerHTML += dotIndex; //만든 구문 태그형식으로 넣기
+    sliderDot.firstElementChild.classList.add("active"); //첫번째이미지에 클래스 부여
+}
+
+function imgClone() {
+    let sliderFirst = document.querySelectorAll(".slider")[0], // 첫번째 이미지
+        sliderLast = document.querySelectorAll(".slider")[sliderLength - 1], // 마지막 이미지
+        cloneFirst = sliderFirst.cloneNode(true), // 첫번째 이미지 복사
+        cloneLast = sliderLast.cloneNode(true); // 마지막 이미지 복사
+    sliderInner.appendChild(cloneFirst); //첫번째 이미지 복사해서 뒤에 넣기
+    sliderInner.insertBefore(cloneLast, sliderFirst); //마지막이미지를 첫번째이미지 이전(앞)에 넣음
+    sliderLength = document.querySelectorAll(".slider").length; //변경된 전체길이 값 다시 대입
+}
+// 이미지 총 길이 넣기
+sliderInner.style.width = sliderWidth * sliderLength + "px"; // 가변되는 이미지 갯수때문에 자바스크립트로 해결
+const slider = document.querySelectorAll(".slider"); // 슬라이드 컨트롤 때문에 이미지 갯수를 함수 실행 이후로 미룸
+
+function autoPlay() {
+    sliderTimer = setInterval(() => {
+        // 셋인터벌 실행시킴
+        let intervalNum = currentIndex + 1; // 복사된 값때문에 시작값은 1임,
+        console.log(intervalNum);
+        console.log(sliderLength);
+        if (intervalNum == sliderLength - 1) intervalNum = 0; // 마지막 이미지에서 다음이미지 넘어가는 과정에 0으로 초기화
+        gotoslider(intervalNum); // 슬라이더 이동함수에 변경된 인덱스 부여
+    }, interval); // 언제? 3초마다 (ex_ 최초 로드시 0->1 되는 과정이 3초후에 일어남.)
+}
+
+function gotoslider(index) {
+    if (index == 4 || index == 0) {
+        sliderInner.classList.remove("transition");
+    } else {
+        sliderInner.classList.add("transition"); // 트랜지션효과부여하기위해서 사용
+        let posInitial = sliderInner.offsetLeft; // -800px
+
+        sliderInner.style.left = -sliderWidth * (index + 1) + "px";
+    }
+    sliderInner.style.left = -sliderWidth * (index + 1) + "px";
+
+    currentIndex = index;
+    console.log(index);
+    // 닷 메뉴도 같이 이동
+    document.querySelectorAll(".slider__dot .dot").forEach((el) => el.classList.remove("active"));
+    if (index >= 3) {
+        index = 0;
+        document.querySelectorAll(".slider__dot .dot")[index].classList.add("active");
+    } else {
+        document.querySelectorAll(".slider__dot .dot")[index].classList.add("active");
+    }
+    clearInterval(sliderTimer);
+    autoPlay();
+}
+
+// 닷 버튼 클릭했을 때 해당 닷버튼의 이미지로 이동
+document.querySelectorAll(".slider__dot .dot").forEach((a, index) => {
+    a.addEventListener("click", (e) => {
+        document.querySelectorAll(".slider__dot .dot").forEach((b) => {
+            b.classList.remove("active");
+        });
+        a.classList.add("active");
+        gotoslider(index);
+        // sliderInner.style.left = `${-((index + 1) * sliderWidth)}px`;
+        // sliderInner.classList.add("transition")
+        // currentIndex = index;
+    });
+});
+
 
 function formatDate(date, showYear = true) {
     const options = { month: 'numeric', day: 'numeric' };
