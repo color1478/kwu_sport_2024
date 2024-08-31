@@ -247,13 +247,13 @@ function displayCurrentGame(sportFilter = currentSport) {
                     <div style="text-align:right;width:15vw;">
                         <p style="white-space: nowrap;">${game.home.team}</p>
                     </div>
-                   <img src="../image/major/${game.home.team}@4x.png" style="width: 3vw; height: 3vw;border-radius: 50%;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
+                   <img src="./image/major/${game.home.team}@4x.png" style="width: 3vw; height: 3vw;border-radius: 50%;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
                     <div class="score">
                         <p style="${homeScoreStyle}">${homeScore}</p>
                         <p> - </p>
                         <p style="${awayScoreStyle}">${awayScore}</p>
                     </div>
-                    <img src="../image/major/${game.away.team}@4x.png" style="width: 3vw; height: 3vw; border-radius: 50%;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
+                    <img src="./image/major/${game.away.team}@4x.png" style="width: 3vw; height: 3vw; border-radius: 50%;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
                     <div style="text-align: left;width:15vw;">
                         <p style="white-space: nowrap;">${game.away.team}</p>
                     </div>
