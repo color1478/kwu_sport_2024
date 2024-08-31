@@ -123,8 +123,6 @@ ul{
 }
 
 
-
-
 /* main */
 .selection {
     max-width: 1200px;
@@ -191,7 +189,7 @@ ul{
 }
 
 
-/* 순위 및 종목 선택 */
+/* 네비 바 */
 
 .sche-nav{
     line-height: 15px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
@@ -238,47 +236,32 @@ ul{
     color: #B5BEC4;
     position: relative;
     padding: 0px 0px;
-    font-family: S-CoreDream-5Medium;
+    font-family: S-CoreDream-4Regular;
 }
 .sche-nav-links img {
     width: 52px;
     height: 52px;
     object-fit: cover;
-    margin: 7px 28.5px 14px 28.5px;
+    margin: 7px 28.5px 0 28.5px;
 }
 
-
-
-.sche-nav-links a.active{
-    color: #002BCB;
-    font-family: S-CoreDream-5Medium;
-}
-
-.sche-nav-links a.active::after{
-    color: #002BCB;
-    font-family: S-CoreDream-5Medium;
-    bottom: -10px;
-    background: #002BCB;
-    height: 3px;
-}
-
+.sche-nav-links a.active,
 .sche-nav-links a:hover {
-    color: #B5BEC4;
-    font-family: S-CoreDream-5Medium;
+    color: #002BCB;
+    font-family: S-CoreDream-7ExtraBold;
 }
-
 .sche-nav-links a.active{
     pointer-events: none;
 }
 .sche-nav-links a::after{
     content: "";
     position: absolute;
-    bottom: -8px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
-    height: 1px;
-    background: #B5BEC4;
+    height: 3px;
+    background: #002BCB;
     transition: all .3s ease-out; /* 색상과 두께 변화에 애니메이션 추가 */
 }
 .sche-nav-links a:hover::after{
@@ -331,7 +314,7 @@ ul{
 
 .select-2type{
     max-width: 1200px;
-    margin: 27px auto;
+    margin: 16px auto;
 }
 
 .type-button {
@@ -352,96 +335,310 @@ ul{
 
 #click {
     color: #002BCB;
-}
-
-/*  table 모습 */
-
-.circle {
-    width: 18px;  
-    height: 18px; 
-    border-radius: 50%;
+    border: 1px solid #002BCB;
+    background-color: #F3F9FF;
 }
 
 
-.highlight-deepblue {
-    background-color: rgba(176, 218, 255, 0.8);
+/* ID / win -> 이긴팀 글자 파란색 lose -> 진팀 박스 색 변경 */
+
+#win {
+    color: #002BCB;
 }
 
-.highlight-skyblue {
-    background-color: #E7F5FF;
+#lose {
+    background-color: #D8DCDF;
+    opacity : 0.8;
 }
 
-.table-body {
+
+.stage {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
+    margin: 27px auto;
+    margin-bottom: 5px;
+}
+
+.category-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 30px;
+    grid-template-columns: repeat(5,1fr);
 }
 
-.table-container {
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.08) 0 0 13px;
-}
-
-.legend {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
+.round_number p {
+    font-family: S-CoreDream-5Medium;
+    font-size: 9px;
+    color: #000000;
+    opacity: 30%;
     display: flex;
-    align-items: center;
-    font-size : 17px;
+    justify-content: center;
+}
+
+
+
+/* match -> 큰 틀 숫자 -> 경기 위치 작은 수 부터 멀리 존재 */
+
+.match {
+    max-width: 1200px;
+    margin: 27px auto;
+    margin-top: 0px;
+}
+
+.down {
+    margin-bottom: -104px;
+}
+
+.up {
+    transform: translateY(-91px);
+}
+
+.ifup {
+    margin-top: -193px;
+}
+
+.match1 {
+    display: flex;
+    justify-content: space-between;
+    transform:translateY(37px);
+}
+
+.match1_sec {
+    display: flex;
+    justify-content: space-between;
+    transform:translateY(-37px);
+}
+
+.match2 {
+    max-width: 672px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.match3 {
+    max-width: 546px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.match4 {
+    display: flex;
+    justify-content:center
+}
+
+/* round 경기 박스 디자인 box: 이중 class 준결승 결승 박스 디자인 */
+
+.round {
+    width:248px;
+    height: 87px;
+    background-color: #F5F6F7;
+    opacity : 0.8;
+    border: 0.2px solid #000000;
+    border-radius: 15px;
+}
+
+.round12 {
+    margin: -30px 10px 0px 0px;
     font-family: S-CoreDream-5Medium;
+    font-size: 9px;
+    color: #000000;
+    opacity: 30%;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.name {
-    text-align: left;
-}
-
-thead {
-    border-bottom: 1.5px solid #909090;
-}
-
-th {
-    padding: 15px;
+.round45 {
+    margin: 0px 10px 0px 0px;
     font-family: S-CoreDream-5Medium;
-    font-size: 16px;
-    text-align: center;
-    border-right:none;
-    border-left:none;
-    border-top:none;
+    font-size: 9px;
+    color: #000000;
+    opacity: 30%;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-td {
-    padding: 4px;
+.round78 {
+    margin: 0px 0 0px 10px;
     font-family: S-CoreDream-5Medium;
-    font-size: 16px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-right:none;
-    border-left:none;
-    border-top:none;
-    border-bottom:none;
-    border-top: 1px solid #909090;
-
+    font-size: 9px;
+    color: #000000;
+    opacity: 30%;
 }
 
-.table-body img {
-    width: 39px;
-    height: 39px;
-    border-radius: 50%;
+.round1011 {
+    margin: -30px 0 0px 10px;
+    font-family: S-CoreDream-5Medium;
+    font-size: 9px;
+    color: #000000;
+    opacity: 30%;
 }
 
 
+.box1 {
+    width:342px;
+    height: 120px;
+}
+
+.box2 {
+    width:396px;
+    height: 139px;
+    margin: 101px 0 101px 0;
+}
+
+/* number major : round 안에 있는 점수 및 학과 이름*/
+
+.number{
+    display: flex;
+    justify-content: center;
+}
+
+.number p{
+    font-family: S-CoreDream-5Medium;
+    font-size: 25px;
+    margin: 25px 9px 11px 9px;
+}
+
+.major {
+    display: flex;
+    justify-content: center;
+}
+
+.major p {
+    font-family: S-CoreDream-5Medium;
+    font-size: 9px;
+    margin: 0;
+}
+
+/* 대진표 검은줄 */
+.underline {
+    border: 0;
+}
+
+/* bet -> 가장자리로 보내기 */
+.bet {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* center -> 중앙으로 모으기 */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* match1, match2 사이 간격 match1쪽*/
+.first {
+    width: 700px;
+    margin: 0 auto;
+}
+
+/* match2, match1 사이 간격 match2쪽 */
+.second {
+    width: 684px;
+    margin: 0 auto;
+}
+
+/* match2의 가로의 정중앙 부터 반대 match2의 가로 정중앙까지 */
+.third {
+    width: 423px;
+    margin: 0 auto;
+    transform: translateY(-1px);
+}
+
+/* match2의 삐죽이 */
+.columnshort {
+    transform:translateY(150px);
+    width: 6px;
+    height: 1px;
+}
+
+/* match2끼리 연결 */
+.long {
+    width: 50px;
+    height: 1px;
+    transform:translateY(45px);
+}
+
+/* match1과 match1_sec끼리의 연결 */
+.contain1 {
+    border: 1px solid #000000;
+    width: 8px;
+    height: 104px;
+    transform:translateY(100px);
+}
+
+/* match2의 중앙에서 중앙까지 */
+.contain2 {
+    border: 1px solid #000000;
+    width: 425px;
+    height: 33px;
+    transform: translateY(-90px);
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: -3;
+}
+
+
+/* match3 중앙부터 중앙까지 */
+.contain3 {
+    border: 1px solid #000000;
+    width: 297px;
+    height: 32px;
+    background-color: white;
+    transform: translateY(-91px);
+    position: relative;
+    z-index: -1;
+}
+
+/* match1_sec와 match2의 부전승의 반대 사이드 */
+.contain4 {
+    border: 1px solid #000000;
+    width: 62px;
+    height: 33px;
+    transform: translateY(-90px);
+}
+
+/* match1_sec와 match2의 부전승 */
+.contain5 {
+    border: 1px solid #000000;
+    width: 202px;
+    transform: translate(140px,-90px);
+}
+
+/* 1사단 match3에서 중심축1 match4까지 세로줄 */
+.contain6 {
+    border: 1px solid #000000;
+    height: 269px;
+    margin-top: -280px;
+}
+
+/* 중심축 1에서 2까지 */
+.contain7 {
+    border: 1px solid #000000;
+    height: 100px;
+    margin-bottom: -100px;
+}
+
+
+
+/* border 사라지게 하는 위치 */
+.bleft {
+    border-left: white;
+}
+
+.bright {
+    border-right: white;
+}
+
+.btop {
+    border-top: white;
+}
+
+.bbottom {
+    border-bottom: white;
+}
 
 /* footer */
+
 .footer {
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;

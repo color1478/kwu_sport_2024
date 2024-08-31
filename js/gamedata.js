@@ -345,5 +345,39 @@ var games = [
         away_score: 2,
         result: "홈팀 승",
         rain: false
+    },
+    {
+        date: "2024-09-01",
+        time: "1교시",
+        sportId: 10,
+        home: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과"
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부"
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "홈팀 승",
+        rain: false
+    },
+    {
+        date: "2024-09-01",
+        time: "3교시",
+        sportId: 2,
+        home: {
+            affiliation: "공과대학",
+            team: "건축학과"
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부"
+        },
+        home_score: 3,
+        away_score: 2,
+        result: "홈팀 승",
+        rain: false
     }
 ];

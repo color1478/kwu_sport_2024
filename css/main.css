@@ -70,39 +70,7 @@ body {
     width: calc(100% / 3);
 }
 
-@keyframes slide {
-    0% {
-        margin-left: 0;
-    }
 
-    /* 0 ~ 10  : 정지 */
-    10% {
-        margin-left: 0;
-    }
-
-    /* 10 ~ 25 : 변이 */
-    25% {
-        margin-left: -100%;
-    }
-
-    /* 25 ~ 40 : 정지 */
-    40% {
-        margin-left: -100%;
-    }
-
-    /* 40 ~ 55 : 변이 */
-    55% {
-        margin-left: -200%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
-}
 
 ul {
     list-style: none;
@@ -135,7 +103,7 @@ ul {
 
 
 .nav-logo img {
-    max-height: 40px;
+    max-height: 50px;
 }
 
 .nav-links {

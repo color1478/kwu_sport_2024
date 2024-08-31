@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2024 광운대학교 연촌체전</title>
+    <link rel="stylesheet" href="../../css/result_sports/result_sports_8자줄넘기_bracket.css">
+    <meta name="viewport" content="width=1440">
+    <link href="../../image/padong.png" rel="icon" type="image">
+</head>
+
+<body>
+     <!-- 네비게이션 바 -->
+     <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li class="nav-logo">
+                    <a href = "../../index.html">
+                        <img src="../../image/padong.png" alt="Logo"> <!--연촌체전 메인로고-->
+                    </a>
+                </li>
+                <li><a href="../schedule.html">경기 일정</a></li>
+                <li><a href="../stauts.html">경기 종목</a></li>
+                <li><a href="../results.html">경기 현황</a></li>
+                <li><a href="../rules.html">종목별 규칙</a></li>
+                <li><a href="../teams.html">팀</a></li>
+                <li><a href="../events.html">이벤트</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <div class = "banner">
+        <h1>경기 현황</h1>
+        <p>경기 순위나 현황을 알 수 있어요!</p>
+    </div>
+
+    <div class="main">
+        <div class="selection">
+            <div id="rank-selection" class="contain">
+                <p>순위</p>
+            </div>
+                <div id="result_sports-selection" class="contain selected">
+                    <p>종목별 현황</p>
+                </div>
+        </div>
+    </div>
+
+    <div>
+        <nav class="sche-nav">
+            <div class="sche-nav-container">
+                <ul class="sche-nav-links">
+                    <li>
+                        <a href="풋살.html" class="sport-link-football" data-sport="풋살" >
+                            <img id="sport-image-풋살" src="../../image/풋살-default픽토그램.png">
+                            <p>풋살</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="농구.html" class="sport-link-basketball" data-sport="농구">
+                            <img id="sport-image-농구" src="../../image/농구-default픽토그램.png">
+                            <p>농구</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="피구.html" class="sport-link-dodgeball" data-sport="피구">
+                            <img id="sport-image-피구" src="../../image/피구-default픽토그램.png">
+                            <p>피구</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="볼링.html" class="sport-link-bowling" data-sport="볼링">
+                            <img id="sport-image-볼링" src="../../image/볼링-default픽토그램.png">
+                            <p>볼링</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="족구.html" class="sport-link-footvolleyball" data-sport="족구">
+                            <img id="sport-image-족구" src="../../image/족구-default픽토그램.png">
+                            <p>족구</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="탁구.html" class="sport-link-tabletennis" data-sport="탁구">
+                            <img id="sport-image-탁구" src="../../image/탁구-default픽토그램.png">
+                            <p>탁구</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="8자줄넘기.html" class="sport-link-jumprope" data-sport="8자 줄넘기">
+                            <img id="sport-image-8자 줄넘기" src="../../image/8자 줄넘기-default픽토그램.png">
+                            <p>8자 줄넘기</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="LOL.html" class="sport-link-lol" data-sport="LOL">
+                            <img id="sport-image-LOL" src="../../image/LOL-default픽토그램.png">
+                            <p>LOL</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="TFT.html" class="sport-link-tft" data-sport="TFT">
+                            <img id="sport-image-TFT" src="../../image/TFT-default픽토그램.png" alt="Football">
+                            <p>TFT</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="FC온라인.html" class="sport-link-FConline" data-sport="FC 온라인">
+                            <img id="sport-image-FC 온라인" src="../../image/FC 온라인-default픽토그램.png" alt="Football">
+                            <p>FC 온라인</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="select-2type">
+        <div class="type-button">
+            <a href="8자줄넘기.html">예선리그</a>
+            <a id="click" href="8자줄넘기_bracket.html">결선 토너먼트</a>
+        </div>
+    </div>
+
+
+    <div class="stage">
+        <div class="category-grid">
+            <div class="round_number">
+                <p>round 1</p>
+            </div>
+            <div class="round_number">
+                <p>round 2</p>
+            </div>
+            <div class="round_number">
+                <p>semi final / FINAL</p>
+            </div>
+            <div class="round_number">
+                <p>round 2</p>
+            </div>
+            <div class="round_number">
+                <p>round 1</p>
+            </div>
+        </div>
+    </div>
+    
+
+<div class="match">
+
+    <!-- 위쪽 1사단 기준 축 위 -->
+    <!-- p태그 / id = win: 숫자, 글자 파랑색으로 변경 -->
+     <!-- class="round" / id = lose: match 박스 진한 색으로 변경 -->
+
+
+    <div class="match1 down">
+        <div class="round">
+            <div class="round1011">
+                <p>round 1 game 1</p>
+            </div>
+            <!-- round1 game1 -->
+            <div class="number">
+                <p>0</p>
+                <p>0</p>
+            </div>
+            <div class="major">
+                <p>반도체시스템공학과</p>
+                <p>환경공학과</p>
+            </div>
+        </div>
+
+        <div class="round">
+            <div class="round12">
+                <p>round 1 game 5</p>
+            </div>
+            <!-- round1 game5 -->
+            <div class="number">
+                <p>0</p>
+                <p>0</p>
+            </div>
+            <div class="major">
+                <p >반도체시스템공학과</p>
+                <p>환경공학과</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="second bet">
+        <div class="underline columnshort">
+            <hr />
+        </div>
+        <div class="underline columnshort">
+            <hr />
+        </div>
+    </div>
+
+    <div class="first bet">
+        <div class="contain1 bleft"></div>
+        <div class="contain1 bright"></div>
+    </div>
+
+    <div class="match2">
+        <div class="round">
+            <div class="round1011">
+                <p>round 2 game 1</p>
+            </div>
+            <!-- round2 game1 -->
+            <div class="number">
+                <p>-</p>
+                <p>-</p>
+            </div>
+            <div class="major">
+                <p>반도체시스템공학과</p>
+                <p>환경공학과</p>
+            </div>
+        </div>
+        <div class="round">
+            <div class="round12">
+                <p>round 2 game 5</p>
+            </div>
+            <!-- round2 game5 -->
+            <div class="number">
+                <p>-</p>
+                <p>-</p>
+            </div>
+            <div class="major">
+                <p>반도체시스템공학과</p>
+                <p>환경공학과</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="match1_sec">
+        <div class="round">
+            <!-- round1 game2 -->
+            <div class="number">
+                <p>0</p>
+                <p>0</p>
+            </div>
+            <div class="major">
+                <p>반도체시스템공학과</p>
+                <p>환경공학과</p>
+            </div>
+            <div class="round78">
+                <p>round 1 game 2</p>
+            </div>
+        </div>
+        <div class="round">
+            <!-- round1 game6 -->
+            <div class="number">
+                <p>0</p>
+                <p>0</p>
+            </div>
+            <div class="major">
+                <p>반도체시스템공학과</p>
+                <p>환경공학과</p>
+            </div>
+            <div class="round45">
+                <p>round 1 game 6</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="second center">
+        <div class="contain2 btop"></div>
+    </div>
+    <div class="second center">
+        <div class="contain3 bbottom btop"></div>
+    </div>
+
+
+    <!-- 1사단 기준축 -->
+    <div class="match3 up">
+        <div class="round">
+            <div class="round1011">
+                <p>round 3 game 1</p>
+            </div>
+            <!-- round3 game1 -->
+            <div class="number">
+                <p>-</p>
+                <p>-</p>
+            </div>
+            <div class="major">
+                <p>반도체시스템공학과</p>
+                <p>환경공학과</p>
+            </div>
+        </div>
+
+        <div class="underline long">
+            <hr />
+        </div>
+
+        <div class="round">
+            <div class="round12">
+                <p>round 3 game 2</p>
+            </div>
+            <!-- round3 game2 -->
+            <div class="number">
+                <p>-</p>
+                <p>-</p>
+            </div>
+            <div class="major">
+                <p>반도체시스템공학과</p>
+                <p>환경공학과</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="second center">
+        <div class="contain3 bbottom btop"></div>
+    </div>
+    <div class="third bet">
+        <div class="contain4 bbottom bright"></div>
+        <div class="contain5 btop bright"></div>
+    </div>
+
+
+    <!-- 1사단 기준축 아래 -->
+    <div class="up">
+        <div class="up">    
+            <div class="match1 down">
+                <div class="round">
+                    <div class="round1011">
+                        <p>round 1 game 3</p>
+                    </div>
+                    <!-- round1 game3 -->
+                    <div class="number">
+                        <p>0</p>
+                        <p>0</p>
+                    </div>
+                    <div class="major">
+                        <p>반도체시스템공학과</p>
+                        <p>환경공학과</p>
+                    </div>
+                </div>
+                <div class="round">
+                    <div class="round12">
+                        <p>round 1 game 7</p>
+                    </div>
+                    <!-- round1 game7 -->
+                    <div class="number">
+                        <p>0</p>
+                        <p>0</p>
+                    </div>
+                    <div class="major">
+                        <p>반도체시스템공학과</p>
+                        <p>환경공학과</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="second bet">
+                <div class="underline columnshort">
+                    <hr />
+                </div>
+            </div>
+            <div class="first bet">
+                <div class="contain1 bleft"></div>
+            </div>
+            
+            <div class="match2">
+                <div class="round">
+                    <div class="round1011">
+                        <p>round 2 game 3</p>
+                    </div>
+                    <!-- round2 game3 -->
+                    <div class="number">
+                        <p>-</p>
+                        <p>-</p>
+                    </div>
+                    <div class="major">
+                        <p>반도체시스템공학과</p>
+                        <p>환경공학과</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="match1_sec">
+                <div class="round">
+                    <!-- round1 game4 -->
+                    <div class="number">
+                        <p>0</p>
+                        <p>0</p>
+                    </div>
+                    <div class="major">
+                        <p>반도체시스템공학과</p>
+                        <p>환경공학과</p>
+                    </div>
+                    <div class="round78">
+                        <p>round 1 game 4</p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+        
+    <div class="second center up">
+        <div class="contain6 up bright"></div>
+    </div>
+
+    <!-- 중심축 1 -->
+    <div class="match4 ifup">
+        <div class="round box1">
+            <!-- round4 game1 -->
+            <div class="number">
+                <p>-</p>
+                <p>-</p>
+            </div>
+            <div class="major">
+                <p>반도체시스템공학과</p>
+                <p>환경공학과</p>
+              </div>
+        </div>
+    </div>
+
+    <div class="second center">
+        <div class="contain7 bright"></div>
+    </div>
+
+    <!-- 중심축 2 -->
+    <div class="match4">
+        <div class="round box2">
+            <!-- round5 game1 -->
+            <div class="number">
+                <p>-</p>
+                <p>-</p>
+            </div>
+            <div class="major">
+                <p>반도체시스템공학과</p>
+                <p>환경공학과</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../../image/padong.png" alt="Logo">
+            </div>
+            <div class="footer-text">
+                <p class="footer-title">광운대학교 제51대 총학생회 '파동'</p>
+                <p class="footer-role">
+                    PRODUCT MANAGER <span class="ingredient">&nbsp;&nbsp;&nbsp;컴퓨터정보공학부 23 이제호</span>
+                    <br>
+                    DESIGNER <span class="ingredient">&nbsp;&nbsp;&nbsp;미디어커뮤니케이션학부 20 변지욱 &nbsp;|&nbsp; 미디어커뮤니케이션학부 21 송다은&nbsp; |&nbsp; 미디어커뮤니케이션학부 21 홍승리</span>
+                    <br>
+                    DEVELOPER <span class="ingredient">&nbsp;&nbsp;&nbsp;소프트웨어학부 20 김민곤&nbsp; | &nbsp;동북아문화산업학부 22 오보람&nbsp; |&nbsp; 컴퓨터정보공학부 23 나민엽 </span>
+                </p>
+                <p class="footer-contact">마케팅 제휴 문의: kwuwave2024@gmail.com</p>
+                <p class="footer-copyright">Copyright 2024. Kwangwoon University 51th Student Council '파동' all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../../js/result.js"></script>
+</body>
+</html>

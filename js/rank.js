@@ -12,7 +12,7 @@ const departments = [
     {korName: "전기공학과", engName: "Electrical Engineering", score: 0},
     {korName: "전자재료공학과", engName: "Electronic Materials Engineering", score: 0},
     {korName: "전자융합공학과", engName: "Electronic Convergence Engineering", score: 0},
-    {korName: "반도체시스템공학부", engName: "Semiconductor System Engineering", score: 0},
+    {korName: "반도체시스템공학과", engName: "Semiconductor System Engineering", score: 0},
     {korName: "환경공학과", engName: "Environmental Engineering", score: 0},
     {korName: "건축공학과", engName: "Architectural Engineering", score: 0},
     {korName: "건축학과", engName: "Architecture", score: 0},
@@ -68,7 +68,7 @@ function displayRankings() {
             <div class="score-contain">
                 <p class="${index < 3 ? 'top_total' : 'total'}">총점</p><p class="${index < 3 ? 'topscore' : 'score'}">${department.score}</p>
             </div>
-            <img src="../image/major/환경공학과-로고.png"> 
+            <img src="../image/major/${department.korName}@4x.png"> 
         `; //img 변경 해야함
 
         rankContainer.appendChild(rankInfDiv);
