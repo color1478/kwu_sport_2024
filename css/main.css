@@ -939,7 +939,7 @@ p {
 
 .slider__dot {
     position: relative;
-    left: 46%;
+    margin-left: 550px;
     bottom: 50px;
 
 }
