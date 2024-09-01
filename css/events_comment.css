@@ -93,7 +93,7 @@ body {
 .banner
 {
     height: 240px;
-    background-image: url("../image/new배너.png");
+    background-image: url("../image/banner/new배너.png");
     background-size: cover;
 }
 

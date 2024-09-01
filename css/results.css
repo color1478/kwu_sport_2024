@@ -40,7 +40,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    /* 위 패딩을 사용하여 양쪽에 여백을 추가하여 그리드 아이템이 컨테이너에 붙지 않도록 합니다 */
 }
 
 .main-view {
@@ -161,7 +160,7 @@ ul{
 .banner
 {
     height: 240px;
-    background-image: url("../image/new배너.png");
+    background-image: url("../image/banner/new배너.png");
     background-size: cover;
 }
 
