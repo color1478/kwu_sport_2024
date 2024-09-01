@@ -310,16 +310,7 @@ ul{
     content: url('../../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
 }
 
-/* ID / win -> 이긴팀 글자 파란색 lose -> 진팀 박스 색 변경 */
 
-#win {
-    color: #002BCB;
-}
-
-#lose {
-    background-color: #D8DCDF;
-    opacity : 0.8;
-}
 
 .stage {
     max-width: 1200px;
@@ -404,19 +395,19 @@ ul{
     border-radius: 15px;
 }
 
-
 .round12 {
-    margin: -30px 10px 0px 0px;
+    margin: -40px 10px 0px 0px;
     font-family: S-CoreDream-5Medium;
     font-size: 9px;
     color: #000000;
     opacity: 30%;
     display: flex;
     flex-direction: row-reverse;
+    transform: translateY(10px);
 }
 
 .round45 {
-    margin: 0px 10px 0px 0px;
+    margin: 20px 10px 0px 0px;
     font-family: S-CoreDream-5Medium;
     font-size: 9px;
     color: #000000;
@@ -426,11 +417,12 @@ ul{
 }
 
 .round78 {
-    margin: 0px 0 0px 10px;
+    margin: 10px 0 0px 10px;
     font-family: S-CoreDream-5Medium;
     font-size: 9px;
     color: #000000;
     opacity: 30%;
+    padding-top: 10px;
 }
 
 .round1011 {
@@ -445,37 +437,95 @@ ul{
 .box1 {
     width:342px;
     height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box2 {
     width:396px;
     height: 139px;
     margin: 101px 0 101px 0;
-}
-
-/* number major : round 안에 있는 점수 및 학과 이름*/
-
-.number{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+/* number major : round 안에 있는 점수 및 학과 이름 */
+
+/* win -> 이긴팀 글자 파란색 end -> 끝난 경기 색 변경 */
+
 
 .number p{
     font-family: S-CoreDream-5Medium;
     font-size: 25px;
-    margin: 25px 9px 11px 9px;
-}
-
-.major {
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    color: #000000;
+    opacity: 50%;
 }
 
 .major p {
     font-family: S-CoreDream-5Medium;
     font-size: 9px;
     margin: 0;
+    color: #000000;
+    opacity: 50%;
 }
+
+
+.win p {
+    color: #002BCB;
+    opacity: 100%;
+}
+
+.end {
+    background-color: #D8DCDF;
+    opacity : 0.8;
+}
+
+.end p {
+    color: #8D9AA3;
+}
+
+.round_grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    margin-top: 25px;
+}
+
+.round_grid1 {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    margin-top: 18px;
+}
+
+.round_grid2 {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: right;
+    justify-self: end;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: left;
+    justify-self: start;
+}
+
 
 /* 대진표 검은줄 */
 .underline {
