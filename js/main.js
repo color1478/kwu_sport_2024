@@ -19,7 +19,7 @@ let currentDate = new Date();
 let currentIndex = 0;
 let sliderWidth = sliderImg.offsetWidth, // 이미지 가로 값
     dotIndex = "",
-    interval = 1500, // setInterval 컨트롤 용 (3 초)
+    interval = 2000, // setInterval 컨트롤 용 (3 초)
     sliderTimer = ""; // setInterval 컨트롤 용, 빈문자열 변수 선언해놓기
 let sliderLength = document.querySelectorAll(".slider").length;
 function init() {
@@ -67,7 +67,7 @@ function autoPlay() {
 }
 
 function gotoslider(index) {
-    if (index == 4 || index == 0) {
+    if (index == 5 || index == 0) { //배너 개수 + 1
         sliderInner.classList.remove("transition");
     } else {
         sliderInner.classList.add("transition"); // 트랜지션효과부여하기위해서 사용
@@ -81,7 +81,7 @@ function gotoslider(index) {
     console.log(index);
     // 닷 메뉴도 같이 이동
     document.querySelectorAll(".slider__dot .dot").forEach((el) => el.classList.remove("active"));
-    if (index >= 3) {
+    if (index >= 4) { //배너 개수
         index = 0;
         document.querySelectorAll(".slider__dot .dot")[index].classList.add("active");
     } else {
@@ -273,6 +273,10 @@ function displayCurrentGame(sportFilter = currentSport) {
     console.log(today);
     console.log(currentGames);
 }
+function preventClick(e){
+	e.preventDefault()
+}
+
 document.querySelectorAll('.sche-nav-links a').forEach(link => {
     link.addEventListener('click', function() {
         // 모든 링크에서 active 클래스 제거

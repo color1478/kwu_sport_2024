@@ -123,7 +123,7 @@ ul {
 }
 
 .nav-logo img {
-    max-height: 40px;
+    max-height: 50px;
 }
 
 .nav-links {
@@ -451,6 +451,7 @@ ul {
 .date-item {
     margin: 0 50px;
     color: #8D9AA3;
+    cursor: pointer;
 }
 
 .arrow-prev,
@@ -461,6 +462,7 @@ ul {
     width: 10px;
     height: 10px;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .arrow-prev::after {
