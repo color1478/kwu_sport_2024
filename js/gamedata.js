@@ -33,9 +33,9 @@ var games = [
             affiliation: "인공지능융합대학",
             team: "소프트웨어학부"
         },
-        home_score: 2,
-        away_score: 1,
-        result: "홈팀 승",
+        home_score: 1,
+        away_score: 2,
+        result: "원정팀 승",
         rain: true
     },
     {
@@ -376,7 +376,7 @@ var games = [
             team: "소프트웨어학부"
         },
         home_score: 3,
-        away_score: 2,
+        away_score: 23,
         result: "홈팀 승",
         rain: false
     }

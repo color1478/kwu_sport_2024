@@ -22,38 +22,19 @@ function formatDate(date, showYear = true) {
 }
 
 function updateDisplayedDates() {
-    const now = new Date(currentDate);
-
-    let closestPastDate = null;
-    let closestFutureDate = null;
-
-    games.forEach(game => {
-        const scheduleDate = new Date(game.date);
-        if (scheduleDate < now) {
-            if (!closestPastDate || scheduleDate > closestPastDate) {
-                closestPastDate = scheduleDate;
-            }
-        } else if (scheduleDate > now) {
-            if (!closestFutureDate || scheduleDate < closestFutureDate) {
-                closestFutureDate = scheduleDate;
-            }
-        }
-    });
-
-    const yesterday = closestPastDate ? closestPastDate : new Date(currentDate);
-    if (!closestPastDate)
-        yesterday.setDate(currentDate.getDate() - 1);
+    const yesterday = new Date(currentDate);
+    yesterday.setDate(currentDate.getDate() - 1);
     const today = new Date(currentDate);
-    const tomorrow = closestFutureDate ? closestFutureDate : new Date(currentDate);
-    console.log(tomorrow);
-    if (closestFutureDate == null)
-        tomorrow.setDate(currentDate.getDate() + 1);  
-    console.log(tomorrow);
+
+    const tomorrow = new Date(currentDate);
+    tomorrow.setDate(currentDate.getDate() + 1);
+
     date1.textContent = formatDate(yesterday, false); // 연도 없이 표시
     date2.textContent = formatDate(today, true); // 연도 포함
     date3.textContent = formatDate(tomorrow, false); // 연도 없이 표시
 
     todayDateDisplay.textContent = formatDate(today, false); // 오늘 날짜에 연도 포함x
+    const now = new Date();
     if (currentDate.getDate() === now.getDate() &&
         currentDate.getMonth() === now.getMonth() &&
         currentDate.getFullYear() === now.getFullYear()) {
@@ -62,7 +43,6 @@ function updateDisplayedDates() {
     } else {
         todayDateDisplay.style.color = 'black';
     }
-
     const popup = document.getElementById('calendarPopup');
     popup.style.display = 'none';
     displayCurrentGame();
