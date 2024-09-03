@@ -1,15 +1,31 @@
-document.getElementById("result_sports-selection").addEventListener("click", function() {
-    window.location.href = "./sports_result/풋살.html";
+document.getElementById("result_sports-selection").addEventListener("click", function () {
+    // 경로 부분만 가져오기
+    const path = window.location.pathname;
+    // 마지막 부분 추출
+    const lastSegment = path.substring(path.lastIndexOf('/') + 1);
+    if (lastSegment == 'results.html')
+        window.location.href = "./sports_result/풋살.html";
 });
 
-document.getElementById("rank-selection").addEventListener("click", function() {
-    window.location.href = "../results.html";
+document.getElementById("rank-selection").addEventListener("click", function () {
+    // 경로 부분만 가져오기
+    const path = window.location.pathname;
+    // 마지막 부분 추출
+    const lastSegment = path.substring(path.lastIndexOf('/') + 1);
+    if (lastSegment != 'results.html')
+        window.location.href = "../results.html";
 });
 document.addEventListener("DOMContentLoaded", function () {
     const activeLink = document.querySelector('#초기'); // 원하는 a 태그 선택
     activeLink.classList.add('active'); // 선택한 a 태그에 active 클래스 추가
     const sportValue = activeLink.getAttribute('data-sport');
     filterBySport(sportValue);
+    // 한글 인코딩
+    const encodedSegment = encodeURIComponent(lastSegment);
+
+    // 결과 출력
+    console.log(encodedSegment);
+
 });
 function filterBySport(sport) {
     currentSport = sport; // 현재 선택된 스포츠 저장
