@@ -198,7 +198,8 @@ ul{
     vertical-align: middle;
     /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
     text-align: center;
-    margin: 60px 0 44px 0;
+    margin-top: 0;
+    padding: 0;
 }
 
 .sche-nav-container {
@@ -210,8 +211,8 @@ ul{
     font-family: S-CoreDream-5Medium;
     font-size: 10px;
     /*크기 조절시 변경 해야함 */
-    overflow-x: auto;
     white-space: nowrap;
+    /*overflow-x:auto;*/
 
 }
 
@@ -243,31 +244,47 @@ ul{
     color: #B5BEC4;
     position: relative;
     padding: 0px 0px;
-    font-family: S-CoreDream-4Regular;
+    font-family: S-CoreDream-5Medium;
 }
 
 .sche-nav-links img {
     width: 52px;
     height: 52px;
     object-fit: cover;
-    margin: 7px 28.5px 0 28.5px;
+    margin: 7px 28.5px 14px 28.5px;
 }
 
-.sche-nav-links a.active,
-.sche-nav-links a:hover {
+.sche-nav-links a.active {
     color: #002BCB;
-    font-family: S-CoreDream-7ExtraBold;
+    font-family: S-CoreDream-5Medium;
+}
+
+.sche-nav-links a.active::after {
+    color: #002BCB;
+    font-family: S-CoreDream-5Medium;
+    bottom: -10px;
+    background: #002BCB;
+    height: 3px;
+}
+
+.sche-nav-links a:hover {
+    color: #B5BEC4;
+    font-family: S-CoreDream-5Medium;
+}
+
+.sche-nav-links a.active {
+    pointer-events: none;
 }
 
 .sche-nav-links a::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
-    height: 3px;
-    background: #002BCB;
+    height: 1px;
+    background: #B5BEC4;
     transition: all .3s ease-out;
     /* 색상과 두께 변화에 애니메이션 추가 */
 }
@@ -286,11 +303,6 @@ ul{
     width: 100%;
     padding: 0px;
 }
-
-.sche-nav-links a.active {
-    pointer-events: none;
-}
-
 .sport-link-all:hover img {
     content: url('../../image/전체-hover픽토그램.png');
     /* 전체 호버 이미지 */
