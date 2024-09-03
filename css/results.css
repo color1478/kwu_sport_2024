@@ -231,6 +231,7 @@ ul{
 }
 
 .num-contain {
+  width: 30px;
   margin-left: 35px;
   margin-right: 55px;
   display: flex;

@@ -579,11 +579,13 @@ p {
 #rank2score {
     font-size: 52px;
     font-family: S-CoreDream-5Medium;
+    margin-left: 5px;
 }
 
 #rank3score {
     font-size: 46px;
     font-family: S-CoreDream-5Medium;
+    margin-left: 10px;
 }
 
 .rank1 {
@@ -610,20 +612,20 @@ p {
 .rankinf img {
     height: 204px;
     width: 204px;
-    transform: translate(42%);
+    transform: translateX(110px);
     opacity: 70%;
 }
 
 .rank1 img {
-    transform: translate(15%);
+    transform: translateX(102px);
 }
 
 .rank2 img {
-    transform: translate(26%);
+    transform: translateX(102px);
 }
 
 .rank3 img {
-    transform: translate(34%);
+    transform: translateX(102px);
 }
 
 .major {
@@ -1031,4 +1033,22 @@ p {
     border-radius: 50%;
     z-index: -1;
     pointer-events: none;
+}
+
+
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* 적절한 너비 설정 */
+    margin: auto;
+}
+
+.slide {
+    display: none; /* 초기에는 모든 슬라이드를 숨김 */
+}
+
+.active {
+    display: block; /* 현재 활성화된 슬라이드만 표시 */
 }

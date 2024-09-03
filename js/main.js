@@ -294,3 +294,27 @@ document.addEventListener("DOMContentLoaded", function() {
 // 초기 날짜 표시
 updateDisplayedDates();
 filterBySport('');
+
+
+
+
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");  // 모든 슬라이드의 active 클래스 제거
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].classList.add("active");  // 현재 슬라이드에 active 클래스 추가
+    setTimeout(showSlides, 5000); // 10초마다 슬라이드 전환
+}
+
+// 초기 상태에서 첫 번째 슬라이드 표시
+document.addEventListener("DOMContentLoaded", function() {
+    slides[slideIndex].classList.add("active");
+    setTimeout(showSlides, 5000); // 10초마다 슬라이드 전환 시작
+});

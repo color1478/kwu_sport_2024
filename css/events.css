@@ -154,7 +154,9 @@ main {
     text-align: center;
     box-sizing: border-box;
     transition: transform 0.2s;
-    background-color: skyblue;
+    background-image: url("../image/승부예측.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .category:hover {
@@ -164,8 +166,8 @@ main {
 .shortcut p{
     display: flex;
     width: 388px;
-    height: 75px;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
     font-family: S-CoreDream-5Medium;
     font-size: 32px;
     color: #FFFFFF;
