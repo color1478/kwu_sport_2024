@@ -192,14 +192,15 @@ ul{
 
 
 /* 순위 및 종목 선택 */
-
-.sche-nav{
-    line-height: 15px;    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
-    vertical-align: middle;   /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
+.sche-nav {
+    line-height: 15px;
+    /*글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정*/
+    vertical-align: middle;
+    /*세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함)*/
     text-align: center;
-    margin-top: 0;
-    padding: 0;
+    margin: 60px 0 44px 0;
 }
+
 .sche-nav-container {
     align-items: center;
     max-width: 1200px;
@@ -207,16 +208,19 @@ ul{
     margin-top: 15px;
     margin-bottom: 15px;
     font-family: S-CoreDream-5Medium;
-    font-size: 10px; /*크기 조절시 변경 해야함 */
-    overflow-x:auto;
-    white-space:nowrap;
+    font-size: 10px;
+    /*크기 조절시 변경 해야함 */
+    overflow-x: auto;
+    white-space: nowrap;
 
 }
+
 .jb-division-line {
     border-top: 1px solid #444444;
     top: 10px;
     margin: 30px 0px;
 }
+
 .sche-nav-links {
     display: flex;
     flex-grow: 1;
@@ -228,7 +232,8 @@ ul{
 }
 
 .sche-nav-links li {
-    margin: 0; /* 각 항목 간의 간격을 설정 */
+    margin: 0;
+    /* 각 항목 간의 간격을 설정 */
 }
 
 .sche-nav-links a {
@@ -238,93 +243,110 @@ ul{
     color: #B5BEC4;
     position: relative;
     padding: 0px 0px;
-    font-family: S-CoreDream-5Medium;
+    font-family: S-CoreDream-4Regular;
 }
+
 .sche-nav-links img {
     width: 52px;
     height: 52px;
     object-fit: cover;
-    margin: 7px 28.5px 14px 28.5px;
+    margin: 7px 28.5px 0 28.5px;
 }
 
-
-
-.sche-nav-links a.active{
-    color: #002BCB;
-    font-family: S-CoreDream-5Medium;
-}
-
-.sche-nav-links a.active::after{
-    color: #002BCB;
-    font-family: S-CoreDream-5Medium;
-    bottom: -10px;
-    background: #002BCB;
-    height: 3px;
-}
-
+.sche-nav-links a.active,
 .sche-nav-links a:hover {
-    color: #B5BEC4;
-    font-family: S-CoreDream-5Medium;
+    color: #002BCB;
+    font-family: S-CoreDream-7ExtraBold;
 }
 
-.sche-nav-links a.active{
-    pointer-events: none;
-}
-.sche-nav-links a::after{
+.sche-nav-links a::after {
     content: "";
     position: absolute;
-    bottom: -8px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
-    height: 1px;
-    background: #B5BEC4;
-    transition: all .3s ease-out; /* 색상과 두께 변화에 애니메이션 추가 */
+    height: 3px;
+    background: #002BCB;
+    transition: all .3s ease-out;
+    /* 색상과 두께 변화에 애니메이션 추가 */
 }
-.sche-nav-links a:hover::after{
+
+.sche-nav-links a:hover::after {
     width: 100%;
     padding: 0px;
 }
-.sche-nav-links a:visited::after{
+
+.sche-nav-links a:visited::after {
     width: 100%;
     padding: 0px;
 }
+
 .sche-nav-links a.active::after {
     width: 100%;
     padding: 0px;
 }
-.sport-link-all:hover img {
-    content: url('../../image/전체-hover픽토그램.png'); /* 전체 호버 이미지 */
+
+.sche-nav-links a.active {
+    pointer-events: none;
 }
+
+.sport-link-all:hover img {
+    content: url('../../image/전체-hover픽토그램.png');
+    /* 전체 호버 이미지 */
+}
+
 .sport-link-football:hover img {
-    content: url('../../image/풋살-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../../image/풋살-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
+}
+.sport-link-football img:active {
+    content: url('../../image/풋살픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
 .sport-link-basketball:hover img {
-    content: url('../../image/농구-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../../image/농구-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 .sport-link-dodgeball:hover img {
-    content: url('../../image/피구-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../../image/피구-hover픽토그램.png');
+    /* 전체 호버 이미지 */
 }
+
 .sport-link-bowling:hover img {
-    content: url('../../image/볼링-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../../image/볼링-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-footvolleyball:hover img {
-    content: url('../../image/족구-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../../image/족구-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 .sport-link-tabletennis:hover img {
-    content: url('../../image/탁구-hover픽토그램.png'); /* 전체 호버 이미지 */
+    content: url('../../image/탁구-hover픽토그램.png');
+    /* 전체 호버 이미지 */
 }
+
 .sport-link-jumprope:hover img {
-    content: url('../../image/8자 줄넘기-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../../image/8자 줄넘기-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-lol:hover img {
-    content: url('../../image/LOL-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../../image/LOL-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
+
 .sport-link-tft:hover img {
-    content: url('../../image/TFT-hover픽토그램.png'); /* 풋살 호버 이미지 */
+    content: url('../../image/TFT-hover픽토그램.png');
+    /* 풋살 호버 이미지 */
 }
+
 .sport-link-FConline:hover img {
-    content: url('../../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
+    content: url('../../image/FC 온라인-hover픽토그램.png');
+    /* 농구 호버 이미지 */
 }
 
 /* 예선 순위 및 결선 토너먼트 */
