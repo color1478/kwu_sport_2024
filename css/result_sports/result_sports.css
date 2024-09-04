@@ -759,3 +759,14 @@ ul{
 hr {
     border-width: 0;
 }
+
+.game1 .round_grid img {
+    height: 88px;
+    width: 88px;
+    opacity: 50%;
+    display: flex;
+    position: relative;
+    transform: translate(-100px, -18px);
+}
+
+
