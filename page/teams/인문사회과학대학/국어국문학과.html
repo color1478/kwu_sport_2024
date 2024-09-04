@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2024 광운대학교 연촌체전</title>
+    <link rel="stylesheet" href="../../../css/teams-details.css">
+    <meta name="viewport" content="width=1440">
+    <link href="../../../image/padong.png" rel="icon" type="image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+    <script src="../../../js/team-details.js"></script>
+</head>
+
+<body>
+     <!-- 네비게이션 바 -->
+     <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li class="nav-logo">
+                    <a href = "../../../index.html">
+                        <img src="../../../image/padong.png" alt="Logo"> <!--연촌체전 메인로고-->
+                    </a>
+                </li>
+                <li><a href="../../schedule.html">경기 일정</a></li>
+                <li><a href="../../stauts.html">경기 종목</a></li>
+                <li><a href="../../results.html">경기 현황</a></li>
+                <li><a href="../../rules.html">종목별 규칙</a></li>
+                <li><a href="../../teams.html">팀</a></li>
+                <li><a href="../../events.html">이벤트</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <div class = "banner">
+        <div class="banner-contain">
+            <div class="banner-tag">
+                <a href="../../teams.html">&lt; 이전으로</a>
+            </div>
+            <style>
+                img{float:left;}
+            </style>
+            <img src="../../../image/major/환경공학과@4x.png" alt="Logo">
+            <div class="banner-message">
+                <h1>Since 1989</h1>
+                <h2>미디어커뮤니케이션학부</h2>
+                <div class="ptype">
+                    <p> &quot;</p>
+                    <p> &quot;</p>
+                </div>
+                <h3>다양한 미디어 이론 교육과 과련 실습 교육을 통해 이론과 제작 실무능력을 겸비한 
+                    전문가를 양성하는 학부입니다! 이번 연촌체전 다 뿌셔뿌셔 기대하십쇼 ~ *^^*
+                </h3>
+            </div>
+            <div class="banner-heart">
+                <div class="banner-button" id="국어국문학과">
+                    <button class="heart" style="cursor: pointer;">
+                        <div class="heart-icon">&#x2661;</div>
+                        <span class="heart-count">0</span>
+                    </button>
+                </div>
+                <img src="../../../image/말풍선.png" alt="Logo">
+            </div>            
+        </div>
+        
+    </div>
+
+    <!-- 주요 내용들-->
+
+    <div class="main">
+        <div class="contain">
+            <div class="contain-sport">
+                <img src="../../../image/풋살픽토그램.png" alt="Logo">
+                <h1>풋살</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="contain-sport">
+                <img src="../../../image/농구픽토그램.png" alt="Logo">
+                <h1>농구</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="contain-sport">
+                <img src="../../../image/피구픽토그램.png" alt="Logo">
+                <h1>피구</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="contain-sport">
+                <img src="../../../image/볼링픽토그램.png" alt="Logo">
+                <h1>볼링</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="contain-sport">
+                <img src="../../../image/족구픽토그램.png" alt="Logo">
+                <h1>족구</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="contain-sport">
+                <img src="../../../image/탁구픽토그램.png" alt="Logo">
+                <h1>탁구</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="contain-sport-5">
+                <img src="../../../image/8자 줄넘기픽토그램.png" alt="Logo">
+                <h1>8자 줄넘기</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+            <div class="underline">
+                <p>&#32;</p>
+            </div>
+        <div class="contain">
+            <div class="contain-sport-1">
+                <img src="../../../image/LOL픽토그램.png" alt="Logo">
+                <h1>롤</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="contain-sport">
+                <img src="../../../image/TFT픽토그램.png" alt="Logo">
+                <h1>TFT</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="contain-sport-5">
+                <img src="../../../image/FC 온라인픽토그램.png" alt="Logo">
+                <h1>FC 온라인</h1>
+            </div>
+            <div class="contain-member">
+                <div class="member-first">
+                    <h2>주전</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                        <h3>26 이제호</h3>
+                        <h3>27 이제호</h3>
+                        <h3>28 이제호</h3>
+                        <h3>29 이제호</h3>
+                        <h3>30 이제호</h3>
+                    </div>
+                </div>
+                <div class="member-second">
+                    <h2>후보</h2>
+                    <p>&#124;</p>
+                    <div class="member-grid">
+                        <h3>21 이제호</h3>
+                        <h3>22 이제호</h3>
+                        <h3>23 이제호</h3>
+                        <h3>24 이제호</h3>
+                        <h3>25 이제호</h3>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../../../image/padong.png" alt="Logo">
+            </div>
+            <div class="footer-text">
+                <p class="footer-title">광운대학교 제51대 총학생회 '파동'</p>
+                <p class="footer-role">
+                    PRODUCT MANAGER <span class="ingredient">&nbsp;&nbsp;&nbsp;컴퓨터정보공학부 23 이제호</span>
+                    <br>
+                    DESIGNER <span class="ingredient">&nbsp;&nbsp;&nbsp;미디어커뮤니케이션학과 20 번지욱 &nbsp;|&nbsp; 미디어커뮤니케이션학과 21 송다은&nbsp; |&nbsp; 미디어커뮤니케이션학과 21 홍승리</span>
+                    <br>
+                    DEVELOPER <span class="ingredient">&nbsp;&nbsp;&nbsp;소프트웨어학부 20 김민곤&nbsp; | &nbsp;동북아문화산업학부 22 오보람&nbsp; |&nbsp; 컴퓨터정보공학부 23 나민엽 </span>
+                </p>
+                <p class="footer-contact">마케팅 제휴 문의: kwuwave2024@gmail.com</p>
+                <p class="footer-copyright">Copyright 2024. Kwangwoon University 51th Student Council '파동' all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+
+<script>
+    var config = {
+        apiKey: "AIzaSyC86MO6Ar7wKb_5m-G3F64mtp7VosC27oQ",
+        authDomain: "kwu-sport.firebaseapp.com",
+        databaseURL: "https://kwu-sport-default-rtdb.firebaseio.com/",
+        projectId: "kwu-sport",
+        storageBucket: "kwu-sport.appspot.com",
+        messagingSenderId: "719636962480",
+        appId: "1:719636962480:web:aad441e94aa751cca6af75",
+        measurementId: "G-Y2G8VHF652"
+    };
+    firebase.initializeApp(config);
+</script>
+
+
+<script type="text/javascript">
+    var dCounters = document.querySelectorAll('.banner-button');
+    [].forEach.call(dCounters, function(dCounter) {
+        var el = dCounter.querySelector('button');
+        var cId = dCounter.id;
+        var dDatabase = firebase.database().ref('major').child(cId);
+
+        // get firebase data
+        dDatabase.on('value', function(snap) {
+            var data = snap.val() || 0;
+            dCounter.querySelector('span').innerHTML = data;
+        });
+
+        // set firebase data
+        el.addEventListener('click', function() {
+            dDatabase.transaction(function(dCount) {
+                return dCount + 1;
+            });
+        });
+    });
+</script>
+
+</html>

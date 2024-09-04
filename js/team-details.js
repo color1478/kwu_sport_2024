@@ -36,6 +36,21 @@ function initializeCounters() {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    initializeCounters();
+document.addEventListener('DOMContentLoaded', function () {
+    // 'banner-button' 클래스에서 id가 majorname인 요소 찾기
+    var majorElement = document.querySelector('.banner-button');
+    var majorName = majorElement.id;  // id가 '경영학부'와 같은 값
+
+    // 이미지 요소 찾기 및 설정 업데이트
+    var imgElement = document.querySelector('.banner-contain img');
+    if (imgElement) {
+        imgElement.src = `../../../image/major/${majorName}@4x.png`;
+        imgElement.alt = `${majorName} Logo`;
+    }
+
+    // 학부 이름 및 정보 설정
+    var bannerMessage = document.querySelector('.banner-message h2');
+    if (bannerMessage) {
+        bannerMessage.textContent = majorName;
+    }
 });

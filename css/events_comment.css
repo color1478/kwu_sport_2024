@@ -162,7 +162,9 @@ main {
     display: flex;
     width: 495px;
     height: 495px;
-    background-color: skyblue;
+    background-image: url("../image/승부예측.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: S-CoreDream-5Medium;
     font-size: 32px;
     color: #FFFFFF;
