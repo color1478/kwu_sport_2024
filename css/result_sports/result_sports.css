@@ -765,7 +765,7 @@ hr {
     width: 88px;
     opacity: 50%;
     display: flex;
-    position: relative;
+    position: absolute;
     transform: translate(-100px, -18px);
 }
 
