@@ -571,5 +571,19 @@
     </footer>
     
     <script src="../../js/result.js"></script>
+
+    <script>
+      document.querySelectorAll('tr').forEach(row => {
+      const nameElement = row.querySelector('td.name');
+      if (nameElement) { // nameElement가 존재하는지 확인
+          const majorName = nameElement.textContent.trim();
+          const imgElement = row.querySelector('img');
+      if (imgElement) { // imgElement가 존재하는지 확인
+          imgElement.src = `../../image/major/${majorName}@4x.png`;
+        }
+    }
+    });
+    </script>
+    
 </body>
 </html>
