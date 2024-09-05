@@ -125,7 +125,7 @@ main {
 }
 
 .comment_event {
-    margin: 60px 0 0 60px;
+    margin: 60px 0  60px 0;
 }
 
 .comment_event p{
@@ -150,6 +150,7 @@ main {
     justify-content: center;
     align-items: center;
     color: #000000;
+    height: 70px;
     margin: 0;
 }
 
@@ -183,18 +184,30 @@ main {
 }
 
 .box {
-    width: 659px;
-    height: 140px;
-    color: #FFFFFF;
-    box-shadow: rgba(0, 0, 0, 0.08)0 0 21px;
-    border-radius: 28px;
-    display: flex;
+  width: 659px;
+  height: 140px;
+  color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.08)0 0 21px;
+  border-radius: 28px;
+  display: flex;
 }
 
-.box-photo img{
-    width: 64px;
-    height: 67px;
-    margin: 49px 0 36px 52px ;
+.fa-calendar-days{
+  color: rgba(0, 0, 0, 0.2);
+    font-size: 70px;
+    margin: 36px 0 36px 36px ;
+}
+
+.fa-location-dot{
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 70px;
+  margin: 36px 0 36px 36px ;
+}
+
+.fa-award{
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 70px;
+  margin: 36px 0 36px 36px ;
 }
 
 .box_comment {
@@ -215,8 +228,9 @@ main {
     font-family: S-CoreDream-5Medium;
     font-size: 28px;
     color: #B5BEC4;
-    margin: 0;
+    margin: 13px 0 0;
 }
+
 
 .rule_title {
     width: 100%;
