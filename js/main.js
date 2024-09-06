@@ -67,7 +67,7 @@ function autoPlay() {
 }
 
 function gotoslider(index) {
-    if (index == 5 || index == 0) { //배너 개수 + 1
+    if (index == 6 || index == 0) { //배너 개수 + 1
         sliderInner.classList.remove("transition");
     } else {
         sliderInner.classList.add("transition"); // 트랜지션효과부여하기위해서 사용
@@ -81,7 +81,7 @@ function gotoslider(index) {
     console.log(index);
     // 닷 메뉴도 같이 이동
     document.querySelectorAll(".slider__dot .dot").forEach((el) => el.classList.remove("active"));
-    if (index >= 4) { //배너 개수
+    if (index >= 5) { //배너 개수
         index = 0;
         document.querySelectorAll(".slider__dot .dot")[index].classList.add("active");
     } else {

@@ -914,8 +914,6 @@ p {
     /* 이미지를 감싸고 있는 부모 : 움직이는 부분 */
     display: flex;
     flex-wrap: wrap;
-    /* width: 8800px; --> js로 이미지 추가되도 전체넓이 가변되게끔! */
-    /* 4000px --> 4800px  : 총이미지가 6개로 변경*/
     height: auto;
     position: relative;
     left: -1200px;
