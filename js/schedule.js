@@ -128,7 +128,7 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
     if (teamFilter) {
         currentGames = currentGames.filter(game => {
             if (game.sportId == 9) {
-                return game.team.some(team => teams.team == teamFilter);
+                return game.teams.some(team => team.team == teamFilter);
             } else {
                 return (game.home.team == teamFilter || game.away.team == teamFilter);
             }
@@ -169,7 +169,7 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                     <p style= "width:170px; margin-left:170px; text-align: right;">${highestRankTeam.team}</p>
                     <div class="teamDrop">
                         <div style="width:170px;">
-                            <p style="font-size:13px; color: gray;vertical-align:bottom;">외 7개 학과<p/>
+                            <p style="font-size:13px; color: gray;vertical-align:bottom;">　외 7개 학과<p/>
                         </div>
                         <div class="dropdown-content">
                             ${game.teams
@@ -356,10 +356,37 @@ function loadCalendar() {
         eventDot.className = 'event-dot';
         eventDot.style.display = 'none'; // 기본적으로 점을 숨김
         const formattedDate = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-        const hasEvent = games.some(event =>
+
+        let currentGames = games
+        // 스포츠 필터링
+        if (currentSport) {
+            currentGames = currentGames.filter(game => sportsAndLocations[game.sportId].sport === currentSport);
+        }
+
+        // 소속 필터링
+        if (currentAffiliation) {
+            currentGames = currentGames.filter(game => {
+                if (game.sportId == 9) {
+                    return game.teams.some(team => team.affiliation == currentAffiliation);
+                } else {
+                    return (game.home.affiliation == currentAffiliation || game.away.affiliation == currentAffiliation);
+                }
+            });
+        }
+
+        // 팀 필터링
+        if (currentTeam) {
+            currentGames = currentGames.filter(game => {
+                if (game.sportId == 9) {
+                    return game.teams.some(team => team.team == currentTeam);
+                } else {
+                    return (game.home.team == currentTeam || game.away.team == currentTeam);
+                }
+            });
+        }
+        const hasEvent = currentGames.some(event =>
             event.date === formattedDate
         );
-
         if (hasEvent) {
             eventDot.style.display = 'block';
         }
