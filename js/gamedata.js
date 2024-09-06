@@ -22,7 +22,7 @@ var sportsAndLocations = {
 };
 var games = [
     {
-        date: "2024-08-16",
+        date: "2024-09-04",
         time: "10:00",
         sportId: 2,
         home: {
@@ -294,7 +294,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-08-16",
+        date: "2024-09-04",
         time: "10:00",
         sportId: 9,
         teams: [
@@ -310,7 +310,7 @@ var games = [
         home_score: 3,
         away_score: 2,
         result: "홈팀 승",
-        rain: false
+        rain: true
     },
     {
         date: "2024-08-16",

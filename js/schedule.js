@@ -164,17 +164,12 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                 });
 
                 gameItem.innerHTML = `
-                    <div style="width:100px;">
-                        <p>${game.time}</p>
-                    </div>
-                    <div style="width:100px;text-align: center;">
-                        <p style="color: gray;">${sportInfo.sport}</p>
-                    </div>
-
-                    <p style= "width:25vw;text-align:right;">${highestRankTeam.team}</p>
+                    <p style="width: 43px; margin-left:66px;">${game.time}</p>
+                        <p style="color: gray; width:74px; margin-left:81px;">${sportInfo.sport}</p>
+                    <p style= "width:170px; margin-left:170px; text-align: right;">${highestRankTeam.team}</p>
                     <div class="teamDrop">
-                        <div style="width:21vw;">
-                            <p style="font-size:10px; color: gray;vertical-align:bottom;">외 7개 학과<p/>
+                        <div style="width:170px;">
+                            <p style="font-size:13px; color: gray;vertical-align:bottom;">외 7개 학과<p/>
                         </div>
                         <div class="dropdown-content">
                             ${game.teams
@@ -183,37 +178,25 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                         .join('')}
                         </div>
                     </div>
-                    <div style="width:10vw;text-align: center;">
-                        <p style="color: gray;">${sportInfo.location}</p>
-                    </div>
-                    <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
+                    <p style="color: gray; margin-left:138px">${sportInfo.location}</p>
+                    <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             } else {
                 // 다른 스포츠의 기본 형식
                 gameItem.innerHTML = `
-                    <div style="width:100px;">
-                        <p>${game.time}</p>
-                    </div>
-                    <div style="width:100px;text-align: center;">
-                        <p style="color: gray;">${sportInfo.sport}</p>
-                    </div>
-                    <div style="text-align:right;width:15vw;">
-                        <p style="white-space: nowrap;">${game.home.team}</p>
-                    </div>
-                   <img src="../image/major/${game.home.team}@4x.png" style="width: 3vw; height: 3vw;border-radius: 50%;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
-                    <div class="score">
-                        <p style="${homeScoreStyle}">${homeScore}</p>
-                        <p> - </p>
-                        <p style="${awayScoreStyle}">${awayScore}</p>
-                    </div>
-                    <img src="../image/major/${game.away.team}@4x.png" style="width: 3vw; height: 3vw; border-radius: 50%;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
-                    <div style="text-align: left;width:15vw;">
-                        <p style="white-space: nowrap;">${game.away.team}</p>
-                    </div>
-                    <div style="width:10vw;text-align: center;">
+                        <p style="width: 43px; margin-left:66px;">${game.time}</p>
+                        <p style="color: gray; width:74px; margin-left:81px;">${sportInfo.sport}</p>
+                        <p style="width:170px; margin-left:21.5px; text-align: right;">${game.home.team}</p>
+                   <img src="../image/major/${game.home.team}@4x.png" style="width: 40px; height: 40px;border-radius: 50%; margin-left:15px;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
+
+                        <p style="${homeScoreStyle} width:10px; margin-left:21px; font-sisze:24px;">${homeScore}</p>
+                        <p>　-　</p>
+                        <p style="${awayScoreStyle} width:10px; margin-right:20px; font-sisze:24px;">${awayScore}</p>
+
+                    <img src="../image/major/${game.away.team}@4x.png" style="width: 40px; height: 40px; border-radius: 50%; margin-right:15px;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
+                        <p style="width:170px; margin-right:76px; text-align: left;">${game.away.team}</p>
                         <p style="color: gray;">${sportInfo.location}</p>
-                    </div>
-                    <p id="status" style="margin-left: 10px; color: red;">${game.rain ? '우천취소' : ''}</p>
+                    <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             }
 

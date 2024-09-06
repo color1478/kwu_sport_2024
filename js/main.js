@@ -19,7 +19,7 @@ let currentDate = new Date();
 let currentIndex = 0;
 let sliderWidth = sliderImg.offsetWidth, // 이미지 가로 값
     dotIndex = "",
-    interval = 2000, // setInterval 컨트롤 용 (3 초)
+    interval = 3000, // setInterval 컨트롤 용 (3 초)
     sliderTimer = ""; // setInterval 컨트롤 용, 빈문자열 변수 선언해놓기
 let sliderLength = document.querySelectorAll(".slider").length;
 function init() {

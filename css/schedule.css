@@ -627,17 +627,14 @@ ul {
     align-items: center;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size:0.8em;
+    font-size:16px;
     text-overflow: ellipsis;
-    height:3vw;
-}
-
-.game-item p,
-.game-item .team,
-.game-item .score {
-    margin: 0 10px;
-    display: inline-block;
-    color: black;
+    width: 1200px;
+    height: 70px;
+    padding: 0;
+    border: 0px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
 }
 
 .game-item .teamDrop{
@@ -650,33 +647,25 @@ ul {
     cursor: pointer;
 }
 
-.game-item .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+    font-size: 13px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-.game-item .dropdown-content p {
+.dropdown-content p {
     color: black;
     text-decoration: none;
     display: block;
 }
 
-.game-item .teamDrop:hover .dropdown-content {
+.teamDrop:hover .dropdown-content {
     display: block;
 }
 /* 전체 게임 리스트 스타일 */
-
-
-/* 개별 게임 항목 스타일 */
-.game-item {
-    padding: 10px;
-    border: 0px solid;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
-}
 
 #date2{
   font-family: S-CoreDream-5Medium;
@@ -692,13 +681,7 @@ ul {
 .fa-calendar::before {
   font-size: 20px;
 }
-/* 점수 스타일 */
-.score {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #333;
-    width: 10vw;
-}
+
 
 /* 화면 크기에 따라 반응형 디자인 */
 @media (max-width: 600px) {
