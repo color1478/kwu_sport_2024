@@ -421,18 +421,17 @@ ul{
 }
 
 .round12 {
-    margin: -40px 10px 0px 0px;
+    margin: -30px 10px 0px 0px;
     font-family: S-CoreDream-5Medium;
     font-size: 9px;
     color: #000000;
     opacity: 30%;
     display: flex;
     flex-direction: row-reverse;
-    transform: translateY(10px);
 }
 
 .round45 {
-    margin: 20px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
     font-family: S-CoreDream-5Medium;
     font-size: 9px;
     color: #000000;
@@ -447,7 +446,6 @@ ul{
     font-size: 9px;
     color: #000000;
     opacity: 30%;
-    padding-top: 10px;
 }
 
 .round1011 {
@@ -486,7 +484,7 @@ ul{
     font-size: 25px;
     margin: 0;
     color: #000000;
-    opacity: 50%;
+    opacity: 70%;
 }
 
 .major p {
@@ -494,7 +492,7 @@ ul{
     font-size: 9px;
     margin: 0;
     color: #000000;
-    opacity: 50%;
+    opacity: 70%;
 }
 
 
@@ -515,17 +513,23 @@ ul{
 .round_grid {
     display: grid;
     gap: 18px;
+    height: 87px;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
-    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .round_grid1 {
     display: grid;
     gap: 18px;
+    height: 87px;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
-    margin-top: 18px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
 }
 
 .round_grid2 {
@@ -541,6 +545,18 @@ ul{
     margin: 0;
     text-align: right;
     justify-self: end;
+    width: 100px;
+}
+
+.left img {
+    height: 88px;
+    width: 88px;
+    opacity: 50%;
+    display: flex;
+    position: absolute;
+    object-fit: cover;
+    transform: translate(-50px, -21px);
+
 }
 
 .right {
@@ -549,6 +565,17 @@ ul{
     margin: 0;
     text-align: left;
     justify-self: start;
+    width: 100px;
+}
+
+.right img {
+    height: 88px;
+    width: 88px;
+    opacity: 50%;
+    display: flex;
+    position: absolute;
+    transform: translate(60px, -21px);
+    object-fit: cover;
 }
 
 
@@ -759,14 +786,3 @@ ul{
 hr {
     border-width: 0;
 }
-
-.game1 .round_grid img {
-    height: 88px;
-    width: 88px;
-    opacity: 50%;
-    display: flex;
-    position: absolute;
-    transform: translate(-100px, -18px);
-}
-
-
