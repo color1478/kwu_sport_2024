@@ -213,10 +213,19 @@ ul{
     margin-right: 20px; /* 텍스트와의 간격 */
 }
 
-.logoNtext a {
+.logoNtext p {
     font-size: 24px; /* 텍스트 크기 */
     color: #25282C; /* 텍스트 색상 */
     font-family: S-CoreDream-5Medium;
+}
+
+.logoNtext a {
+    font-size: 15px;
+    color: #3f5363;
+    font-family: S-CoreDream-4Regular;
+    margin: 7px 0 0 10px;
+    text-decoration-line: none;
+
 }
 
 .button {
