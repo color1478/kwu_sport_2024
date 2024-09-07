@@ -397,9 +397,7 @@ ul {
     align-items: center;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 0.8em;
     text-overflow: ellipsis;
-    height: 3vw;
 }
 
 .game-item p,
@@ -454,9 +452,7 @@ ul {
 /* 점수 스타일 */
 .score {
     font-weight: bold;
-    font-size: 1.2em;
     color: #333;
-    width: 10vw;
 }
 
 /* 화면 크기에 따라 반응형 디자인 -> 144px 고정이라 수정 요망*/

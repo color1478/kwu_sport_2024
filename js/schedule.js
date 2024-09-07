@@ -194,8 +194,8 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                         <p style="${awayScoreStyle} width:10px; margin-right:20px; font-sisze:24px;">${awayScore}</p>
 
                     <img src="../image/major/${game.away.team}@4x.png" style="width: 40px; height: 40px; border-radius: 50%; margin-right:15px;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
-                        <p style="width:170px; margin-right:76px; text-align: left;">${game.away.team}</p>
-                        <p style="color: gray;">${sportInfo.location}</p>
+                        <p style="width:170px; text-align: left;">${game.away.team}</p>
+                        <p style="color: gray; margin-left: 20px">${sportInfo.location}</p>
                     <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             }
