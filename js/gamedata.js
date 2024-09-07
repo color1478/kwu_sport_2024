@@ -21,21 +21,42 @@ var sportsAndLocations = {
     // 필요한 종목과 장소 추가
 };
 var games = [
-    {
-        date: "2024-09-04",
+    { // 일반 종목
+        date: "2024-09-07",
         time: "10:00",
         sportId: 2,
         home: {
             affiliation: "인문사회과학대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : true
         },
         away: {
             affiliation: "인공지능융합대학",
-            team: "소프트웨어학부"
+            team: "소프트웨어학부",
+            abstention : false
         },
-        home_score: 1,
-        away_score: 2,
+        home_score: 0,
+        away_score: 5,
         result: "원정팀 승",
+        rain: true
+    },
+    { //tft
+        date: "2024-09-07",
+        time: "10:00",
+        sportId: 9,
+        teams: [
+            { affiliation: "인공지능융합대학", team: "소프트웨어학부", rank: 1 },
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 2 },
+            { affiliation: "팀C 소속", team: "팀C", rank: 3 },
+            { affiliation: "팀D 소속", team: "팀D", rank: 4 },
+            { affiliation: "팀E 소속", team: "팀E", rank: 5 },
+            { affiliation: "팀F 소속", team: "팀F", rank: 6 },
+            { affiliation: "팀G 소속", team: "팀G", rank: 7 },
+            { affiliation: "팀H 소속", team: "팀H", rank: 8 }
+        ],
+        home_score: 3,
+        away_score: 2,
+        result: "홈팀 승",
         rain: true
     },
     {
@@ -292,25 +313,6 @@ var games = [
         away_score: 2,
         result: "홈팀 승",
         rain: false
-    },
-    {
-        date: "2024-09-04",
-        time: "10:00",
-        sportId: 9,
-        teams: [
-            { affiliation: "인공지능융합대학", team: "소프트웨어학부", rank: 1 },
-            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 2 },
-            { affiliation: "팀C 소속", team: "팀C", rank: 3 },
-            { affiliation: "팀D 소속", team: "팀D", rank: 4 },
-            { affiliation: "팀E 소속", team: "팀E", rank: 5 },
-            { affiliation: "팀F 소속", team: "팀F", rank: 6 },
-            { affiliation: "팀G 소속", team: "팀G", rank: 7 },
-            { affiliation: "팀H 소속", team: "팀H", rank: 8 }
-        ],
-        home_score: 3,
-        away_score: 2,
-        result: "홈팀 승",
-        rain: true
     },
     {
         date: "2024-08-16",

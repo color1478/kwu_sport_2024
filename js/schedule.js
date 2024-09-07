@@ -151,7 +151,6 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
             // 이긴 쪽의 점수에 파란색 스타일 적용
             const homeScoreStyle = homeScore > awayScore ? 'color: blue;' : 'color: gray;';
             const awayScoreStyle = awayScore > homeScore ? 'color: blue;' : 'color: gray;';
-
             // 특정 스포츠 형식 적용
             if (sportInfo.sport === 'TFT') {
                 let highestRankTeam = game.teams[0]; // 초기값 설정
@@ -182,11 +181,13 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                     <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             } else {
+                const homeAbstention = game.home.abstention ? 'color: red;' : 'color: black';
+                const awayAbstention = game.away.abstention ? 'color: red;' : 'color: black';
                 // 다른 스포츠의 기본 형식
                 gameItem.innerHTML = `
                         <p style="width: 43px; margin-left:66px;">${game.time}</p>
                         <p style="color: gray; width:74px; margin-left:81px;">${sportInfo.sport}</p>
-                        <p style="width:170px; margin-left:21.5px; text-align: right;">${game.home.team}</p>
+                        <p style="${homeAbstention} width:170px; margin-left:21.5px; text-align: right;">${game.home.team}</p>
                    <img src="../image/major/${game.home.team}@4x.png" style="width: 40px; height: 40px;border-radius: 50%; margin-left:15px;" onclick="filterByTeam('${game.home.team}', '${game.home.affiliation}')"/>
 
                         <p style="${homeScoreStyle} width:10px; margin-left:21px; font-sisze:24px;">${homeScore}</p>
@@ -194,8 +195,8 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                         <p style="${awayScoreStyle} width:10px; margin-right:20px; font-sisze:24px;">${awayScore}</p>
 
                     <img src="../image/major/${game.away.team}@4x.png" style="width: 40px; height: 40px; border-radius: 50%; margin-right:15px;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
-                        <p style="width:170px; text-align: left;">${game.away.team}</p>
-                        <p style="color: gray; margin-left: 20px">${sportInfo.location}</p>
+                        <p style="${awayAbstention} width:170px; text-align: left;">${game.away.team}</p>
+                        <p style="color: gray; margin-left: 100px">${sportInfo.location}</p>
                     <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             }
