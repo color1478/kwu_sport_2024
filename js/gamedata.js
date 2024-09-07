@@ -60,7 +60,7 @@ var games = [
         rain: true
     },
     {
-        date: "2024-08-03",
+        date: "2024-09-07",
         time: "10:00",
         sportId: 2,
         home: {

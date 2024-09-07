@@ -229,8 +229,12 @@ function displayCurrentGame(sportFilter = currentSport) {
                     <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             } else {
-                const homeAbstention = game.home.abstention ? 'color: red;' : 'color: black';
-                const awayAbstention = game.away.abstention ? 'color: red;' : 'color: black';
+                const homeAbstention = game.home.abstention ? 'color: red;' : homeScore > awayScore ? 'color: blue;' : 'color: black;';
+                const awayAbstention = game.away.abstention ? 'color: red;' : awayScore > homeScore ? 'color: blue;' : 'color: black;';;
+                if(homeScore > awayScore)
+                    homeAbstention = 'color: blue;';
+                if(homeScore > awayScore)
+                    awayAbstention = 'color: blue;';
                 // 다른 스포츠의 기본 형식
                 gameItem.innerHTML = `
                         <p style="width: 43px; margin-left:66px;">${game.time}</p>
@@ -244,8 +248,8 @@ function displayCurrentGame(sportFilter = currentSport) {
 
                     <img src="./image/major/${game.away.team}@4x.png" style="width: 40px; height: 40px; border-radius: 50%; margin-right:15px;" onclick="filterByTeam('${game.away.team}', '${game.away.affiliation}')"/>
                         <p style="${awayAbstention} width:170px; text-align: left;">${game.away.team}</p>
-                        <p style="color: gray; margin-left: 80px">${sportInfo.location}</p>
-                    <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
+                        <p style="color: gray; margin-left: 19px">${sportInfo.location}</p>
+                    <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : '　'}</p>
                 `;
             }
 
