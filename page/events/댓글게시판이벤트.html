@@ -39,7 +39,7 @@
     <main>
 
         <div class="comment_event">
-            <p>긁?</p>
+            <p>댓글 게시판 이벤트</p>
         </div>
 
         <div class="d_day">
@@ -61,7 +61,7 @@
                             <p>일시</p>
                         </div>
                         <div class="sub">
-                            <p>올스타전(10/7-8)</p>
+                            <p>9월 9일~</p>
                         </div>
                     </div>
                 </div>
@@ -71,10 +71,10 @@
                     </div>
                     <div class="box_comment">
                         <div class="title">
-                            <p>장소</p>
+                            <p>상품</p>
                         </div>
                         <div class="sub">
-                            <p>광운 스퀘어</p>
+                            <p>1등 2등 3등</p>
                         </div>
                     </div>
                 </div>
@@ -82,13 +82,15 @@
                     <div class="box-photo">
                         <i class="fa-solid fa-award"></i>
                     </div>
+                
                     <div class="box_comment">
                         <div class="title">
-                            <p>상품</p>
+                            <p>참여 방식</p>
                         </div>
-                        <div class="sub">
-                            <p>종목별 1등에게 치킨 기프티콘 제공</p>
+                        <div class="sub" onclick="location.href='./noticeboard.html';">
+                            <p style="color:blue">게시판 바로 가기</p>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -100,7 +102,7 @@
             </div>
             <div class="underline"></div>
             <div class="rule_comment">
-                <p>럭키 스크래치를 긁어 나오는 상품 증정</p>
+                <p>1차</p>
             </div>
         </div>
     </main>
@@ -132,11 +134,17 @@
     <script>
       let counter = document.querySelector('.counter');
       let today = new Date(),
-          dday = new Date("2024-10-07T00:00:00").getTime(),
+          dday = new Date("2024-09-09T08:00:00").getTime(),
           gap = dday - today,
           result = Math.floor(gap / (1000 * 60 * 60 * 24));
+      if (result === 0)
+      {
+        document.getElementById('countdown').innerText = `D-day`;
+      }
+      else{
+          document.getElementById('countdown').innerText = `D-${result}`
+      }
       
-      document.getElementById('countdown').innerText = `D-${result}`
   </script>
     
 </body>

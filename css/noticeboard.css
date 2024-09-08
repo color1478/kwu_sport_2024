@@ -239,7 +239,7 @@ h3{
 .btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #002BCB;
     color: white;
     border: none;
     border-radius: 5px;
@@ -247,5 +247,5 @@ h3{
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #001d85;
 }
