@@ -36,7 +36,41 @@ body {
     /* 위 패딩을 사용하여 양쪽에 여백을 추가하여 그리드 아이템이 컨테이너에 붙지 않도록 합니다 */
 }
 
+.main-view {
+    margin: auto;
+    text-align: center;
+}
 
+.main-view {
+    height:420px;
+    overflow:hidden;
+}
+
+.main-view ul {
+    width:calc(100% * 3);
+    display:flex;
+    animation:slide 20s infinite;
+} /* slide를 20초동안 진행하며 무한반복 함 */
+
+.main-view li {
+    width:calc(100% / 3);
+    height:300px;
+}
+  
+  @keyframes slide {
+    0% {margin-left:0;} /* 0 ~ 10  : 정지 */
+    10% {margin-left:0;} /* 10 ~ 25 : 변이 */
+    25% {margin-left:-100%;} /* 25 ~ 40 : 정지 */
+    40% {margin-left:-100%;} /* 40 ~ 55 : 변이 */
+    55% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+    100% {margin-left:0;}
+  }
+
+ul{
+    list-style:none;
+    padding-left:0px;
+}
 
 /* nav */
 .nav-container {
@@ -88,6 +122,7 @@ body {
     font-family: S-CoreDream-7ExtraBold;
 }
 
+
 /* contain */
 
 .banner
@@ -95,9 +130,6 @@ body {
     height: 240px;
     background-image: url("../image/banner/new배너.png");
     background-size: cover;
-}
-
-.banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,204 +149,165 @@ body {
     color: #3F474D;
 }
 
-/* main */
-main {
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  section.notice {
+    padding: 80px 0;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
-}
-
-main h1 {
-    width: 100%;
-    font-family: S-CoreDream-5Medium;
-    font-size: 25px;
-    border-bottom: 1px solid #D8DCDF;
-    margin: 60px 0 60px 0;
-    padding-bottom: 10px;
-}
-
-
-.container_main {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-    border-radius: 20px; /* 둥근 모서리 */
-}
-
-.form-control {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#post-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form_grid {
-    display: grid;
-    gap: 0;
-    grid-template-rows: 90px 90px 90px 1fr;
-}
-
-.form_grid_sec {
-    display: grid;
-    gap: 0;
-    grid-template-columns: 255px 1fr;
-    align-items: center;
-    border-bottom: 1px solid #D8DCDF;
-}
-
-.form_grid_sec p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-family: S-CoreDream-5Medium;
-    font-size: 20px;
-}
-
-/* 이름 적기 */
-.form_name {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: 24px;
-}
-
-#post-form #title {
-    display: flex;
-    font-size: 18px;
-    height: 50px;
-    width: 872px;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-    padding-left: 10px;
+  }
+  
+  .page-title {
+    margin-bottom: 60px;
+  }
+  .page-title h3 {
+    font-size: 28px;
+    color: #333333;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  
+  .board-table {
+    font-size: 16px;
     font-family: S-CoreDream-4Regular;
-    font-size: 15px;
-  }
-
-/* 학번 적기 */
-.form_studentID {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: 24px;
-
-}
-
-#post-form #writer {
-    display: flex;
-    font-size: 18px;
-    height: 50px;
-    width: 872px;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-    padding-left: 10px;
-    font-family: S-CoreDream-4Regular;
-    font-size: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
-
-  /* 응원 학과 적기 */
-.form_major {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: 24px;
-
-}
-
-  #post-form #content {
-    display: flex;
-    font-size: 18px;
-    height: 50px;
-    width: 872px;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-    padding-left: 10px;
-    font-family: S-CoreDream-4Regular;
-    font-size: 15px;
+  
+  .board-table a {
+    color: #333;
+    display: inline-block;
+    line-height: 1.4;
+    word-break: break-all;
+    vertical-align: middle;
   }
-
-  /* 내용 적기 */
-.form_text {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: 24px;
-
-}
-
-#post-form #author {
-    font-size: 18px;
-    width: 872px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-    background-color: #EDEFF1;
-    padding: 10px 0 0 10px;
-    resize: vertical; /* 수직으로 크기 조정 가능 */
-    margin: 30px 0 30px 0;
-    font-family: S-CoreDream-4Regular;
-    font-size: 15px;
+  .board-table a:hover {
+    text-decoration: underline;
   }
-
-  #submit-btn {
-    display: flex;
-    font-family: S-CoreDream-5Medium;
-    font-size: 15px;
-    border: 1px solid #002BCB;
-    background-color: #F3F9FF;
-    margin: 0 8px 0 8px;
-    border-radius: 15px;
-    color: #002BCB;
-    padding: 8px 14px 8px 14px;
+  .board-table th {
+    text-align: center;
   }
-
-.form_button {
-   display: flex;
-   justify-content: center;
-   flex-direction: row;
-   margin: 20px 0 20px 0;
-}
-
-.form_button a{
-    display: flex;
-    font-family: S-CoreDream-5Medium;
+  
+  .board-table .th-num {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .board-table .th-date {
+    width: 200px;
+  }
+  
+  .board-table th, .board-table td {
+    padding: 14px 0;
+  }
+  
+  .board-table tbody td {
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+  }
+  
+  .board-table tbody th {
+    padding-left: 28px;
+    padding-right: 14px;
+    border-top: 1px solid #e7e7e7;
+    text-align: left;
+  }
+  
+  .board-table tbody th p{
+    display: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0 30px;
     font-size: 15px;
-    border: 1px solid #000000;
-    background-color: #FFFFFF;
-    margin: 0 8px 0 8px;
-    border-radius: 15px;
-    color: #3F474D;
-    padding: 8px 14px 8px 14px;
+    font-weight: 400;
+    background: transparent;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .btn-dark {
+    background: #555;
+    color: #fff;
+  }
+  
+  .btn-dark:hover, .btn-dark:focus {
+    background: #373737;
+    border-color: #373737;
+    color: #fff;
+  }
+  
+  .btn-dark {
+    background: #555;
+    color: #fff;
+  }
+  
+  .btn-dark:hover, .btn-dark:focus {
+    background: #373737;
+    border-color: #373737;
+    color: #fff;
+  }
+  
+  /* reset */
+  
+  * {
+    list-style: none;
     text-decoration: none;
- }
-
-.warning {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .container {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 20px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
+  }
+  .blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+  }
+  
 
-.warning p {
-    color: #FF0000;
-    font-family: S-CoreDream-5Medium;
-    font-size: 15px;
-    margin: 0;
-}
-
-
+  
 /* footer */
 .footer {
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;
-    color: hsl(205, 11%, 60%); /* 텍스트 색상 설정 */
-    margin-top: 119px;
+    color: #8D9AA3; /* 텍스트 색상 설정 */
+
+    margin-top: 200px;
     
 }
 
@@ -369,6 +362,9 @@ main h1 {
     margin: auto;
 }
 
+thead tr {
+    background-color: #e7e7e7;
+}
 
 /* 폰트 전체 속성 변경 */
 
@@ -382,4 +378,5 @@ h2{
 
 h3{
     font-weight: normal;
+    font-family: S-CoreDream-5Medium;
 }
