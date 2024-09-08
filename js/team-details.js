@@ -46,6 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (imgElement) {
         imgElement.src = `../../../image/major/${majorName}@4x.png`;
         imgElement.alt = `${majorName} Logo`;
+    
+        // 이미지 로드 실패 시 대체 이미지 설정
+        imgElement.onerror = function() {
+            imgElement.src = '../../../image/연촌 로고.png';
+        };
     }
 
     // 학부 이름 및 정보 설정
