@@ -182,11 +182,7 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                 `;
             } else {
                 const homeAbstention = game.home.abstention ? 'color: red;' : homeScore > awayScore ? 'color: blue;' : 'color: black;';
-                const awayAbstention = game.away.abstention ? 'color: red;' : awayScore > homeScore ? 'color: blue;' : 'color: black;';;
-                if(homeScore > awayScore)
-                    homeAbstention = 'color: blue;';
-                if(homeScore > awayScore)
-                    awayAbstention = 'color: blue;';
+                const awayAbstention = game.away.abstention ? 'color: red;' : awayScore > homeScore ? 'color: blue;' : 'color: black;';
                 // 다른 스포츠의 기본 형식
                 gameItem.innerHTML = `
                         <p style="width: 43px; margin-left:66px;">${game.time}</p>
@@ -289,8 +285,8 @@ document.getElementById('calendarButton').addEventListener('click', function () 
         const rect = this.getBoundingClientRect();
         popup.style.top = `${rect.bottom + window.scrollY}px`;
         popup.style.left = `${rect.left}px`;
-
-        const today = new Date();
+        
+        const today = currentDate;
         currentYear = today.getFullYear();
         currentMonth = today.getMonth();
 

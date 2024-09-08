@@ -65,11 +65,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "공과대학",
-            team: "화학공학과"
+            team: "화학공학과",
+            abstention : true
         },
         away: {
             affiliation: "자연과학대학",
-            team: "화학과"
+            team: "화학과",
+            abstention : false
         },
         home_score: 0,
         away_score: 3,
@@ -82,11 +84,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "경영대학",
-            team: "경영학부"
+            team: "경영학부",
+            abstention : false
         },
         away: {
             affiliation: "인문사회과학대학",
-            team: "영어산업학과"
+            team: "영어산업학과",
+            abstention : false
         },
         home_score: 1,
         away_score: 2,
@@ -99,11 +103,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "정책법학대학",
-            team: "행정학과"
+            team: "행정학과",
+            abstention : false
         },
         away: {
             affiliation: "자연과학대학",
-            team: "수학과"
+            team: "수학과",
+            abstention : false
         },
         home_score: 2,
         away_score: 2,
@@ -116,11 +122,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "인공지능융합대학",
-            team: "소프트웨어학부"
+            team: "소프트웨어학부",
+            abstention : false
         },
         away: {
             affiliation: "전자정보공과대학",
-            team: "전자공학과"
+            team: "전자공학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 1,
@@ -133,11 +141,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "자연과학대학",
-            team: "물리학과"
+            team: "물리학과",
+            abstention : false
         },
         away: {
             affiliation: "공과대학",
-            team: "기계공학과"
+            team: "기계공학과",
+            abstention : false
         },
         home_score: 1,
         away_score: 4,
@@ -150,11 +160,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "경영대학",
-            team: "회계학과"
+            team: "회계학과",
+            abstention : false
         },
         away: {
             affiliation: "정책법학대학",
-            team: "법학과"
+            team: "법학과",
+            abstention : false
         },
         home_score: 0,
         away_score: 0,
@@ -167,11 +179,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "인문사회과학대학",
-            team: "사회학과"
+            team: "사회학과",
+            abstention : false
         },
         away: {
             affiliation: "자연과학대학",
-            team: "생물학과"
+            team: "생물학과",
+            abstention : false
         },
         home_score: 2,
         away_score: 3,
@@ -184,11 +198,13 @@ var games = [
         sportId: 1,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -201,11 +217,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -218,11 +236,13 @@ var games = [
         sportId: 3,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -235,11 +255,13 @@ var games = [
         sportId: 4,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -252,11 +274,13 @@ var games = [
         sportId: 5,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -269,11 +293,13 @@ var games = [
         sportId: 6,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -286,11 +312,13 @@ var games = [
         sportId: 7,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -303,11 +331,13 @@ var games = [
         sportId: 8,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -320,11 +350,13 @@ var games = [
         sportId: 10,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -337,11 +369,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "공과대학",
-            team: "미디어커뮤니케이션학부"
+            team: "미디어커뮤니케이션학부",
+            abstention : false
         },
         away: {
             affiliation: "경영대학",
-            team: "마케팅학과"
+            team: "마케팅학과",
+            abstention : false
         },
         home_score: 3,
         away_score: 2,
@@ -354,11 +388,13 @@ var games = [
         sportId: 10,
         home: {
             affiliation: "자연과학대학",
-            team: "스포츠융합과학과"
+            team: "스포츠융합과학과",
+            abstention : false
         },
         away: {
             affiliation: "인공지능융합대학",
-            team: "정보융합학부"
+            team: "정보융합학부",
+            abstention : false
         },
         home_score: '-',
         away_score: '-',
@@ -371,11 +407,13 @@ var games = [
         sportId: 2,
         home: {
             affiliation: "공과대학",
-            team: "건축학과"
+            team: "건축학과",
+            abstention : false
         },
         away: {
             affiliation: "인공지능융합대학",
-            team: "소프트웨어학부"
+            team: "소프트웨어학부",
+            abstention : false
         },
         home_score: 3,
         away_score: 23,
