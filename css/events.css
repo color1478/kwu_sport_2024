@@ -154,7 +154,6 @@ main {
     text-align: center;
     box-sizing: border-box;
     transition: transform 0.2s;
-    background-image: url("../image/승부예측.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
