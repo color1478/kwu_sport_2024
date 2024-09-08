@@ -182,25 +182,29 @@ ul{
 .ptype {
     display: flex;
     justify-content: space-between;
-    
 }
-
+.banner-message{
+    width: 1200px;
+}
+.banner-message img{
+    float:left;
+}
 .banner-message p{
     margin:0%;
     font-family: S-CoreDream-5Medium;
     font-size: 50px;
     color: #0B2FA4;
-    
+    display: inline;
 }
 
-.banner-message h3{
-    display: flex;
+.banner-message span{
+    display: inline;
     margin:0%;
     font-family: S-CoreDream-5Medium;
     font-size: 19px;
     color: #5A666F;
     margin-top: -50px;
-    padding: 21px 11px 0px 30px;
+    padding: 21px 11px 0px 11px;
 }
 
 .banner-heart{
