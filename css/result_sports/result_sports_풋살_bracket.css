@@ -149,7 +149,7 @@ ul{
 .contain.selected {
     color: #002BCB;
     border-bottom: 3px solid #002BCB; /* 선택된 상태일 때의 border */
-    cursor: default; /* 선택된 상태에서는 기본 커서로 변경 */
+    cursor: default; /* 선택된 상태에서는 기본 커서로 변경 *
 }
 
 .selection .contain:not(.selected) {
@@ -301,6 +301,7 @@ ul{
     width: 100%;
     padding: 0px;
 }
+
 .sport-link-all:hover img {
     content: url('../../image/전체-hover픽토그램.png'); /* 전체 호버 이미지 */
 }
@@ -335,6 +336,34 @@ ul{
     content: url('../../image/FC 온라인-hover픽토그램.png'); /* 농구 호버 이미지 */
 }
 
+/* 예선 순위 및 결선 토너먼트 */
+
+.select-2type{
+    max-width: 1200px;
+    margin: 16px auto;
+}
+
+.type-button {
+    width: 100%;
+    display: flex;
+}
+
+.type-button a{
+    font-family: S-CoreDream-7ExtraBold;
+    font-size: 16px;
+    color: #3F474D;
+    text-decoration-line: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding:8px 14px 8px 14px;
+    margin-right: 16px;
+}
+
+#click {
+    color: #002BCB;
+    border: 1px solid #002BCB;
+    background-color: #F3F9FF;
+}
 
 
 .stage {
@@ -356,6 +385,7 @@ ul{
     display: flex;
     justify-content: center;
 }
+
 
 
 /* match -> 큰 틀 숫자 -> 경기 위치 작은 수 부터 멀리 존재 */
@@ -418,6 +448,8 @@ ul{
     opacity : 0.8;
     border: 0.2px solid #000000;
     border-radius: 15px;
+    position: relative;
+    z-index: 2;
 }
 
 .round12 {
@@ -582,7 +614,6 @@ ul{
 /* 대진표 검은줄 */
 .underline {
     border: 0;
-    background-color: #000000;
 }
 
 /* bet -> 가장자리로 보내기 */
@@ -633,7 +664,7 @@ ul{
 .underline_long {
     height: 1px;
     width: 50px;
-    transform:translateY(45px);
+    transform:translateY(48px);
     border: 1px solid #000000;
 
 }
@@ -743,8 +774,8 @@ ul{
 /* 1사단 match3에서 중심축1 match4까지 세로줄 */
 .contain6 {
     border: 1px solid #000000;
-    height: 276px;
-    margin-top: -285px;
+    height: 269px;
+    margin-top: -280px;
 }
 
 /* 중심축 1에서 2까지 */
@@ -754,22 +785,7 @@ ul{
     margin-bottom: -100px;
 }
 
-/* 중심축 2에서 3까지 */
-.contain8 {
-    border: 1px solid #000000;
-    height: 100px;
-    margin-bottom: -100px;
-    margin-top: -10px;
-}
 
-/* 중심축 3에서 2사단 match3까지 */
-.contain9 {
-    border: 1px solid #000000;
-    height: 290px;
-    margin-bottom: -287px;
-    position: relative;
-    z-index: 2;
-}
 
 /* border 사라지게 하는 위치 */
 .bleft {
@@ -789,10 +805,12 @@ ul{
 }
 
 /* footer */
+
 .footer {
     background-color: #EDEFF1; /* 배경색 설정 */
     padding: 35px 35px;
     color: #8D9AA3; /* 텍스트 색상 설정 */
+    margin-top: 100px;
     
 }
 
@@ -845,8 +863,4 @@ ul{
     font-size: 14px;
     font-family: S-CoreDream-4Regular;
     margin: auto;
-}
-
-hr {
-    border-width: 0;
 }
