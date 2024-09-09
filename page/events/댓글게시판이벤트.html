@@ -32,14 +32,14 @@
 
     <!-- 메인 콘텐츠 섹션 -->
     <div class = "banner">
-        <h1>댓글 게시판 이벤트</h1>
+        <h1>응원 게시판 이벤트</h1>
         <p>응원하는 댓글을 작성해주세요!</p>
     </div>
 
     <main>
 
         <div class="comment_event">
-            <p>댓글 게시판 이벤트</p>
+            <p>응원 게시판 이벤트</p>
         </div>
 
         <div class="d_day">
@@ -61,7 +61,7 @@
                             <p>일시</p>
                         </div>
                         <div class="sub">
-                            <p>9월 9일~</p>
+                            <p>9월 9일 20:00 ~ 10월 4일 18:00</p>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                             <p>상품</p>
                         </div>
                         <div class="sub">
-                            <p>1등 2등 3등</p>
+                            <p>컴포즈 1500원 쿠폰 (15명)</p>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,20 @@
             </div>
             <div class="underline"></div>
             <div class="rule_comment">
-                <p>1차</p>
+                <br>
+                <p>당첨자 확률 올리기</p>
+                
+                <hr>
+                <p>인스타그램을 통해 해당 게시물 공유 & 홈페이지 링크 추가</p>
+                <p style="font-size:20px">*여러 번 공유해도 응모 수는 최소 한 번 증가</p>
+
+                <br>
+                <p>당첨자 발표 일자</p>
+                <hr>
+                <p>10월 5일 00:00</p>
+                
+
+
             </div>
         </div>
     </main>
@@ -134,7 +147,7 @@
     <script>
       let counter = document.querySelector('.counter');
       let today = new Date(),
-          dday = new Date("2024-09-09T08:00:00").getTime(),
+          dday = new Date("2024-09-09T20:00:00").getTime(),
           gap = dday - today,
           result = Math.floor(gap / (1000 * 60 * 60 * 24));
       if (result === 0)
