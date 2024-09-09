@@ -94,7 +94,1325 @@ var games = [
         },
         home_score: '4',
         away_score: '1',
-        result: "",
+        result: "-",
+        rain: false
+    },
+
+
+
+
+
+    //          풋살            //
+    //날짜 기권패 시간 수정해야됨
+    {
+        date: "2024-09-10",
+        time: "1교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "2교시",
+        sportId: 1,
+        home: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "3교시",
+        sportId: 1,
+        home: {
+            affiliation: "공과대학",
+            team: "화학공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "4교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "5교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "6교시",
+        sportId: 1,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "1교시",
+        sportId: 1,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "2교시",
+        sportId: 1,
+        home: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "3교시",
+        sportId: 1,
+        home: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "4교시",
+        sportId: 1,
+        home: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "5교시",
+        sportId: 1,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "6교시",
+        sportId: 1,
+        home: {
+            affiliation: "정책법학대학",
+            team: "법학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "1교시",
+        sportId: 1,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "2교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "3교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "4교시",
+        sportId: 1,
+        home: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "5교시",
+        sportId: 1,
+        home: {
+            affiliation: "공과대학",
+            team: "화학공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "6교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "7교시",
+        sportId: 1,
+        home: {
+            affiliation: "정책법학대학",
+            team: "법학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "3교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "4교시",
+        sportId: 1,
+        home: {
+            affiliation: "경영대학",
+            team: "국제통상학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "5교시",
+        sportId: 1,
+        home: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "6교시",
+        sportId: 1,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "1교시",
+        sportId: 1,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "2교시",
+        sportId: 1,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "3교시",
+        sportId: 1,
+        home: {
+            affiliation: "정책법학대학",
+            team: "행정학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "4교시",
+        sportId: 1,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "5교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "6교시",
+        sportId: 1,
+        home: {
+            affiliation: "정책법학대학",
+            team: "행정학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "7교시",
+        sportId: 1,
+        home: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "3교시",
+        sportId: 1,
+        home: {
+            affiliation: "공과대학",
+            team: "화학공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "4교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "5교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "6교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-24",
+        time: "2교시",
+        sportId: 1,
+        home: {
+            affiliation: "경영대학",
+            team: "국제통상학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "3교시",
+        sportId: 1,
+        home: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "4교시",
+        sportId: 1,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "5교시",
+        sportId: 1,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+
+
+
+
+
+
+
+
+
+    //-----------------------------------//    
+    //          농구            //
+    {
+        date: "2024-09-13",
+        time: "1교시",
+        sportId: 2,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "2교시",
+        sportId: 2,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "3교시",
+        sportId: 2,
+        home: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "4교시",
+        sportId: 2,
+        home: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "5교시",
+        sportId: 2,
+        home: {
+            affiliation: "정책법학대학",
+            team: "법학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "6교시",
+        sportId: 2,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "행정학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "7교시",
+        sportId: 2,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "1교시",
+        sportId: 2,
+        home: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "2교시",
+        sportId: 2,
+        home: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "화학공학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "3교시",
+        sportId: 2,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "4교시",
+        sportId: 2,
+        home: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "5교시",
+        sportId: 2,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "6교시",
+        sportId: 2,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "경영대학",
+            team: "국제통상학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "7교시",
+        sportId: 2,
+        home: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+
+
+
+
+
+
+
+
+
+    //----------------------------------//
+    //          피구            //
+    {
+        date: "2024-09-09",
+        time: "1교시",
+        sportId: 3,
+        home: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-09",
+        time: "2교시",
+        sportId: 3,
+        home: {
+            affiliation: "공과대학",
+            team: "화학공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "행정학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-09",
+        time: "3교시",
+        sportId: 3,
+        home: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-09",
+        time: "4교시",
+        sportId: 3,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-09",
+        time: "7교시",
+        sportId: 3,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "1교시",
+        sportId: 3,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "경영대학",
+            team: "국제통상학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "2교시",
+        sportId: 3,
+        home: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "3교시",
+        sportId: 3,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "4교시",
+        sportId: 3,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "5교시",
+        sportId: 3,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "6교시",
+        sportId: 3,
+        home: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "7교시",
+        sportId: 3,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "4교시",
+        sportId: 3,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "법학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "7교시",
+        sportId: 3,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //-----------------------------------//
+    //          볼링            //
+    //-----------------------------------//
+    { // 4교시 경기
+        date: "2024-09-09",
+        time: "3교시",
+        sportId: 4,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자바이오물리학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
         rain: false
     },
     { // 4교시 경기
@@ -111,8 +1429,8 @@ var games = [
             team: "국제통상학부",
             abstention: false
         },
-        home_score: '526',
-        away_score: '244',
+        home_score: '-',
+        away_score: '-',
         result: "-",
         rain: false
     },
@@ -130,9 +1448,9 @@ var games = [
             team: "국제학부",
             abstention: false
         },
-        home_score: '475',
-        away_score: '606',
-        result: "",
+        home_score: '-',
+        away_score: '-',
+        result: "-",
         rain: false
     },
     { // 6교시 경기
@@ -149,12 +1467,1336 @@ var games = [
             team: "건축공학과",
             abstention: false
         },
-        home_score: '506',
-        away_score: '588',
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "3교시",
+        sportId: 4,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "4교시",
+        sportId: 4,
+        home: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "5교시",
+        sportId: 4,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "6교시",
+        sportId: 4,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "3교시",
+        sportId: 4,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "4교시",
+        sportId: 4,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "5교시",
+        sportId: 4,
+        home: {
+            affiliation: "정책법학대학",
+            team: "행정학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "6교시",
+        sportId: 4,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "3교시",
+        sportId: 4,
+        home: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "4교시",
+        sportId: 4,
+        home: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
         result: "-",
         rain: false
     },
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //          족구            //
+    {
+        date: "2024-09-10",
+        time: "1교시",
+        sportId: 5,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "2교시",
+        sportId: 5,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "3교시",
+        sportId: 5,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "4교시",
+        sportId: 5,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "5교시",
+        sportId: 5,
+        home: {
+            affiliation: "경영대학",
+            team: "국제통상학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "법학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "6교시",
+        sportId: 5,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "7교시",
+        sportId: 5,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "1교시",
+        sportId: 5,
+        home: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "2교시",
+        sportId: 5,
+        home: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "행정학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "3    교시",
+        sportId: 5,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "4교시",
+        sportId: 5,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "5교시",
+        sportId: 5,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "화학공학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "6교시",
+        sportId: 5,
+        home: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "7교시",
+        sportId: 5,
+        home: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+
+
+
+
+
+
+
+
+
+
+    //----------------------------------//
+    //          탁구            //
+    {
+        date: "2024-09-09",
+        time: "2교시",
+        sportId: 6,
+        home: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-10",
+        time: "1교시",
+        sportId: 6,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "2교시",
+        sportId: 6,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "1교시",
+        sportId: 6,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "2교시",
+        sportId: 6,
+        home: {
+            affiliation: "정책법학대학",
+            team: "행정학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "법학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "2교시",
+        sportId: 6,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-23",
+        time: "2교시",
+        sportId: 6,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "1교시",
+        sportId: 6,
+        home: {
+            affiliation: "경영대학",
+            team: "국제통상학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "2교시",
+        sportId: 6,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "3교시",
+        sportId: 6,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "4교시",
+        sportId: 6,
+        home: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "5교시",
+        sportId: 6,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "6교시",
+        sportId: 6,
+        home: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "화학공학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "7교시",
+        sportId: 6,
+        home: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    //--------------------------------------//
+    //          롤          //
+    {
+        date: "2024-09-11",
+        time: "1교시",
+        sportId: 8,
+        home: {
+            affiliation: "경영대학",
+            team: "국제통상학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "2교시",
+        sportId: 8,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "3교시",
+        sportId: 8,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "행정학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "4교시",
+        sportId: 8,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "1교시",
+        sportId: 8,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "2교시",
+        sportId: 8,
+        home: {
+            affiliation: "공과대학",
+            team: "화학공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "3교시",
+        sportId: 8,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "4교시",
+        sportId: 8,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "1교시",
+        sportId: 8,
+        home: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "법학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "2교시",
+        sportId: 8,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "3교시",
+        sportId: 8,
+        home: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "1교시",
+        sportId: 8,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "2교시",
+        sportId: 8,
+        home: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-20",
+        time: "3교시",
+        sportId: 8,
+        home: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //--------------------------------//
+    //          FC온라인            //
+    {
+        date: "2024-09-11",
+        time: "5교시",
+        sportId: 8,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "6교시",
+        sportId: 8,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "국어국문학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-11",
+        time: "7교시",
+        sportId: 8,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "미디어커뮤니케이션학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "5교시",
+        sportId: 8,
+        home: {
+            affiliation: "자연과학대학",
+            team: "수학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "6교시",
+        sportId: 8,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-13",
+        time: "7교시",
+        sportId: 8,
+        home: {
+            affiliation: "경영대학",
+            team: "국제통상학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "4교시",
+        sportId: 8,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전기공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "5교시",
+        sportId: 8,
+        home: {
+            affiliation: "정책법학대학",
+            team: "행정학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "6교시",
+        sportId: 8,
+        home: {
+            affiliation: "공과대학",
+            team: "화학공학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-19",
+        time: "7교시",
+        sportId: 8,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "환경공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "4교시",
+        sportId: 8,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "5교시",
+        sportId: 8,
+        home: {
+            affiliation: "인문사회과학대학",
+            team: "동북아문화산업학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "산업심리학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "6교시",
+        sportId: 8,
+        home: {
+            affiliation: "공과대학",
+            team: "건축학과",
+            abstention: true
+        },
+        away: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "7교시",
+        sportId: 8,
+        home: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "정책법학대학",
+            team: "법학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
@@ -178,5 +2820,5 @@ var games = [
         result: "홈팀 승",
         rain: true
     },
-   
+
 ];
