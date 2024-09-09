@@ -278,8 +278,13 @@ h3{
 
 .user{
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 60px;
+    display: flex;
+}
+.sud {
+    display: flex;
+    justify-content: center;
 }
 
 #submitBtn {
