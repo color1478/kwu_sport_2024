@@ -2,24 +2,26 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>학과별 투표율</title>
-    <link rel="stylesheet" href="../../css/events_details.css">
+    <title>조별 학과 선택 비율</title>
     <meta name="viewport" content="width=1440">
+    <link rel="stylesheet" href="../../css/voterate.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <main>
-        <h1>학과별 투표율</h1>
+        <h1>조별 학과 선택 비율</h1>
         <div id="results"></div>
     </main>
 
+    <!-- Firebase 초기화 스크립트 -->
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
 
     <script>
-
+        // Firebase 초기화
         const firebaseConfig = {
-            piKey: "AIzaSyC86MO6Ar7wKb_5m-G3F64mtp7VosC27oQ",
+          apiKey: "YOUR_API_KEY",
           authDomain: "kwu-sport.firebaseapp.com",
           databaseURL: "https://kwu-sport-default-rtdb.firebaseio.com/",
           projectId: "kwu-sport",
@@ -33,36 +35,110 @@
 
         async function getVoteRates() {
             const resultsDiv = document.getElementById('results');
-            let totalVotes = 0;
-            const departmentVotes = {};
 
+            // 각 조의 학과별 선택 수를 저장할 객체
+            const groupVotes = {
+                A: { total: 0, majors: { '로봇학부': 0, '전자재료공학과': 0, '전기공학과': 0, '수학과': 0 } },
+                B: { total: 0, majors: { '법학부': 0, '행정학과': 0, '전자통신공학과': 0, '정보융합학부': 0 } },
+                C: { total: 0, majors: { '화학과': 0, '전자공학과': 0, '산업심리학과': 0, '경영학부': 0 } },
+                D: { total: 0, majors: { '전자융합공학과': 0, '국제통상학부': 0, '동북아문화산업학부': 0, '국어국문학과': 0 } },
+                E: { total: 0, majors: { '반도체시스템공학부': 0, '환경공학과': 0, '건축공학과': 0, '미디어커뮤니케이션학부': 0 } },
+                F: { total: 0, majors: { '스포츠융합과학과': 0, '컴퓨터정보공학부': 0, '국제학부': 0, '전자바이오물리학과': 0 } },
+                G: { total: 0, majors: { '화학공학과': 0, '영어산업학과': 0, '건축학과': 0, '소프트웨어학부': 0 } },
+            };
+
+            // Firestore에서 모든 투표 데이터를 가져오기
             const snapshot = await db.collection('selections').get();
 
-
+            // 각 조별 학과 선택 수 계산
             snapshot.forEach((doc) => {
                 const data = doc.data();
-                const majors = [data.majorA, data.majorB, data.majorC, data.majorD, data.majorE, data.majorF, data.majorG];
 
-                majors.forEach((major) => {
-                    if (major !== "선택 안 됨") {
-                        if (departmentVotes[major]) {
-                            departmentVotes[major]++;
-                        } else {
-                            departmentVotes[major] = 1;
+                // 각 조의 학과 선택에 따라 카운팅
+                if (data.majorA && groupVotes.A.majors[data.majorA] !== undefined) {
+                    groupVotes.A.majors[data.majorA]++;
+                    groupVotes.A.total++;
+                }
+                if (data.majorB && groupVotes.B.majors[data.majorB] !== undefined) {
+                    groupVotes.B.majors[data.majorB]++;
+                    groupVotes.B.total++;
+                }
+                if (data.majorC && groupVotes.C.majors[data.majorC] !== undefined) {
+                    groupVotes.C.majors[data.majorC]++;
+                    groupVotes.C.total++;
+                }
+                if (data.majorD && groupVotes.D.majors[data.majorD] !== undefined) {
+                    groupVotes.D.majors[data.majorD]++;
+                    groupVotes.D.total++;
+                }
+                if (data.majorE && groupVotes.E.majors[data.majorE] !== undefined) {
+                    groupVotes.E.majors[data.majorE]++;
+                    groupVotes.E.total++;
+                }
+                if (data.majorF && groupVotes.F.majors[data.majorF] !== undefined) {
+                    groupVotes.F.majors[data.majorF]++;
+                    groupVotes.F.total++;
+                }
+                if (data.majorG && groupVotes.G.majors[data.majorG] !== undefined) {
+                    groupVotes.G.majors[data.majorG]++;
+                    groupVotes.G.total++;
+                }
+            });
+
+            // 각 조별 학과 선택 비율 차트 그리기 (원형 차트)
+            Object.keys(groupVotes).forEach(group => {
+                const groupData = groupVotes[group];
+                const groupContainer = document.createElement('div');
+                groupContainer.innerHTML = `<h2>${group}조</h2><canvas id="chart-${group}"></canvas>`;
+                resultsDiv.appendChild(groupContainer);
+
+                // 차트를 그릴 데이터 생성
+                const majorNames = Object.keys(groupData.majors);
+                const majorCounts = majorNames.map(major => groupData.majors[major]);
+
+                // 차트 생성 (원형 차트)
+                const ctx = document.getElementById(`chart-${group}`).getContext('2d');
+                new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: majorNames,
+                        datasets: [{
+                            label: `${group}조 학과 선택 비율`,
+                            data: majorCounts,
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            tooltip: {
+                                callbacks: {
+                                    label: function(tooltipItem) {
+                                        const count = majorCounts[tooltipItem.dataIndex];
+                                        const percentage = groupData.total ? ((count / groupData.total) * 100).toFixed(2) : 0;
+                                        return `${tooltipItem.label}: ${percentage}% (${count}명)`;
+                                    }
+                                }
+                            }
                         }
-                        totalVotes++;
                     }
                 });
             });
-
-            for (const [department, votes] of Object.entries(departmentVotes)) {
-                const voteRate = ((votes / totalVotes) * 100).toFixed(2); // 백분율로 계산
-                const resultItem = document.createElement('p');
-                resultItem.textContent = `${department}: ${voteRate}% (${votes} votes)`;
-                resultsDiv.appendChild(resultItem);
-            }
         }
 
+        // 페이지 로드 시 투표율 계산 및 표시
         window.onload = getVoteRates;
     </script>
 </body>

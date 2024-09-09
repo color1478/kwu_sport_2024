@@ -1,0 +1,17 @@
+canvas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 200px;
+    height: 200px;;
+}
+
+#chart-A {
+    width: 100px;
+}
+
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
