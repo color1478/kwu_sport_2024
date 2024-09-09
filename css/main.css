@@ -1058,3 +1058,9 @@ p {
 .active {
     display: block; /* 현재 활성화된 슬라이드만 표시 */
 }
+
+
+.company-logo {
+
+    justify-items: center;
+}
