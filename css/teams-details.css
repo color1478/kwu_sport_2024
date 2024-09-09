@@ -152,8 +152,8 @@ ul{
     font-size: 20px;
     color: #25282C;
     padding-left: 2%;
-    padding-right: 87%;
     text-decoration-line: none;
+    display: flex;
 }
 
 .banner-contain img{

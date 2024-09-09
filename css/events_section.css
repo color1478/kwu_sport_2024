@@ -251,6 +251,18 @@ main {
     margin-top: 36px;
 }
 
+.rule_comment a {
+    font-family: S-CoreDream-4Regular;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 14px 8px 14px;
+    border: 1px solid #002BCB;
+    border-radius: 15px;
+    background-color: #F3F9FF;
+    color: #002BCB;
+}
+
+
 
 /* footer */
 .footer {
