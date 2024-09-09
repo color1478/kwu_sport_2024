@@ -380,7 +380,7 @@ button.heart .heart-icon {
 
 .member-grid{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, auto);
     gap: 28px;
     justify-content: space-between;
     align-items: center;

@@ -54,8 +54,8 @@ var games = [
             team: "행정학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '10',
+        away_score: '1',
         result: "-",
         rain: false
     },
@@ -73,8 +73,8 @@ var games = [
             team: "전자공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '0',
+        away_score: '5',
         result: "-",
         rain: false
     },
@@ -92,8 +92,8 @@ var games = [
             team: "국제통상학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '4',
+        away_score: '1',
         result: "",
         rain: false
     },
@@ -111,8 +111,8 @@ var games = [
             team: "국제통상학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '526',
+        away_score: '244',
         result: "-",
         rain: false
     },
@@ -130,8 +130,8 @@ var games = [
             team: "국제학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '475',
+        away_score: '606',
         result: "",
         rain: false
     },
@@ -149,8 +149,8 @@ var games = [
             team: "건축공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '506',
+        away_score: '588',
         result: "-",
         rain: false
     },
