@@ -238,48 +238,62 @@
             const db = firebase.firestore();
     </script>
 
-    <script>
-        document.getElementById("submitBtn").addEventListener("click", function() {
-             // 이름과 학번 값 가져오기
-          const name = document.getElementById('name').value;
-          const studentId = document.getElementById('studentId').value;
-          const phonenumber = document.getElementById('phonenumber').value;
-          // 각 조에서 선택된 값 가져오기
-          const majorA = document.querySelector('input[name="majorA"]:checked')?.value;
-          const majorB = document.querySelector('input[name="majorB"]:checked')?.value;
-          const majorC = document.querySelector('input[name="majorC"]:checked')?.value;
-          const majorD = document.querySelector('input[name="majorD"]:checked')?.value;
-          const majorE = document.querySelector('input[name="majorE"]:checked')?.value;
-          const majorF = document.querySelector('input[name="majorF"]:checked')?.value;
-          const majorG = document.querySelector('input[name="majorG"]:checked')?.value;
-          
-          if (!name || !studentId || !phonenumber) {
+<script>
+    document.getElementById("submitBtn").addEventListener("click", function() {
+        // 이름과 학번 값 가져오기
+        const name = document.getElementById('name').value;
+        const studentId = document.getElementById('studentId').value;
+        const phonenumber = document.getElementById('phonenumber').value;
+        // 각 조에서 선택된 값 가져오기
+        const majorA = document.querySelector('input[name="majorA"]:checked')?.value;
+        const majorB = document.querySelector('input[name="majorB"]:checked')?.value;
+        const majorC = document.querySelector('input[name="majorC"]:checked')?.value;
+        const majorD = document.querySelector('input[name="majorD"]:checked')?.value;
+        const majorE = document.querySelector('input[name="majorE"]:checked')?.value;
+        const majorF = document.querySelector('input[name="majorF"]:checked')?.value;
+        const majorG = document.querySelector('input[name="majorG"]:checked')?.value;
+
+        // 필수 항목 검사
+        if (!name || !studentId || !phonenumber) {
             alert("이름과 학번, 전화번호를 입력해 주세요.");
             return;
         }
 
+        // 데이터베이스에 입력하기 전에 기존 데이터 존재 여부 확인
+        db.collection("selections").where("studentId", "==", studentId)
+            .get()
+            .then((querySnapshot) => {
+                if (!querySnapshot.empty) {
+                    // 이미 해당 studentId로 입력된 데이터가 있는 경우
+                    alert("이미 이 학번으로 입력된 데이터가 있습니다.");
+                } else {
+                    // 데이터가 없을 경우 새로 저장
+                    db.collection("selections").add({
+                        name: name,
+                        studentId: studentId,
+                        phonenumber: phonenumber,
+                        majorA: majorA || "선택 안 됨",
+                        majorB: majorB || "선택 안 됨",
+                        majorC: majorC || "선택 안 됨",
+                        majorD: majorD || "선택 안 됨",
+                        majorE: majorE || "선택 안 됨",
+                        majorF: majorF || "선택 안 됨",
+                        majorG: majorG || "선택 안 됨",
+                        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+                    }).then(() => {
+                        alert("선택이 저장되었습니다!");
+                        location.href = "./승부예측소개.html";
+                    }).catch((error) => {
+                        console.error("Error adding document: ", error);
+                    });
+                }
+            })
+            .catch((error) => {
+                console.error("Error checking document: ", error);
+            });
+    });
+</script>
 
-          // 데이터베이스에 저장
-          db.collection("selections").add({
-            name: name,
-            studentId: studentId,
-            phonenumber: phonenumber,
-            majorA: majorA || "선택 안 됨",
-            majorB: majorB || "선택 안 됨",
-            majorC: majorC || "선택 안 됨",
-            majorD: majorD || "선택 안 됨",
-            majorE: majorE || "선택 안 됨",
-            majorF: majorF || "선택 안 됨",
-            majorG: majorG || "선택 안 됨",
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
-          }).then(() => {
-            alert("선택이 저장되었습니다!");
-            location.href="./승부예측소개.html";
-          }).catch((error) => {
-            console.error("Error adding document: ", error);
-          });
-        });
-      </script>
 
 
 
