@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>학과별 투표율</title>
+    <link rel="stylesheet" href="../../css/events_details.css">
+    <meta name="viewport" content="width=1440">
+</head>
+<body>
+    <main>
+        <h1>학과별 투표율</h1>
+        <div id="results"></div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+
+    <script>
+
+        const firebaseConfig = {
+            piKey: "AIzaSyC86MO6Ar7wKb_5m-G3F64mtp7VosC27oQ",
+          authDomain: "kwu-sport.firebaseapp.com",
+          databaseURL: "https://kwu-sport-default-rtdb.firebaseio.com/",
+          projectId: "kwu-sport",
+          storageBucket: "kwu-sport.appspot.com",
+          messagingSenderId: "719636962480",
+          appId: "1:719636962480:web:aad441e94aa751cca6af75",
+          measurementId: "G-Y2G8VHF652"
+        };
+        const app = firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        async function getVoteRates() {
+            const resultsDiv = document.getElementById('results');
+            let totalVotes = 0;
+            const departmentVotes = {};
+
+            const snapshot = await db.collection('selections').get();
+
+
+            snapshot.forEach((doc) => {
+                const data = doc.data();
+                const majors = [data.majorA, data.majorB, data.majorC, data.majorD, data.majorE, data.majorF, data.majorG];
+
+                majors.forEach((major) => {
+                    if (major !== "선택 안 됨") {
+                        if (departmentVotes[major]) {
+                            departmentVotes[major]++;
+                        } else {
+                            departmentVotes[major] = 1;
+                        }
+                        totalVotes++;
+                    }
+                });
+            });
+
+            for (const [department, votes] of Object.entries(departmentVotes)) {
+                const voteRate = ((votes / totalVotes) * 100).toFixed(2); // 백분율로 계산
+                const resultItem = document.createElement('p');
+                resultItem.textContent = `${department}: ${voteRate}% (${votes} votes)`;
+                resultsDiv.appendChild(resultItem);
+            }
+        }
+
+        window.onload = getVoteRates;
+    </script>
+</body>
+</html>

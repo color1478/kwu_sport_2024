@@ -35,8 +35,8 @@ var games = [
             team: "전자재료공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '1',
+        away_score: '11',
         result: "-",
         rain: false
     },
@@ -94,7 +94,7 @@ var games = [
         },
         home_score: '-',
         away_score: '-',
-        result: "-",
+        result: "",
         rain: false
     },
     { // 4교시 경기
@@ -132,7 +132,7 @@ var games = [
         },
         home_score: '-',
         away_score: '-',
-        result: "-",
+        result: "",
         rain: false
     },
     { // 6교시 경기
