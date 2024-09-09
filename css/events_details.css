@@ -277,18 +277,20 @@ h3{
 
 
 .user{
-    text-align: center;
-    justify-content: space-between;
-    margin-top: 60px;
-    display: flex;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px 0 10px 0;
+    align-items: center;
 }
+
 .sud {
     display: flex;
     justify-content: center;
 }
 
 #submitBtn {
-    margin-top: 30px;
+    margin-top: 40px;
     height: 60px;
     width: 200px;
     font-size: 30px;
@@ -301,7 +303,8 @@ h3{
 #name, #studentId, #phonenumber {
     height: 30px;
     width: 300px;
-    margin-bottom: 10px;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.08) 0 0 6px;
+    padding-left: 10px;
+    margin-left: 5px;
 }
