@@ -149,8 +149,11 @@
       {
         document.getElementById('countdown').innerText = `D-day`;
       }
-      else{
-          document.getElementById('countdown').innerText = `D-${result}`
+      else if((gap > 0)){
+          document.getElementById('countdown').innerText = `D-${result}`;
+      }
+      else {
+          document.getElementById('countdown').innerText = `D+${result * -1}`;
       }
       
   </script>
