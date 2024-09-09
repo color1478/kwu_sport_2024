@@ -1185,8 +1185,8 @@ var games = [
             team: "건축학과",
             abstention: true
         },
-        home_score: '-',
-        away_score: '3',
+        home_score: '3',
+        away_score: '-',
         result: "-",
         rain: false
     },
@@ -1204,8 +1204,8 @@ var games = [
             team: "스포츠융합과학과",
             abstention: false
         },
-        home_score: '3',
-        away_score: '-',
+        home_score: '-',
+        away_score: '3',
         result: "-",
         rain: false
     },
@@ -1262,7 +1262,7 @@ var games = [
             abstention: false
         },
         home_score: '-',
-        away_score: '-',
+        away_score: '3',
         result: "-",
         rain: false
     },
@@ -1973,8 +1973,8 @@ var games = [
             team: "동북아문화산업학부",
             abstention: false
         },
-        home_score: '3',
-        away_score: '-',
+        home_score: '-',
+        away_score: '3',
         result: "-",
         rain: false
     },
