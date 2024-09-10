@@ -231,9 +231,12 @@ h3{
 
 #posts td {
     font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 800px;
+}
+
+.left-aligned-cell {
+    width: 200px;
 }
 
 .btn {
@@ -248,4 +251,15 @@ h3{
 
 .btn:hover {
     background-color: #001d85;
+}
+
+td {
+    max-width: 800px;
+    flex-wrap: wrap;
+    word-break: normal;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
 }
