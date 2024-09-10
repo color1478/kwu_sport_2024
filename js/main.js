@@ -229,12 +229,9 @@ function displayCurrentGame(sportFilter = currentSport) {
                     <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
             } else {
-                const homeAbstention = game.home.abstention ? 'color: red;' : homeScore > awayScore ? 'color: blue;' : 'color: black;';
-                const awayAbstention = game.away.abstention ? 'color: red;' : awayScore > homeScore ? 'color: blue;' : 'color: black;';;
-                if(homeScore > awayScore)
-                    homeAbstention = 'color: blue;';
-                if(homeScore > awayScore)
-                    awayAbstention = 'color: blue;';
+                const homeAbstention = game.home.abstention ? 'color: red;' : homeScoreStyle;
+                const awayAbstention = game.away.abstention ? 'color: red;' : awayScoreStyle;
+                console.log(homeScoreStyle);
                 // 다른 스포츠의 기본 형식
                 gameItem.innerHTML = `
                         <p style="width: 43px; margin-left:66px;">${game.time}</p>
