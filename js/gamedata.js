@@ -156,8 +156,8 @@ var games = [
             team: "영어산업학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 6,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -175,8 +175,8 @@ var games = [
             team: "수학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 9,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -194,8 +194,8 @@ var games = [
             team: "정보융합학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 6,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -1486,8 +1486,8 @@ var games = [
             team: "미디어커뮤니케이션학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 667,
+        away_score: 302,
         result: "-",
         rain: false
     },
@@ -1524,8 +1524,8 @@ var games = [
             team: "동북아문화산업학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 379,
+        away_score: 233,
         result: "-",
         rain: false
     },
@@ -1733,8 +1733,8 @@ var games = [
             team: "정보융합학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -1752,8 +1752,8 @@ var games = [
             team: "전자통신공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 2,
         result: "-",
         rain: false
     },
