@@ -347,6 +347,34 @@ ul {
     font-size: 20px;
 }
 
+.legend {
+    margin: 0 auto;
+    padding: 0 200px 0 10px;
+    display: flex;
+    align-items: center;
+    font-size : 17px;
+    font-family: S-CoreDream-4Regular;
+}
+
+.circle {
+    width: 18px;  
+    height: 18px; 
+    border-radius: 50%;
+}
+
+
+.highlight-win {
+    background-color: #002BCB;
+}
+
+.highlight-giveup {
+    background-color: #FF0000;
+}
+
+.highlight-lose {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 #calendarControls {
     display: flex;
@@ -527,8 +555,6 @@ ul {
     font-size: 24px;
     /* 글씨 크기 조정 */
     font-family: S-CoreDream-5Medium;
-    margin-top: 20px;
-    /* 위쪽 여백 추가 */
     text-align: left;
     /* 중앙 정렬 */
     justify-content: flex-start;
@@ -549,12 +575,7 @@ ul {
     justify-content: space-between;
     /* 양쪽 끝으로 정렬 */
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.today-date {
-    flex: 1;
-    /* 왼쪽에 공간을 차지하도록 설정 */
+    margin: 20px 0 20px 0;
 }
 
 .team-select {
