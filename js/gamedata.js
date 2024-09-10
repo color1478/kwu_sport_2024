@@ -2523,7 +2523,7 @@ var games = [
     {
         date: "2024-09-11",
         time: "5교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "전자정보공과대학",
             team: "전자통신공학과",
@@ -2542,7 +2542,7 @@ var games = [
     {
         date: "2024-09-11",
         time: "6교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "인문사회과학대학",
             team: "국어국문학과",
@@ -2561,7 +2561,7 @@ var games = [
     {
         date: "2024-09-11",
         time: "7교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "인문사회과학대학",
             team: "미디어커뮤니케이션학부",
@@ -2580,7 +2580,7 @@ var games = [
     {
         date: "2024-09-13",
         time: "5교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "자연과학대학",
             team: "수학과",
@@ -2599,7 +2599,7 @@ var games = [
     {
         date: "2024-09-13",
         time: "6교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "인문사회과학대학",
             team: "영어산업학과",
@@ -2618,7 +2618,7 @@ var games = [
     {
         date: "2024-09-13",
         time: "7교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "경영대학",
             team: "국제통상학부",
@@ -2637,7 +2637,7 @@ var games = [
     {
         date: "2024-09-19",
         time: "4교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "전자정보공과대학",
             team: "전자재료공학과",
@@ -2656,7 +2656,7 @@ var games = [
     {
         date: "2024-09-19",
         time: "5교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "정책법학대학",
             team: "행정학과",
@@ -2675,7 +2675,7 @@ var games = [
     {
         date: "2024-09-19",
         time: "6교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "공과대학",
             team: "화학공학과",
@@ -2694,7 +2694,7 @@ var games = [
     {
         date: "2024-09-19",
         time: "7교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "자연과학대학",
             team: "화학과",
@@ -2713,7 +2713,7 @@ var games = [
     {
         date: "2024-09-20",
         time: "4교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "인공지능융합대학",
             team: "정보융합학부",
@@ -2732,7 +2732,7 @@ var games = [
     {
         date: "2024-09-20",
         time: "5교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "인문사회과학대학",
             team: "동북아문화산업학부",
@@ -2751,7 +2751,7 @@ var games = [
     {
         date: "2024-09-20",
         time: "6교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "공과대학",
             team: "건축학과",
@@ -2770,7 +2770,7 @@ var games = [
     {
         date: "2024-09-20",
         time: "7교시",
-        sportId: 8,
+        sportId: 10,
         home: {
             affiliation: "정책법학대학",
             team: "국제학부",
