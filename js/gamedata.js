@@ -118,8 +118,8 @@ var games = [
             team: "환경공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '2',
+        away_score: '5',
         result: "-",
         rain: false
     },
@@ -137,8 +137,8 @@ var games = [
             team: "컴퓨터정보공학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '13',
+        away_score: '4',
         result: "-",
         rain: false
     },
@@ -1992,8 +1992,8 @@ var games = [
             team: "정보융합학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: '0',
+        away_score: '2',
         result: "-",
         rain: false
     },
