@@ -232,8 +232,8 @@ var games = [
             team: "국어국문학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -251,8 +251,8 @@ var games = [
             team: "미디어커뮤니케이션학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 3,
+        away_score: 6,
         result: "-",
         rain: false
     },
@@ -270,8 +270,8 @@ var games = [
             team: "전자바이오물리학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 5,
+        away_score: 4,
         result: "-",
         rain: false
     },
@@ -289,8 +289,8 @@ var games = [
             team: "소프트웨어학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 3,
+        away_score: 2,
         result: "-",
         rain: false
     },
@@ -308,8 +308,8 @@ var games = [
             team: "전기공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 10,
         result: "-",
         rain: false
     },
@@ -327,8 +327,8 @@ var games = [
             team: "전자통신공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 4,
         result: "-",
         rain: false
     },
@@ -1562,8 +1562,8 @@ var games = [
             team: "소프트웨어학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 297,
+        away_score: 336,
         result: "-",
         rain: false
     },
@@ -1600,8 +1600,8 @@ var games = [
             team: "수학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 374,
+        away_score: 281,
         result: "-",
         rain: false
     },
@@ -1619,8 +1619,8 @@ var games = [
             team: "전자통신공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 335,
+        away_score: 434,
         result: "-",
         rain: false
     },
@@ -1854,7 +1854,7 @@ var games = [
     },
     {
         date: "2024-09-11",
-        time: "3    교시",
+        time: "3교시",
         sportId: 5,
         home: {
             affiliation: "자연과학대학",
@@ -1864,7 +1864,7 @@ var games = [
         away: {
             affiliation: "공과대학",
             team: "건축학과",
-            abstention: false
+            abstention: true
         },
         home_score: '-',
         away_score: '-',
@@ -1885,8 +1885,8 @@ var games = [
             team: "스포츠융합과학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 2,
         result: "-",
         rain: false
     },
@@ -2004,7 +2004,7 @@ var games = [
         home: {
             affiliation: "전자정보공과대학",
             team: "반도체시스템공학부",
-            abstention: false
+            abstention: true
         },
         away: {
             affiliation: "전자정보공과대학",
@@ -2259,8 +2259,8 @@ var games = [
         rain: false
     },
     {
-        date: "2024-09-11",
-        time: "2교시",
+        date: "2024-09-12",
+        time: "5교시",
         sportId: 8,
         home: {
             affiliation: "인문사회과학대학",
@@ -2297,8 +2297,8 @@ var games = [
         rain: false
     },
     {
-        date: "2024-09-11",
-        time: "4교시",
+        date: "2024-09-20",
+        time: "7교시",
         sportId: 8,
         home: {
             affiliation: "전자정보공과대학",
@@ -2534,8 +2534,8 @@ var games = [
             team: "컴퓨터정보공학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 1,
         result: "-",
         rain: false
     },
