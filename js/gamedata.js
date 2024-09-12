@@ -2272,8 +2272,8 @@ var games = [
             team: "화학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 1,
         result: "-",
         rain: false
     },
