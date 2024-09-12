@@ -1600,8 +1600,8 @@ var games = [
             team: "수학과",
             abstention: false
         },
-        home_score: 374,
-        away_score: 281,
+        home_score: 281,
+        away_score: 374,
         result: "-",
         rain: false
     },
