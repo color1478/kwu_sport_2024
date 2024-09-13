@@ -873,7 +873,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-13",
