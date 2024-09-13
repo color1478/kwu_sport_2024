@@ -2023,7 +2023,7 @@ var games = [
         home: {
             affiliation: "인공지능융합대학",
             team: "컴퓨터정보공학부",
-            abstention: false
+            abstention: true
         },
         away: {
             affiliation: "전자정보공과대학",
