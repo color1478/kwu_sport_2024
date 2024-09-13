@@ -2367,8 +2367,8 @@ var games = [
             team: "컴퓨터정보공학부",
             abstention: false
         },
-        home_score: 0,
-        away_score: 1,
+        home_score: 1,
+        away_score: 0,
         result: "-",
         rain: false
     },
