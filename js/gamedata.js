@@ -365,8 +365,8 @@ var games = [
             team: "동북아문화산업학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 11,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -387,7 +387,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-13",
@@ -403,8 +403,8 @@ var games = [
             team: "국제학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 10,
+        away_score: 4,
         result: "-",
         rain: false
     },
@@ -425,7 +425,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-13",
@@ -444,7 +444,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-13",
@@ -930,7 +930,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-13",
@@ -949,7 +949,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-13",
@@ -968,7 +968,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-19",
@@ -2023,7 +2023,7 @@ var games = [
         home: {
             affiliation: "인공지능융합대학",
             team: "컴퓨터정보공학부",
-            abstention: false
+            abstention: true
         },
         away: {
             affiliation: "전자정보공과대학",
@@ -2329,8 +2329,8 @@ var games = [
             team: "전자재료공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -2348,8 +2348,8 @@ var games = [
             team: "건축공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -2367,8 +2367,8 @@ var games = [
             team: "컴퓨터정보공학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 0,
         result: "-",
         rain: false
     },
