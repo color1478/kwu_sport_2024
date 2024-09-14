@@ -8,375 +8,43 @@
     <link href="image/연촌 로고.png" rel="icon" type="image">
 </head>
 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        text-align: center;
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    .footer {
+        font-size: 0.9em;
+        color: #777;
+    }
+</style>
+
 <body>
-     <!-- 네비게이션 바 -->
-     <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li class="nav-logo">
-                    <a href = "./index.html">
-                        <img src="./image/연촌 로고.png" alt="Logo"> <!--연촌체전 메인로고-->
-                    </a>
-                </li>
-                <li><a href="./page/schedule.html">경기 일정</a></li>
-                <li><a href="./page/stauts.html">경기 종목</a></li>
-                <li><a href="./page/results.html">경기 현황</a></li>
-                <li><a href="./page/rules.html">종목별 규칙</a></li>
-                <li><a href="./page/teams.html">팀</a></li>
-                <li><a href="./page/events.html">이벤트</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
-
-    <!-- 메인 콘텐츠 섹션 -->
-    <div class = "container">
-        <div class="slider__wrap">
-            <div class="slider__img">
-                <div class="slider__inner">
-                    <div class="slider s1" role="group" aria-label="1/5">
-                        <img src="image/banner/main_banner3.png" alt="이미지1" width="100%"/>
-                    </div>
-                    <div class="slider s2" role="group" aria-label="2/5">
-                        <img src="image/banner/몬스터배너.jpg" alt="이미지2" width="100%"/>
-                    </div>
-                    <div class="slider s3" role="group" aria-label="3/5">
-                        <img src="image/banner/FC온라인배너.jpg" alt="이미지3" width="100%"/>
-                    </div>
-                    <div class="slider s5" role="group" aria-label="4/5">
-                        <img src="image/banner/볼링장배너.jpg" alt="이미지4" width="100%"/>
-                    </div>
-                    <div class="slider s4" role="group" aria-label="5/5">
-                        <img src="image/banner/레드포스배너.jpg" alt="이미지4" width="100%"/>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="slider__dot">
-            <!-- <a href="#" class="dot active">이미지1</a>
-            <a href="#" class="dot">이미지2</a>
-            <a href="#" class="dot">이미지3</a>
-            <a href="#" class="dot">이미지4</a>
-            <a href="#" class="dot">이미지5</a> -->
-        </div>
-        <div class="contain">
-            <div style="margin-top: 100px; display: flex;">
-                <span style="font-weight: normal; font-family: S-CoreDream-5Medium; font-size: 36px; margin-top: auto; margin-right: 20px;">오늘 경기 일정 </span>
-                <span id="date" style="color: rgb(128,128,128); margin-top: auto;"></span>
-                <a href="./page/schedule.html" style="position: relative; margin-top: auto; margin-left: auto; color: rgb(128,128,128);">모든 경기 일정 보러가기</a>
-            </div>
-            <nav class="sche-nav">
-                <div class="sche-nav-container">
-                    <ul class="sche-nav-links">
-                        <li>
-                            <a id="초기" href="#" class="sport-link-all" data-sport="전체" onclick="filterBySport(''); preventClick(event);">
-                                <img id="sport-image-전체" src="./image/전체픽토그램.png">
-                                <p>전체</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-football" data-sport="풋살" onclick="filterBySport('풋살'); preventClick(event);">
-                                <img id="sport-image-풋살" src="./image/풋살-default픽토그램.png">
-                                <p>풋살</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-basketball" data-sport="농구" onclick="filterBySport('농구'); preventClick(event);">
-                                <img id="sport-image-농구" src="./image/농구-default픽토그램.png">
-                                <p>농구</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-dodgeball" data-sport="피구" onclick="filterBySport('피구'); preventClick(event);">
-                                <img id="sport-image-피구" src="./image/피구-default픽토그램.png">
-                                <p>피구</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-bowling" data-sport="볼링" onclick="filterBySport('볼링'); preventClick(event);">
-                                <img id="sport-image-볼링" src="./image/볼링-default픽토그램.png">
-                                <p>볼링</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-footvolleyball" data-sport="족구" onclick="filterBySport('족구'); preventClick(event);">
-                                <img id="sport-image-족구" src="./image/족구-default픽토그램.png">
-                                <p>족구</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-tabletennis" data-sport="탁구" onclick="filterBySport('탁구'); preventClick(event);">
-                                <img id="sport-image-탁구" src="./image/탁구-default픽토그램.png">
-                                <p>탁구</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-jumprope" data-sport="8자 줄넘기" onclick="filterBySport('8자 줄넘기'); preventClick(event);">
-                                <img id="sport-image-8자 줄넘기" src="./image/8자 줄넘기-default픽토그램.png">
-                                <p>8자 줄넘기</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-lol" data-sport="LOL" onclick="filterBySport('LOL'); preventClick(event);">
-                                <img id="sport-image-LOL" src="./image/LOL-default픽토그램.png">
-                                <p>LOL</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-tft" data-sport="TFT" onclick="filterBySport('TFT'); preventClick(event);">
-                                <img id="sport-image-TFT" src="./image/TFT-default픽토그램.png" alt="Football">
-                                <p>TFT</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sport-link-FConline" data-sport="FC 온라인" onclick="filterBySport('FC 온라인'); preventClick(event);">
-                                <img id="sport-image-FC 온라인" src="./image/FC 온라인-default픽토그램.png" alt="Football">
-                                <p>FC 온라인</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="daybyday">
-                <p id="current-game"></p>
-            </div>
-            <script src="./js/gamedata.js"></script>
-            <script src="./js/main.js"></script>
-            
-        <!--div class="rankNresult">
-            <div class="rank">
-                <div class="rank-text">
-                    <h1>실시간 종합 순위</h1>
-                    <p>TOP5 학과</p>
-                    <a href="./page/results.html">전체 순위 보러가기</a>
-                </div>
-                <div class="rank-contain">
-                    <div class="rankinf rank1">
-                        <div class="num-contain">
-                            <p class = "topnum">1</p><p class = "top_mod">위</p>
-                        </div>
-                        <div class="major topmajor">
-                            <p class = "major_kor">미디어커뮤니케이션학부</p>
-                            <p class="major_eng">School of Media & Communication</p>
-                        </div>
-                        <p class= "rankscore" id = "rank1score">0점</p>
-                        <img src = "image/major/미디어커뮤니케이션학부@4x.png">
-                    </div>
-                    <div class="rankinf rank2">
-                        <div class="num-contain">
-                            <p class = "topnum">2</p><p class = "top_mod">위</p>
-                        </div>
-                        <div class="major topmajor">
-                            <p class = "major_kor">정보융합학부</p>
-                            <p class="major_eng">School of Media & Communication</p>
-                        </div>
-                        <p class= "rankscore" id = "rank2score">0점</p>
-                        <img src = "image/major/정보융합학부@4x.png">
-                    </div>
-                    <div class="rankinf rank3">
-                        <div class="num-contain">
-                            <p class = "topnum">3</p><p class = "top_mod">위</p>
-                        </div>
-                        <div class="major topmajor">
-                            <p class = "major_kor">국제통상학부</p>
-                            <p class="major_eng">School of Media & Communication</p>
-                        </div>
-                        <p class= "rankscore" id = "rank3score">0점</p>
-                        <img src = "image/major/국제통상학부@4x.png">
-                    </div>
-                    <div class="rankinf">
-                        <div class="num-contain">
-                            <p class = "number">4</p><p class = "mod">위</p>
-                        </div>
-                        <div class="major rankout">
-                            <p class = "major_kor">로봇학부</p>
-                            <p class="major_eng">School of Media & Communication</p>
-                        </div>
-                        <p class= "rankscore">0점</p>
-                        <img src = "image/major/로봇학부@4x.png">
-                    </div>
-                    <div class="rankinf">
-                        <div class="num-contain">
-                            <p class = "number">5</p><p class = "mod">위</p>
-                        </div>
-                        <div class="major rankout">
-                            <p class = "major_kor">스포츠융합과학과</p>
-                            <p class="major_eng">School of Media & Communication</p>
-                        </div>
-                        <p class= "rankscore">0점</p>
-                        <img src = "image/major/스포츠융합과학과@4x.png">
-                    </div>
-                </div>
-            </div>
-
-            <div class="recent_result">
-                <div class="recent_result-text">
-                    <h1>최근 경기 결과</h1>
-                    <a href="./page/schedule.html">경기 결과 보러가기</a> 
-                </div>
-                <div class="slideshow-container">
-                    <div class="slide active">
-                        <div class="recent_result_contain">
-                            <div class="result_left">
-                                <img src="image/major/정보융합학부@4x.png">
-                                <p class="reult_score_lose">0</p>
-                                <p class="reult_major_lose">정보융합학부</p>
-                            </div>
-                            <p id="sport">풋살</p>
-                            <div class="result_right">
-                                <img src="image/major/스포츠융합과학과@4x.png">
-                                <p class="reult_score_win">3</p>
-                                <p class="reult_major_win">스포츠융합과학과</p>
-                            </div>
-                        </div>
-                        <div class="result_player">
-                            <img src="image/major/스포츠융합과학과@4x.png">
-                            <div class="player_name">
-                                <p class="player">21 김파동</p>
-                                <p class="player">21 김파동</p>
-                                <p class="player">21 김파동</p>
-                                <p class="player">21 김파동</p>
-                                <p class="player">21 김파동</p>
-                            </div>
-                        </div>
-                    </div>
-                
-                
-                    
-                    <div class="slide">
-                        <div class="recent_result_contain">
-                            <div class="result_left">
-                                <img src="image/major/환경공학과@4x.png">
-                                <p class="reult_score_lose">23</p>
-                                <p class="reult_major_lose">환경공학과</p>
-                            </div>
-                            
-                            <p id="sport">농구</p>
-                
-                            <div class="result_right">
-                                <img src="image/major/동북아문화산업학부@4x.png">
-                                <p class="reult_score_win">57</p>
-                                <p class="reult_major_win">동북아문화산업학부</p>
-                            </div>
-                        </div>
-                
-                        <div class="result_player">
-                            <img src="image/major/동북아문화산업학부@4x.png">
-                            <div class="player_name">
-                                <p class="player">23 김파동</p>
-                                <p class="player">21 김파동</p>
-                                <p class="player">22 김파동</p>
-                                <p class="player">19 김파동</p>
-                                <p class="player">23 김파동</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
-            </div>
-        </div-->
+    <div class="container">
+        <h1>사이트 점검 중입니다</h1>
+        <p>저희 사이트를 개선하기 위해 현재 점검 중입니다.<br>이용에 불편을 드려 죄송합니다.</p>
     </div>
-</div> 
-
-    <div class="direct-rule">
-        <h1>2024 연촌체전 소개 영상</h1>
-        <p>경기 진행 방식<br>아래 영상에서 바로 확인하세요!</p>
-        <button type = "button" onclick = "location.href = '#' ">공개 예정</button>
-    </div>
-
-
-
-    <div class = "SNS_contain">
-
-        <a class = "SNSbutton" id = "notice" href="./page/notice.html"> <!--하이퍼 페이지 추가 예정-->
-            <img src="image/notice.png" alt="notice">
-            <div class="SNS_text">
-                <h1>공지사항</h1>
-                <p>공지사항 게시판</p>
-            </div>
-        </a>
-
-        <a class = "SNSbutton" id = "instagram" href="https://www.instagram.com/kwu_studentcouncil/">
-            <img src="image/아이콘인스타.png" alt="instagram">
-            <div class="SNS_text">
-                <h1>인스타그램</h1>
-                <p>@kwu_studentcouncil</p>
-            </div>
-
-        </a>
-        <a class = "SNSbutton" id = "kakao" href="https://open.kakao.com/me/kwuwave2024">
-            <img src="image/아이콘카카오톡.png" alt="kakao">
-            <div class="SNS_text">
-                <h1>카카오톡</h1>
-                <p>문의사항 오픈채팅방</p>
-            </div>
-        </a>
-        
-        <a class = "SNSbutton" id = "youtube" href="https://www.youtube.com/@kwuwave2024">
-            <img src="image/아이콘유튜브.png" alt="youtube">
-            <div class="SNS_text">
-                <h1>유튜브</h1>
-                <p>광운대학교 총학생회 '파동'</p>
-            </div>
-        </a>
-
-    </div>
-
-    
-    <div class="company-logo">
-        <a href = "https://www.monsterenergy.com/ko-kr/">
-            <img src="image/moster-logo.svg" alt="moster-logo">
-        </a>
-        <a href = "https://fconline.nexon.com/main/index">
-            <img src="image/fc온라인-logo.svg" alt="allpin-logo" >
-        </a>
-        <a href="https://www.instagram.com/kwu_studentcouncil/">
-            <img src="image/major/연촌 로고.png " alt="moster-logo">
-        </a>
-        <a href="https://www.ns-esports.com/">
-            <img src="image/REDPC-logo.png" alt="moster-logo">
-        </a>
-        <a href = "https://www.instagram.com/all_pin_bowling_center/">
-            <img src="image/allpin-logo.jpg" alt="moster-logo">
-        </a>
-    </div>
-
-
-
-    <!-- 푸터 -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="./image/padong.png" alt="Logo">
-            </div>
-            <div class="footer-text">
-                <p class="footer-title">광운대학교 제51대 총학생회 '파동'</p>
-                <p class="footer-role">
-                    PRODUCT MANAGER <span class="ingredient">&nbsp;&nbsp;&nbsp;컴퓨터정보공학부 23 이제호</span>
-                    <br>
-                    DESIGNER <span class="ingredient">&nbsp;&nbsp;&nbsp;미디어커뮤니케이션학부 20 변지욱 &nbsp;|&nbsp; 미디어커뮤니케이션학부 21 송다은&nbsp; |&nbsp; 미디어커뮤니케이션학부 21 홍승리</span>
-                    <br>
-                    DEVELOPER <span class="ingredient">&nbsp;&nbsp;&nbsp;소프트웨어학부 20 김민곤&nbsp; | &nbsp;동북아문화산업학부 22 오보람&nbsp; |&nbsp; 컴퓨터정보공학부 23 나민엽 </span>
-                </p>
-                <p class="footer-contact">마케팅 제휴 문의: kwuwave2024@gmail.com</p>
-                <p class="footer-copyright">Copyright 2024. Kwangwoon University 51th Student Council '파동' all rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
 </body>
-
-<!--팝업-->
-<body onLoad="javascript:popup()">
-    <script>
-        function popup()
-        {
-          window.open("./page/Popup.html", "popup", "width=800px, height=1000px, history=no, resizable=no, status=no, scrollbars=yes, menubar=no")
-        }
-    </script>
-</body->
     
 </html>
