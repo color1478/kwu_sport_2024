@@ -13,7 +13,7 @@ const departments = [
   {korName: "전자재료공학과", engName: "Electronic Materials Engineering", score: "-"},
   {korName: "전자융합공학과", engName: "Electronic Convergence Engineering", score: "-"},
   {korName: "반도체시스템공학부", engName: "Semiconductor System Engineering", score: "-"},
-  {korName: "환경공학과", engName: "Environmental Engineering", score: "-"},
+  {korName: "환경공학과", engName: "Environmental Engineering", score: -50},
   {korName: "건축공학과", engName: "Architectural Engineering", score: "-"},
   {korName: "건축학과", engName: "Architecture", score: -50},
   {korName: "화학공학과", engName: "Chemical Engineering", score: "-"},
