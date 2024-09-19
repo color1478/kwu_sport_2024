@@ -1724,6 +1724,85 @@ var games = [
 
 
 
+    {
+        date: "2024-09-20",
+        time: "3교시",
+        sportId: 4,
+        home: {
+            affiliation: "정책법학대학",
+            team: "국제학부",
+            abstention: true
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "화학공학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "4교시",
+        sportId: 4,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전재재료공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: true
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+
+    {
+        date: "2024-09-20",
+        time: "3교시",
+        sportId: 4,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-20",
+        time: "4교시",
+        sportId: 4,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+
+
 
 
 
