@@ -1,5 +1,5 @@
 var teamsByAffiliation = {
-    "전자정보공과대학": ["전자공학과", "전자통신공학과", "전자융합공학과", "전자재료공학과", "전기공학과"],
+    "전자정보공과대학": ["전자공학과", "전자통신공학과", "전자융합공학과", "전자재료공학과", "전기공학과", "반도체시스템공학부"],
     "인공지능융합대학": ["소프트웨어학부", "컴퓨터정보공학부", "정보융합학부", "로봇학부"],
     "공과대학": ["화학공학과", "환경공학과", "건축공학과", "건축학과"],
     "자연과학대학": ["수학과", "화학과", "전자바이오물리학과", "스포츠융합과학과"],
@@ -2864,9 +2864,9 @@ var games = [
         time: "2교시",
         sportId: 9,
         teams: [
-            { affiliation: "인공지능융합대학", team: "화학과", rank: 1 },
+            { affiliation: "자연과학대학", team: "화학과", rank: 1 },
             { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 2 },
-            { affiliation: "전자정보공과대학", team: "전자바이오물리학과", rank: 3 },
+            { affiliation: "자연과학대학", team: "전자바이오물리학과", rank: 3 },
             { affiliation: "인공지능융합대학", team: "정보융합학부", rank: 4 },
             { affiliation: "인공지능융합대학", team: "로봇학부", rank: 5 },
             { affiliation: "정책법학대학", team: "법학부", rank: 6 },
@@ -2880,14 +2880,14 @@ var games = [
         time: "3교시",
         sportId: 9,
         teams: [
-            { affiliation: "인공지능융합대학", team: "전자재료공학과", rank: 1 },
-            { affiliation: "인문사회과학대학", team: "전자공학과", rank: 2 },
+            { affiliation: "전자정보공과대학", team: "전자재료공학과", rank: 1 },
+            { affiliation: "전자정보공과대학", team: "전자공학과", rank: 2 },
             { affiliation: "전자정보공과대학", team: "전기공학과", rank: 3 },
-            { affiliation: "인공지능융합대학", team: "영어산업학과", rank: 4 },
-            { affiliation: "인공지능융합대학", team: "전자융합공학과", rank: 5 },
-            { affiliation: "정책법학대학", team: "반도체시스템공학부", rank: 6 },
-            { affiliation: "인문사회과학대학", team: "전자통신공학과", rank: 7 },
-            { affiliation: "자연과학대학", team: "동북아문화산업학부", rank: 8 }
+            { affiliation: "인문사회과학대학", team: "영어산업학과", rank: 4 },
+            { affiliation: "전자정보공과대학", team: "전자융합공학과", rank: 5 },
+            { affiliation: "전자정보공과대학", team: "반도체시스템공학부", rank: 6 },
+            { affiliation: "전자정보공과대학", team: "전자통신공학과", rank: 7 },
+            { affiliation: "인문사회과학대학", team: "동북아문화산업학부", rank: 8 }
         ],
         rain: false
     },
@@ -2896,12 +2896,12 @@ var games = [
         time: "4교시",
         sportId: 9,
         teams: [
-            { affiliation: "인공지능융합대학", team: "전자통신공학과", rank: 1 },
+            { affiliation: "전자정보공과대학", team: "전자통신공학과", rank: 1 },
             { affiliation: "인문사회과학대학", team: "산업심리학과", rank: 2 },
             { affiliation: "전자정보공과대학", team: "정보융합학부", rank: 3 },
-            { affiliation: "인공지능융합대학", team: "동북아문화산업학부", rank: 4 },
-            { affiliation: "인공지능융합대학", team: "미디어커뮤니케이션학부", rank: 5 },
-            { affiliation: "정책법학대학", team: "전기공학과", rank: 6 },
+            { affiliation: "인문사회과학대학", team: "동북아문화산업학부", rank: 4 },
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 5 },
+            { affiliation: "전자정보공과대학", team: "전기공학과", rank: 6 },
             { affiliation: "인문사회과학대학", team: "영어산업학과", rank: 7 },
             { affiliation: "자연과학대학", team: "전자바이오물리학과", rank: 8 }
         ],
@@ -2912,14 +2912,14 @@ var games = [
         time: "5교시",
         sportId: 9,
         teams: [
-            { affiliation: "인공지능융합대학", team: "전자재료공학과", rank: 1 },
-            { affiliation: "인문사회과학대학", team: "반도체시스템공학부", rank: 2 },
-            { affiliation: "전자정보공과대학", team: "법학부", rank: 3 },
+            { affiliation: "전자정보공과대학", team: "전자재료공학과", rank: 1 },
+            { affiliation: "전자정보공과대학", team: "반도체시스템공학부", rank: 2 },
+            { affiliation: "정책법학대학", team: "법학부", rank: 3 },
             { affiliation: "인공지능융합대학", team: "로봇학부", rank: 4 },
-            { affiliation: "인공지능융합대학", team: "화학과", rank: 5 },
-            { affiliation: "정책법학대학", team: "수학과", rank: 6 },
-            { affiliation: "인문사회과학대학", team: "전자공학과", rank: 7 },
-            { affiliation: "자연과학대학", team: "전자융합공학과", rank: 8 }
+            { affiliation: "자연과학대학", team: "화학과", rank: 5 },
+            { affiliation: "자연과학대학", team: "수학과", rank: 6 },
+            { affiliation: "전자정보공과대학", team: "전자공학과", rank: 7 },
+            { affiliation: "전자정보공과대학", team: "전자융합공학과", rank: 8 }
         ],
         rain: false
     },
@@ -2928,13 +2928,13 @@ var games = [
         time: "2교시",
         sportId: 9,
         teams: [
-            { affiliation: "인공지능융합대학", team: "전자재료공학과", rank: 1 },
-            { affiliation: "인문사회과학대학", team: "전자융합공학과", rank: 2 },
+            { affiliation: "전자정보공과대학", team: "전자재료공학과", rank: 1 },
+            { affiliation: "전자정보공과대학", team: "전자융합공학과", rank: 2 },
             { affiliation: "전자정보공과대학", team: "전자공학과", rank: 3 },
-            { affiliation: "인공지능융합대학", team: "미디어커뮤니케이션학부", rank: 4 },
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 4 },
             { affiliation: "인공지능융합대학", team: "로봇학부", rank: 5 },
-            { affiliation: "정책법학대학", team: "산업심리학과", rank: 6 },
-            { affiliation: "인문사회과학대학", team: "화학과", rank: 7 },
+            { affiliation: "인문사회과학대학", team: "산업심리학과", rank: 6 },
+            { affiliation: "자연과학대학", team: "화학과", rank: 7 },
             { affiliation: "자연과학대학", team: "수학과", rank: 8 }
         ],
         rain: false
@@ -2944,14 +2944,14 @@ var games = [
         time: "3교시",
         sportId: 9,
         teams: [
-            { affiliation: "인공지능융합대학", team: "영어산업학과", rank: 1 },
-            { affiliation: "인문사회과학대학", team: "정보융합학부", rank: 2 },
-            { affiliation: "전자정보공과대학", team: "동북아문화산업학부", rank: 3 },
-            { affiliation: "인공지능융합대학", team: "전기공학과", rank: 4 },
-            { affiliation: "인공지능융합대학", team: "법학부", rank: 5 },
-            { affiliation: "정책법학대학", team: "반도체시스템공학부", rank: 6 },
-            { affiliation: "인문사회과학대학", team: "반도체시스템공학부", rank: 7 },
-            { affiliation: "자연과학대학", team: "전자통신공학과", rank: 8 }
+            { affiliation: "인문사회과학대학", team: "영어산업학과", rank: 1 },
+            { affiliation: "인공지능융합대학", team: "정보융합학부", rank: 2 },
+            { affiliation: "인문사회과학대학", team: "동북아문화산업학부", rank: 3 },
+            { affiliation: "전자정보공과대학", team: "전기공학과", rank: 4 },
+            { affiliation: "정책법학대학", team: "법학부", rank: 5 },
+            { affiliation: "전자정보공과대학", team: "반도체시스템공학부", rank: 6 },
+            { affiliation: "자연과학대학", team: "전자바이오물리학과", rank: 7 },
+            { affiliation: "전자정보공과대학", team: "전자통신공학과", rank: 8 }
         ],
         rain: false
     },
@@ -2960,14 +2960,14 @@ var games = [
         time: "4교시",
         sportId: 9,
         teams: [
-            { affiliation: "인공지능융합대학", team: "전자공학과", rank: 1 },
-            { affiliation: "인문사회과학대학", team: "전자바이오물리학과", rank: 2 },
-            { affiliation: "전자정보공과대학", team: "산업심리학과", rank: 3 },
-            { affiliation: "인공지능융합대학", team: "전자통신공학과", rank: 4 },
-            { affiliation: "인공지능융합대학", team: "법학부", rank: 5 },
-            { affiliation: "정책법학대학", team: "전자재료공학과", rank: 6 },
-            { affiliation: "인문사회과학대학", team: "전자융합공학과", rank: 7 },
-            { affiliation: "자연과학대학", team: "미디어커뮤니케이션학부", rank: 8 }
+            { affiliation: "전자정보공과대학", team: "전자공학과", rank: 1 },
+            { affiliation: "전자정보공과대학", team: "전자바이오물리학과", rank: 2 },
+            { affiliation: "인문사회과학대학", team: "산업심리학과", rank: 3 },
+            { affiliation: "전자정보공과대학", team: "전자통신공학과", rank: 4 },
+            { affiliation: "정책법학대학", team: "법학부", rank: 5 },
+            { affiliation: "전자정보공과대학", team: "전자재료공학과", rank: 6 },
+            { affiliation: "전자정보공과대학", team: "전자융합공학과", rank: 7 },
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 8 }
         ],
         rain: false
     },
@@ -2976,14 +2976,14 @@ var games = [
         time: "5교시",
         sportId: 9,
         teams: [
-            { affiliation: "인공지능융합대학", team: "반도체시스템공학부", rank: 1 },
-            { affiliation: "인문사회과학대학", team: "로봇학부", rank: 2 },
-            { affiliation: "전자정보공과대학", team: "영어산업학과", rank: 3 },
-            { affiliation: "인공지능융합대학", team: "수학과", rank: 4 },
-            { affiliation: "인공지능융합대학", team: "화학과", rank: 5 },
-            { affiliation: "정책법학대학", team: "전기공학과", rank: 6 },
+            { affiliation: "전자정보공과대학", team: "반도체시스템공학부", rank: 1 },
+            { affiliation: "인공지능융합대학", team: "로봇학부", rank: 2 },
+            { affiliation: "인문사회과학대학", team: "영어산업학과", rank: 3 },
+            { affiliation: "자연과학대학", team: "수학과", rank: 4 },
+            { affiliation: "자연과학대학", team: "화학과", rank: 5 },
+            { affiliation: "전자정보공과대학", team: "전기공학과", rank: 6 },
             { affiliation: "인문사회과학대학", team: "동북아문화산업학부", rank: 7 },
-            { affiliation: "자연과학대학", team: "정보융합학부", rank: 8 }
+            { affiliation: "인공지능융합대학", team: "정보융합학부", rank: 8 }
         ],
         rain: false
     },
