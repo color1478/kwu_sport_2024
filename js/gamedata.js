@@ -558,7 +558,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -577,7 +577,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -596,7 +596,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -615,7 +615,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -634,7 +634,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -653,7 +653,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -672,7 +672,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-23",
@@ -770,7 +770,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-09-23",
+        date: "2024-09-24",
         time: "3교시",
         sportId: 1,
         home: {
@@ -789,7 +789,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-09-23",
+        date: "2024-09-24",
         time: "4교시",
         sportId: 1,
         home: {
@@ -808,7 +808,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-09-23",
+        date: "2024-09-24",
         time: "5교시",
         sportId: 1,
         home: {
@@ -1226,7 +1226,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -1245,7 +1245,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -1264,7 +1264,7 @@ var games = [
         home_score: '-',
         away_score: '3',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -1283,7 +1283,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -1302,7 +1302,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -1321,7 +1321,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-20",
@@ -1340,7 +1340,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: false
+        rain: true
     },
     {
         date: "2024-09-23",
@@ -1738,8 +1738,8 @@ var games = [
             team: "화학공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 600,
+        away_score: 591,
         result: "-",
         rain: false
     },
@@ -1765,7 +1765,7 @@ var games = [
 
     {
         date: "2024-09-20",
-        time: "3교시",
+        time: "5교시",
         sportId: 4,
         home: {
             affiliation: "인공지능융합대학",
@@ -1784,7 +1784,7 @@ var games = [
     },
     {
         date: "2024-09-20",
-        time: "4교시",
+        time: "6교시",
         sportId: 4,
         home: {
             affiliation: "전자정보공과대학",
@@ -2198,15 +2198,15 @@ var games = [
         home: {
             affiliation: "전자정보공과대학",
             team: "전자융합공학과",
-            abstention: true
+            abstention: false
         },
         away: {
             affiliation: "인공지능융합대학",
             team: "소프트웨어학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -2599,8 +2599,8 @@ var games = [
             team: "산업심리학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -2618,8 +2618,8 @@ var games = [
             team: "정보융합학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -2854,12 +2854,12 @@ var games = [
         home: {
             affiliation: "인공지능융합대학",
             team: "정보융합학부",
-            abstention: true
+            abstention: false
         },
         away: {
             affiliation: "경영대학",
             team: "경영학부",
-            abstention: true
+            abstention: false
         },
         home_score: '-',
         away_score: '-',
