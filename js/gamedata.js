@@ -1749,7 +1749,7 @@ var games = [
         sportId: 4,
         home: {
             affiliation: "전자정보공과대학",
-            team: "전재재료공학과",
+            team: "전자재료공학과",
             abstention: false
         },
         away: {
@@ -1774,7 +1774,7 @@ var games = [
         },
         away: {
             affiliation: "전자정보공과대학",
-            team: "반도체시스템공학과",
+            team: "반도체시스템공학부",
             abstention: false
         },
         home_score: '-',
