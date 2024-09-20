@@ -1226,7 +1226,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: true
+        rain: false
     },
     {
         date: "2024-09-20",
@@ -1245,7 +1245,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: true
+        rain: false
     },
     {
         date: "2024-09-20",
@@ -1264,7 +1264,7 @@ var games = [
         home_score: '-',
         away_score: '3',
         result: "-",
-        rain: true
+        rain: false
     },
     {
         date: "2024-09-20",
@@ -1283,7 +1283,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: true
+        rain: false
     },
     {
         date: "2024-09-20",
@@ -1340,7 +1340,7 @@ var games = [
         home_score: '-',
         away_score: '-',
         result: "-",
-        rain: true
+        rain: false
     },
     {
         date: "2024-09-23",
@@ -1757,8 +1757,8 @@ var games = [
             team: "화학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 402,
+        away_score: 533,
         result: "-",
         rain: false
     },
@@ -1777,8 +1777,8 @@ var games = [
             team: "반도체시스템공학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 530,
+        away_score: 576,
         result: "-",
         rain: false
     },
@@ -2447,8 +2447,8 @@ var games = [
             team: "전기공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 0,
         result: "-",
         rain: false
     },
