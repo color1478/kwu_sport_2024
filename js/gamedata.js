@@ -1731,12 +1731,12 @@ var games = [
         home: {
             affiliation: "정책법학대학",
             team: "국제학부",
-            abstention: true
+            abstention: false
         },
         away: {
             affiliation: "자연과학대학",
             team: "화학공학과",
-            abstention: true
+            abstention: false
         },
         home_score: '-',
         away_score: '-',
@@ -1755,7 +1755,7 @@ var games = [
         away: {
             affiliation: "자연과학대학",
             team: "화학과",
-            abstention: true
+            abstention: false
         },
         home_score: '-',
         away_score: '-',
@@ -1789,7 +1789,7 @@ var games = [
         home: {
             affiliation: "전자정보공과대학",
             team: "전자통신공학과",
-            abstention: false
+            abstention: true
         },
         away: {
             affiliation: "경영대학",
