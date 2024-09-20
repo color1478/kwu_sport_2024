@@ -2854,12 +2854,12 @@ var games = [
         home: {
             affiliation: "인공지능융합대학",
             team: "정보융합학부",
-            abstention: false
+            abstention: true
         },
         away: {
             affiliation: "경영대학",
             team: "경영학부",
-            abstention: false
+            abstention: true
         },
         home_score: '-',
         away_score: '-',
