@@ -3597,8 +3597,8 @@ var games = [
             abstention: false
         },
         away: {
-            affiliation: "경영대학",
-            team: "국제통상학부",
+            affiliation: "정책법학대학",
+            team: "국제학부",
             abstention: false
         },
         home_score: '-',
