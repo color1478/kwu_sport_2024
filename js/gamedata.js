@@ -854,7 +854,7 @@ var games = [
         home: {
             affiliation: "정책법학대학",
             team: "행정학과",
-            abstention: false
+            abstention: true
         },
         away: {
             affiliation: "인공지능융합대학",
@@ -1328,8 +1328,8 @@ var games = [
             team: "건축학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 28,
+        away_score: 30,
         result: "-",
         rain: false
     },
@@ -1352,19 +1352,18 @@ var games = [
         result: "-",
         rain: false
     },
-/** 예선 경기 끝난 후 팀만 변경
     {
         date: "2024-09-24",
         time: "2교시",
         sportId: 2,
         home: {
-            affiliation: "전자정보공과대학",
-            team: "전자통신공학과",
+            affiliation: "공과대학",
+            team: "건축학과",
             abstention: false
         },
         away: {
             affiliation: "전자정보공과대학",
-            team: "전자융합공학과",
+            team: "전자재료공학과",
             abstention: false
         },
         home_score: '-',
@@ -1372,7 +1371,7 @@ var games = [
         result: "-",
         rain: false
     }, 
-*/  
+  
     {
         date: "2024-09-24",
         time: "3교시",
@@ -2194,9 +2193,27 @@ var games = [
         result: "-",
         rain: false
     },
+    {
+        date: "2024-09-24",
+        time: "3교시",
+        sportId: 4,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "반도체시스템공학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
 
-    // 결승전 일정 추가해야 함
-
+    // 볼링 일정 끝
 
 
 
@@ -3827,6 +3844,70 @@ var games = [
             { affiliation: "인공지능융합대학", team: "로봇학부", rank: 6 },
             { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 7 },
             { affiliation: "자연과학대학", team: "수학과", rank: 8 }
+        ],
+        rain: false
+    },
+    { //tft
+        date: "2024-09-24",
+        time: "2교시",
+        sportId: 9,
+        teams: [
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 1 },
+            { affiliation: "공과대학", team: "건축공학과", rank: 2 },
+            { affiliation: "인공지능융합대학", team: "로봇학부", rank: 3 },
+            { affiliation: "전자정보공과대학", team: "전자재료공학과", rank: 4 },
+            { affiliation: "전자정보공과대학", team: "정보융합학부", rank: 5 },
+            { affiliation: "자연과학대학", team: "수학과", rank: 6 },
+            { affiliation: "인문사회과학대학", team: "영어산업학과", rank: 7 },
+            { affiliation: "인문사회과학대학", team: "산업심리학과", rank: 8 }
+        ],
+        rain: false
+    },
+    { //tft
+        date: "2024-09-24",
+        time: "3교시",
+        sportId: 9,
+        teams: [
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 1 },
+            { affiliation: "공과대학", team: "건축공학과", rank: 2 },
+            { affiliation: "인공지능융합대학", team: "로봇학부", rank: 3 },
+            { affiliation: "전자정보공과대학", team: "전자재료공학과", rank: 4 },
+            { affiliation: "전자정보공과대학", team: "정보융합학부", rank: 5 },
+            { affiliation: "자연과학대학", team: "수학과", rank: 6 },
+            { affiliation: "인문사회과학대학", team: "영어산업학과", rank: 7 },
+            { affiliation: "인문사회과학대학", team: "산업심리학과", rank: 8 }
+        ],
+        rain: false
+    },
+    { //tft
+        date: "2024-09-24",
+        time: "4교시",
+        sportId: 9,
+        teams: [
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 1 },
+            { affiliation: "공과대학", team: "건축공학과", rank: 2 },
+            { affiliation: "인공지능융합대학", team: "로봇학부", rank: 3 },
+            { affiliation: "전자정보공과대학", team: "전자재료공학과", rank: 4 },
+            { affiliation: "전자정보공과대학", team: "정보융합학부", rank: 5 },
+            { affiliation: "자연과학대학", team: "수학과", rank: 6 },
+            { affiliation: "인문사회과학대학", team: "영어산업학과", rank: 7 },
+            { affiliation: "인문사회과학대학", team: "산업심리학과", rank: 8 }
+        ],
+        rain: false
+    },
+    { //tft
+        date: "2024-09-24",
+        time: "5교시",
+        sportId: 9,
+        teams: [
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 1 },
+            { affiliation: "공과대학", team: "건축공학과", rank: 2 },
+            { affiliation: "인공지능융합대학", team: "로봇학부", rank: 3 },
+            { affiliation: "전자정보공과대학", team: "전자재료공학과", rank: 4 },
+            { affiliation: "전자정보공과대학", team: "정보융합학부", rank: 5 },
+            { affiliation: "자연과학대학", team: "수학과", rank: 6 },
+            { affiliation: "인문사회과학대학", team: "영어산업학과", rank: 7 },
+            { affiliation: "인문사회과학대학", team: "산업심리학과", rank: 8 }
         ],
         rain: false
     },
