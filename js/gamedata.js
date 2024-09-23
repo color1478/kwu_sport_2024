@@ -3175,7 +3175,7 @@ var games = [
     },
     {
         date: "2024-09-23",
-        time: "3교시",
+        time: "4교시",
         sportId: 8,
         home: {
             affiliation: "인문사회과학대학",
