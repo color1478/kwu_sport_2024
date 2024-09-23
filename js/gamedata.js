@@ -500,8 +500,8 @@ var games = [
             team: "국어국문학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 3,
         result: "-",
         rain: false
     },
