@@ -3240,7 +3240,7 @@ var games = [
         away: {
             affiliation: "공과대학",
             team: "건축공학과",
-            abstention: false
+            abstention: true
         },
         home_score: '-',
         away_score: '-',
@@ -3575,7 +3575,7 @@ var games = [
         home: {
             affiliation: "인문사회과학대학",
             team: "미디어커뮤니케이션학부",
-            abstention: false
+            abstention: true
         },
         away: {
             affiliation: "전자정보공과대학",
