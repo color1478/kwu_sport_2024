@@ -3198,7 +3198,7 @@ var games = [
         sportId: 8,
         home: {
             affiliation: "공과대학",
-            team: "건축공학과",
+            team: "건축학과",
             abstention: false
         },
         away: {
