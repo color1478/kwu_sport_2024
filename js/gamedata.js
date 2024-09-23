@@ -481,7 +481,7 @@ var games = [
             team: "경영학부",
             abstention: false
         },
-        home_score: 4,
+        home_score: 3,
         away_score: 0,
         result: "-",
         rain: false
