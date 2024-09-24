@@ -729,7 +729,7 @@ var games = [
             abstention: false
         },
         home_score: 1,
-        away_score: 9,
+        away_score: 10,
         result: "-",
         rain: false
     },
@@ -842,8 +842,8 @@ var games = [
             team: "건축학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 3,
+        away_score: 1,
         result: "-",
         rain: false
     },
