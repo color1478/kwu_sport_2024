@@ -877,7 +877,7 @@ var games = [
         },
         away: {
             affiliation: "공과대학",
-            team: "건축공학과",
+            team: "건축학과",
             abstention: false
         },
         home_score: '-',
@@ -2529,8 +2529,8 @@ var games = [
             team: "전자통신공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 2,
         result: "-",
         rain: false
     },
@@ -2548,8 +2548,8 @@ var games = [
             team: "스포츠융합과학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 2,
         result: "-",
         rain: false
     },
