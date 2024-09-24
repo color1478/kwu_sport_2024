@@ -462,8 +462,8 @@ var games = [
             team: "정보융합학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 1,
         result: "-",
         rain: false
     },
