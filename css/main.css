@@ -617,15 +617,15 @@ p {
 }
 
 .rank1 img {
-    transform: translateX(102px);
-}
+    transform: translateX(30px);
+}   
 
 .rank2 img {
-    transform: translateX(102px);
+    transform: translateX(48px);
 }
 
 .rank3 img {
-    transform: translateX(102px);
+    transform: translateX(90px);
 }
 
 .major {
