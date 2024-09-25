@@ -3702,7 +3702,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-09-24",
+        date: "2024-09-25",
         time: "5교시",
         sportId: 10,
         home: {
@@ -3721,7 +3721,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-09-24",
+        date: "2024-09-25",
         time: "6교시",
         sportId: 10,
         home: {
