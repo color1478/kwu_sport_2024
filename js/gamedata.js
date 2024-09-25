@@ -3304,6 +3304,44 @@ var games = [
         result: "-",
         rain: false
     },
+    {
+        date: "2024-09-25",
+        time: "3교시",
+        sportId: 8,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "4교시",
+        sportId: 8,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
     
     // 8강 일정 추가해야 함
 
@@ -3663,6 +3701,45 @@ var games = [
         result: "-",
         rain: false
     },
+    {
+        date: "2024-09-24",
+        time: "5교시",
+        sportId: 10,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-24",
+        time: "6교시",
+        sportId: 10,
+        home: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    
     
     // 8강 일정 추가해야 함
 
