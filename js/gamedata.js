@@ -1410,7 +1410,64 @@ var games = [
         away_score: '-',
         result: "-",
         rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "4교시",
+        sportId: 2,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자재료공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-25",
+        time: "5교시",
+        sportId: 2,
+        home: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
     }, 
+    {
+        date: "2024-09-25",
+        time: "6교시",
+        sportId: 2,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인문사회과학대학",
+            team: "영어산업학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
 
     
 // 8강부터 다시 작성해야 함
