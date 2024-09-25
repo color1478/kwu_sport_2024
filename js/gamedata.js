@@ -918,8 +918,8 @@ var games = [
             team: "전자통신공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 6,
         result: "-",
         rain: false
     },
@@ -937,8 +937,8 @@ var games = [
             team: "경영학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 3,
         result: "-",
         rain: false
     },
@@ -956,8 +956,8 @@ var games = [
             team: "전자바이오물리학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 20,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -1444,8 +1444,8 @@ var games = [
             team: "스포츠융합과학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 51,
+        away_score: 50,
         result: "-",
         rain: false
     }, 
@@ -1463,8 +1463,8 @@ var games = [
             team: "영어산업학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 48,
+        away_score: 45,
         result: "-",
         rain: false
     },
@@ -1743,8 +1743,8 @@ var games = [
             team: "동북아문화산업학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -2885,8 +2885,8 @@ var games = [
             team: "수학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -3715,8 +3715,8 @@ var games = [
             team: "전자융합공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -3734,8 +3734,8 @@ var games = [
             team: "전자재료공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 1,
         result: "-",
         rain: false
     },
