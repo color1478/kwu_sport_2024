@@ -3087,25 +3087,6 @@ var games = [
         home: {
             affiliation: "인문사회과학대학",
             team: "동북아문화산업학부",
-            abstention: true
-        },
-        away: {
-            affiliation: "인공지능융합대학",
-            team: "정보융합학부",
-            abstention: false
-        },
-        home_score: '-',
-        away_score: '-',
-        result: "-",
-        rain: false
-    },
-    {
-        date: "2024-09-26",
-        time: "2교시",
-        sportId: 6,
-        home: {
-            affiliation: "인문사회과학대학",
-            team: "동북아문화산업학부",
             abstention: false
         },
         away: {
