@@ -1391,7 +1391,7 @@ var games = [
         result: "-",
         rain: false
     },
-/** 예선 경기 끝난 후 어웨이 팀만 변경
+
     {
         date: "2024-09-25",
         time: "3교시",
@@ -1399,7 +1399,7 @@ var games = [
         home: {
             affiliation: "인공지능융합대학",
             team: "정보융합학부",
-            abstention: false
+            abstention: true
         },
         away: {
             affiliation: "전자정보공과대학",
@@ -1411,7 +1411,7 @@ var games = [
         result: "-",
         rain: false
     }, 
-*/  
+
     
 // 8강부터 다시 작성해야 함
 
