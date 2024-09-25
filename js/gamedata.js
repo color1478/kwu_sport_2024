@@ -880,8 +880,8 @@ var games = [
             team: "건축학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 4,
+        away_score: 3,
         result: "-",
         rain: false
     },
@@ -899,8 +899,8 @@ var games = [
             team: "소프트웨어학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 2,
         result: "-",
         rain: false
     },
@@ -1425,8 +1425,8 @@ var games = [
             team: "전자바이오물리학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 33,
+        away_score: 22,
         result: "-",
         rain: false
     },
@@ -2624,8 +2624,8 @@ var games = [
             team: "전자융합공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 2,
         result: "-",
         rain: false
     },
@@ -2643,8 +2643,8 @@ var games = [
             team: "건축공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 2,
         result: "-",
         rain: false
     },
@@ -2828,8 +2828,8 @@ var games = [
             team: "전기공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -2866,8 +2866,8 @@ var games = [
             team: "산업심리학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -3337,8 +3337,8 @@ var games = [
             team: "전자공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 0,
         result: "-",
         rain: false
     },
