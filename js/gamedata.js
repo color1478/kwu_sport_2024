@@ -1665,7 +1665,7 @@ var games = [
         away: {
             affiliation: "인공지능융합대학",
             team: "컴퓨터정보공학부",
-            abstention: false
+            abstention: true
         },
         home_score: '-',
         away_score: '-',
