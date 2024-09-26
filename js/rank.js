@@ -2,7 +2,7 @@ const departments = [
   {korName: "미디어커뮤니케이션학부", engName: "Media and Communication", score: 0},
   {korName: "국어국문학과", engName: "Korean Language and Literature", score: 0},
   {korName: "영어산업학과", engName: "English Language and Industry", score: 0},
-  {korName: "동북아문화산업학부", engName: "Northeast Asia Cultural Industries", score: -50},
+  {korName: "동북아문화산업학부", engName: "Northeast Asia Cultural Industries", score: -100},
   {korName: "산업심리학과", engName: "Industrial Psychology", score: 90},
   {korName: "법학부", engName: "Law", score: -100},
   {korName: "행정학과", engName: "Public Administration", score: 0},

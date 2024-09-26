@@ -3089,7 +3089,7 @@ var games = [
         home: {
             affiliation: "인문사회과학대학",
             team: "동북아문화산업학부",
-            abstention: false
+            abstention: true
         },
         away: {
             affiliation: "인공지능융합대학",
