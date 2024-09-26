@@ -1019,6 +1019,7 @@ var games = [
         result: "-",
         rain: false
     },
+ /**   
     {
         date: "2024-09-26",
         time: "6교시",
@@ -1038,6 +1039,7 @@ var games = [
         result: "-",
         rain: false
     },
+ */   
     {
         date: "2024-09-27",
         time: "2교시",
@@ -3176,6 +3178,46 @@ var games = [
         rain: false
     },
     // round 2 일정 추가해야 함
+
+
+
+    // 8자 줄넘기
+    {
+        date: "2024-09-26",
+        time: "2교시",
+        sportId: 7,
+        teams: [
+            { affiliation: "자연과학대학", team: "스포츠융합과학과", rank: 1 },
+        ],
+        rain: false
+    },
+    {
+        date: "2024-09-26",
+        time: "5교시",
+        sportId: 7,
+        teams: [
+            { affiliation: "자연과학대학", team: "화학과", rank: 1 },
+        ],
+        rain: false
+    },
+    {
+        date: "2024-09-26",
+        time: "7교시",
+        sportId: 7,
+        teams: [
+            { affiliation: "인문사회과학대학", team: "미디어커뮤니케이션학부", rank: 1 },
+        ],
+        rain: false
+    },{
+        date: "2024-09-26",
+        time: "7교시",
+        sportId: 7,
+        teams: [
+            { affiliation: "인공지능융합대학", team: "소프트웨어학부", rank: 1 },
+        ],
+        rain: false
+    },
+    
 
 
 
