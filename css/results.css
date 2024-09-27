@@ -263,6 +263,7 @@ ul{
   color:#FFFFFF;
   box-shadow: rgba(255, 0, 0, 0.08) 0 0 15px;
   height: 132px;
+  width: 1000px;
 }
 
 .rank2 {
@@ -282,20 +283,20 @@ ul{
 .rankinf img {
   height: 260px;
   width: 260px;
-  transform: translate(30%);
+  transform: translate(7%);
   opacity: 30%;
 }
 
 .rank1 img {
-  transform: translate(6%);
+  transform: translate(7%);
 }
 
 .rank2 img {
-  transform: translate(12%);
+  transform: translate(7%);
 }
 
 .rank3 img {
-  transform: translate(12%);
+  transform: translate(7%);
 }
 
 .major {
@@ -349,6 +350,7 @@ ul{
   margin-right: 40px;
   display: flex;
   align-items: center;
+  width: 150px;
 }
 
 .top_total {
