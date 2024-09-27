@@ -976,8 +976,8 @@ var games = [
             team: "컴퓨터정보공학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 4,
         result: "-",
         rain: false
     },
@@ -995,8 +995,8 @@ var games = [
             team: "미디어커뮤니케이션학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 4,
+        away_score: 2,
         result: "-",
         rain: false
     },
@@ -1014,8 +1014,8 @@ var games = [
             team: "국어국문학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 3,
+        away_score: 2,
         result: "-",
         rain: false
     },
@@ -1054,8 +1054,8 @@ var games = [
             team: "경영학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 8,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -1073,8 +1073,8 @@ var games = [
             team: "법학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 3,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -1625,6 +1625,44 @@ var games = [
         result: "-",
         rain: false
     },
+    {
+        date: "2024-09-27",
+        time: "2교시",
+        sportId: 2,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "소프트웨어학부",
+            abstention: false
+        },
+        home_score: 55,
+        away_score: 14,
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-27",
+        time: "3교시",
+        sportId: 2,
+        home: {
+            affiliation: "경영대학",
+            team: "경영학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "로봇학부",
+            abstention: false
+        },
+        home_score: 56,
+        away_score: 32,
+        result: "-",
+        rain: false
+    },
 
     
 // 8강부터 다시 작성해야 함
@@ -1919,8 +1957,8 @@ var games = [
             team: "법학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 0,
         result: "-",
         rain: false
     }, 
@@ -1938,8 +1976,8 @@ var games = [
             team: "컴퓨터정보공학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 2,
         result: "-",
         rain: false
     }, 
@@ -3113,7 +3151,7 @@ var games = [
         away: {
             affiliation: "전자정보공과대학",
             team: "전자통신공학과",
-            abstention: false
+            abstention: true
         },
         home_score: '-',
         away_score: '-',
@@ -3134,8 +3172,8 @@ var games = [
             team: "전자재료공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -3151,7 +3189,7 @@ var games = [
         away: {
             affiliation: "자연과학대학",
             team: "전자바이오물리학과",
-            abstention: false
+            abstention: true
         },
         home_score: '-',
         away_score: '-',
@@ -3170,6 +3208,44 @@ var games = [
         away: {
             affiliation: "인공지능융합대학",
             team: "소프트웨어학부",
+            abstention: false
+        },
+        home_score: 0,
+        away_score: 2,
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-27",
+        time: "4교시",
+        sportId: 6,
+        home: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자통신공학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-09-27",
+        time: "7교시",
+        sportId: 6,
+        home: {
+            affiliation: "공과대학",
+            team: "건축공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
             abstention: false
         },
         home_score: '-',
@@ -3645,8 +3721,8 @@ var games = [
             team: "스포츠융합과학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -3664,8 +3740,8 @@ var games = [
             team: "수학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -4080,8 +4156,8 @@ var games = [
             team: "환경공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 2,
         result: "-",
         rain: false
     },
