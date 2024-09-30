@@ -3892,8 +3892,8 @@ var games = [
             team: "소프트웨어학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -3918,7 +3918,7 @@ var games = [
     },
     {
         date: "2024-09-30",
-        time: "3교시",
+        time: "4교시",
         sportId: 8,
         home: {
             affiliation: "인공지능융합대학",
