@@ -1118,7 +1118,7 @@ var games = [
  // 풋살 4강
 
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "3교시",
         sportId: 1,
         home: {
@@ -1137,7 +1137,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "4교시",
         sportId: 1,
         home: {
@@ -1156,7 +1156,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "5교시",
         sportId: 1,
         home: {
@@ -1175,7 +1175,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "6교시",
         sportId: 1,
         home: {
@@ -1763,7 +1763,7 @@ var games = [
     // 농구 결승
 
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "6교시",
         sportId: 2,
         home: {
@@ -2160,7 +2160,7 @@ var games = [
 
 // 피구 준결승
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "2교시",
         sportId: 3,
         home: {
@@ -2179,7 +2179,7 @@ var games = [
         rain: false
     }, 
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "3교시",
         sportId: 3,
         home: {
@@ -3058,7 +3058,7 @@ var games = [
     // 족구 준결승
 
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "4교시",
         sportId: 5,
         home: {
@@ -3077,7 +3077,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "5교시",
         sportId: 5,
         home: {
@@ -3547,7 +3547,7 @@ var games = [
     },
     // 탁구 준결승
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "2교시",
         sportId: 6,
         home: {
@@ -3566,7 +3566,7 @@ var games = [
         rain: false
     },
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "3교시",
         sportId: 6,
         home: {
@@ -4139,7 +4139,7 @@ var games = [
     
     // 롤 결승
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "2교시",
         sportId: 8,
         home: {
@@ -4616,7 +4616,7 @@ var games = [
     //피파 결승
    /**
     {
-        date: "2024-10-01",
+        date: "2024-10-02",
         time: "5교시",
         sportId: 10,
         home: {
