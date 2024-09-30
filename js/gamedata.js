@@ -1754,21 +1754,21 @@ var games = [
             team: "전자재료공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 38,
+        away_score: 44,
         result: "-",
         rain: false
     },
 
     // 농구 결승
-/**
+
     {
         date: "2024-10-01",
         time: "6교시",
         sportId: 2,
         home: {
             affiliation: "전자정보공과대학",
-            team: "전자융합공학과",
+            team: "전자재료공학과",
             abstention: false
         },
         away: {
@@ -1781,7 +1781,7 @@ var games = [
         result: "-",
         rain: false
     },
-*/
+
     
 
 
@@ -4585,8 +4585,8 @@ var games = [
             team: "스포츠융합과학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 3,
         result: "-",
         rain: false
     },
@@ -4596,7 +4596,7 @@ var games = [
         sportId: 10,
         home: {
             affiliation: "공과대학",
-            team: "화학공학과",
+            team: "환경공학과",
             abstention: false
         },
         away: {
@@ -4604,8 +4604,8 @@ var games = [
             team: "법학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 3,
         result: "-",
         rain: false
     },
@@ -4620,8 +4620,8 @@ var games = [
         time: "5교시",
         sportId: 10,
         home: {
-            affiliation: "공과대학",
-            team: "화학공학과",
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
             abstention: false
         },
         away: {
