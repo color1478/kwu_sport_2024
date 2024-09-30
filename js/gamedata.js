@@ -1109,8 +1109,8 @@ var games = [
             team: "전자재료공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 5,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -2052,8 +2052,8 @@ var games = [
             team: "컴퓨터정보공학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 2,
         result: "-",
         rain: false
     }, 
@@ -3362,8 +3362,8 @@ var games = [
             team: "화학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 1,
+        away_score: 2,
         result: "-",
         rain: false
     },
@@ -3911,30 +3911,12 @@ var games = [
             team: "수학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 0,
         result: "-",
         rain: false
     },
-    {
-        date: "2024-09-30",
-        time: "4교시",
-        sportId: 8,
-        home: {
-            affiliation: "인공지능융합대학",
-            team: "정보융합학부",
-            abstention: false
-        },
-        away: {
-            affiliation: "자연과학대학",
-            team: "수학과",
-            abstention: false
-        },
-        home_score: '-',
-        away_score: '-',
-        result: "-",
-        rain: false
-    },
+
 
     
     // 8강 일정 추가해야 함
