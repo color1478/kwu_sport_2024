@@ -612,7 +612,7 @@ p {
 .rankinf img {
     height: 204px;
     width: 204px;
-    transform: translateX(110px);
+    transform: translateX(90px);
     opacity: 70%;
 }
 
@@ -621,11 +621,11 @@ p {
 }   
 
 .rank2 img {
-    transform: translateX(80px);
+    transform: translateX(50px);
 }
 
 .rank3 img {
-    transform: translateX(90px);
+    transform: translateX(65px);
 }
 
 .major {
