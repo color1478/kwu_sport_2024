@@ -3071,8 +3071,8 @@ var games = [
             team: "전자융합공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -4152,8 +4152,8 @@ var games = [
             team: "정보융합학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 3,
         result: "-",
         rain: false
     },
@@ -4612,9 +4612,7 @@ var games = [
     
 
     
-    
-    //피파 결승
-   /**
+
     {
         date: "2024-10-02",
         time: "5교시",
@@ -4635,7 +4633,6 @@ var games = [
         rain: false
     },
 
-*/ 
 
 
     // var teamsByAffiliation = {
