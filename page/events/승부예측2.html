@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2024 광운대학교 연촌체전</title>
+    <link rel="stylesheet" href="../../css/events_details2.css">
+    <meta name="viewport" content="width=1440">
+    <link href="../../image/연촌 로고.png" rel="icon" type="image">
+</head>
+
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li class="nav-logo">
+                    <a href = "../../index.html">
+                        <img src="../../image/연촌 로고.png" alt="Logo"> <!--연촌체전 메인로고-->
+                    </a>
+                </li>
+                <li><a href="../schedule.html">경기 일정</a></li>
+                <li><a href="../stauts.html">경기 종목</a></li>
+                <li><a href="../results.html">경기 현황</a></li>
+                <li><a href="../rules.html">종목별 규칙</a></li>
+                <li><a href="../teams.html">팀</a></li>
+                <li><a href="../events.html">이벤트</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <div class = "banner">
+        <h1>승부예측 이벤트</h1>
+        <p>각 종목 우승자를 선택하세요!</p>
+    </div>
+
+    <main>
+        <div class="banner-tag">
+            <a href="./승부예측소개.html">&lt; 이전으로</a>
+        </div>
+
+        <section id="offline-categories">
+            <div class="category-grid">
+                <div class="shortcut">
+                    <p>종목 1</p>
+                        <label for="majorA1" class="radio_box">
+                            <input type="radio" id="majorA1" name="majorA" value="로봇학부"/>
+                            <span class="on"></span>
+                            로봇학부
+                        </label>
+                        <label for="majorA2" class="radio_box">
+                            <input type="radio" id="majorA2" name="majorA" value="전자재료공학과" />
+                            <span class="on"></span>
+                            전자재료공학과
+                        </label>
+                </div>
+                <div class="shortcut">
+                    <p>종목 2</p>
+                    <label for="majorB1" class="radio_box">
+                        <input type="radio" id="majorB1" name="majorB" value="법학부"/>
+                        <span class="on"></span>
+                        법학부
+                    </label>
+                    <label for="majorB2" class="radio_box">
+                        <input type="radio" id="majorB2" name="majorB" value="행정학과" />
+                        <span class="on"></span>
+                        행정학과
+                    </label>
+                </div>
+                <div class="shortcut">
+                    <p>종목 3</p>
+                    <label for="majorC1" class="radio_box">
+                        <input type="radio" id="majorC1" name="majorC" value="화학과"/>
+                        <span class="on"></span>
+                        화학과
+                    </label>
+                    <label for="majorC2" class="radio_box">
+                        <input type="radio" id="majorC2" name="majorC" value="전자공학과" />
+                        <span class="on"></span>
+                        전자공학과
+                    </label>
+                </div>
+                <div class="shortcut">
+                    <p>종목 4</p>
+                    <label for="majorD1" class="radio_box">
+                        <input type="radio" id="majorD1" name="majorD" value="전자융합공학과"/>
+                        <span class="on"></span>
+                        전자융합공학과
+                    </label>
+                    <label for="majorD2" class="radio_box">
+                        <input type="radio" id="majorD2" name="majorD" value="국제통상학부" />
+                        <span class="on"></span>
+                        국제통상학부
+                    </label>
+                </div>
+                <div class="shortcut">
+                    <p>종목 5</p>
+                    <label for="majorE1" class="radio_box">
+                        <input type="radio" id="majorE1" name="majorE" value="반도체시스템공학부"/>
+                        <span class="on"></span>
+                        반도체시스템공학부
+                    </label>
+                    <label for="majorE2" class="radio_box">
+                        <input type="radio" id="majorE2" name="majorE" value="환경공학과" />
+                        <span class="on"></span>
+                        환경공학과
+                    </label>
+                </div>
+            </div>
+        </section>
+        <div class = "user">
+            <div class="enter_name">
+                <label for="name">이  름 :</label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력해주세요" required />
+            </div>
+
+            <div class="enter_studentID">
+                <label for="studentId">학  번 :</label>
+                <input type="text" id="studentId" name="studentId" placeholder="학번을 입력해주세요" required/>
+            </div>
+
+            <div class="enter_phone">
+                <label for="phonenumber">전화번호 :</label>
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="전화번호를 입력해주세요" required />
+            </div>
+        </div>
+        <div class = "sud">
+            <button id="submitBtn">제출하기</button>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>   
+
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyC86MO6Ar7wKb_5m-G3F64mtp7VosC27oQ",
+          authDomain: "kwu-sport.firebaseapp.com",
+          databaseURL: "https://kwu-sport-default-rtdb.firebaseio.com/",
+          projectId: "kwu-sport",
+          storageBucket: "kwu-sport.appspot.com",
+          messagingSenderId: "719636962480",
+          appId: "1:719636962480:web:aad441e94aa751cca6af75",
+          measurementId: "G-Y2G8VHF652"
+          };
+          // Firebase 앱 초기화
+          const app = firebase.initializeApp(firebaseConfig);
+            
+            // Firestore 데이터베이스 참조
+            const db = firebase.firestore();
+    </script>
+
+<script>
+    document.getElementById("submitBtn").addEventListener("click", function() {
+        // 이름과 학번 값 가져오기
+        const name = document.getElementById('name').value;
+        const studentId = document.getElementById('studentId').value;
+        const phonenumber = document.getElementById('phonenumber').value;
+        // 각 조에서 선택된 값 가져오기
+        const majorA = document.querySelector('input[name="majorA"]:checked')?.value;
+        const majorB = document.querySelector('input[name="majorB"]:checked')?.value;
+        const majorC = document.querySelector('input[name="majorC"]:checked')?.value;
+        const majorD = document.querySelector('input[name="majorD"]:checked')?.value;
+        const majorE = document.querySelector('input[name="majorE"]:checked')?.value;
+
+        // 필수 항목 검사
+        if (!name || !studentId || !phonenumber) {
+            alert("이름과 학번, 전화번호를 입력해 주세요.");
+            return;
+        }
+
+        // 데이터베이스에 입력하기 전에 기존 데이터 존재 여부 확인
+        db.collection("select2").where("studentId", "==", studentId)
+            .get()
+            .then((querySnapshot) => {
+                if (!querySnapshot.empty) {
+                    // 이미 해당 studentId로 입력된 데이터가 있는 경우
+                    alert("이미 이 학번으로 입력된 데이터가 있습니다.");
+                } else {
+                    // 데이터가 없을 경우 새로 저장
+                    db.collection("select2").add({
+                        name: name,
+                        studentId: studentId,
+                        phonenumber: phonenumber,
+                        majorA: majorA || "선택 안 됨",
+                        majorB: majorB || "선택 안 됨",
+                        majorC: majorC || "선택 안 됨",
+                        majorD: majorD || "선택 안 됨",
+                        majorE: majorE || "선택 안 됨",
+                        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+                    }).then(() => {
+                        alert("선택이 저장되었습니다!");
+                        location.href = "./승부예측소개.html";
+                    }).catch((error) => {
+                        console.error("Error adding document: ", error);
+                    });
+                }
+            })
+            .catch((error) => {
+                console.error("Error checking document: ", error);
+            });
+    });
+</script>
+
+
+
+
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../../image/padong.png" alt="Logo">
+            </div>
+            <div class="footer-text">
+                <p class="footer-title">광운대학교 제51대 총학생회 '파동'</p>
+                <p class="footer-role">
+                    PRODUCT MANAGER <span class="ingredient">&nbsp;&nbsp;&nbsp;컴퓨터정보공학부 23 이제호</span>
+                    <br>
+                    DESIGNER <span class="ingredient">&nbsp;&nbsp;&nbsp;미디어커뮤니케이션학부 20 변지욱 &nbsp;|&nbsp; 미디어커뮤니케이션학부 21 송다은&nbsp; |&nbsp; 미디어커뮤니케이션학부 21 홍승리</span>
+                    <br>
+                    DEVELOPER <span class="ingredient">&nbsp;&nbsp;&nbsp;소프트웨어학부 20 김민곤&nbsp; | &nbsp;동북아문화산업학부 22 오보람&nbsp; |&nbsp; 컴퓨터정보공학부 23 나민엽 </span>
+                </p>
+                <p class="footer-contact">마케팅 제휴 문의: kwuwave2024@gmail.com</p>
+                <p class="footer-copyright">Copyright 2024. Kwangwoon University 51th Student Council '파동' all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+</html>

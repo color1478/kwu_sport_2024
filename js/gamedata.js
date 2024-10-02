@@ -1765,7 +1765,7 @@ var games = [
 
     {
         date: "2024-09-20",
-        time: "3교시",
+        time: "5교시",
         sportId: 4,
         home: {
             affiliation: "인공지능융합대학",

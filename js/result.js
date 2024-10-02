@@ -4,7 +4,7 @@ document.getElementById("result_sports-selection").addEventListener("click", fun
     // 마지막 부분 추출
     const lastSegment = path.substring(path.lastIndexOf('/') + 1);
     if (lastSegment == 'results.html')
-        window.location.href = "./sports_result/풋살.html";
+        window.location.href = "./sports_result/풋살bracket.html";
 });
 
 document.getElementById("rank-selection").addEventListener("click", function () {
