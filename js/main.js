@@ -228,7 +228,35 @@ function displayCurrentGame(sportFilter = currentSport) {
                     <p style="color: gray; margin-left:138px">${sportInfo.location}</p>
                     <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
                 `;
-            } else {
+            } else  if (sportInfo.sport === '8자 줄넘기') {
+                let highestRankTeam = game.teams[0]; // 초기값 설정
+
+                // rank가 가장 높은 팀 찾기
+                game.teams.forEach(t => {
+                    if (t.rank < highestRankTeam.rank) {
+                        highestRankTeam = t; // rank가 더 낮은 팀으로 업데이트
+                    }
+                });
+
+                gameItem.innerHTML = `
+                    <p style="width: 43px; margin-left:66px;">${game.time}</p>
+                        <p style="color: gray; width:74px; margin-left:81px;">${sportInfo.sport}</p>
+                    <p style= "width:170px; margin-left:170px; text-align: right;">${highestRankTeam.team}</p>
+                    <div class="teamDrop">
+                        <div style="width:170px;">
+                            <p style="font-size:13px; color: gray;vertical-align:bottom;">　<p/>
+                        </div>
+                        <div class="dropdown-content">
+                            ${game.teams
+                        .filter(t => t.team !== highestRankTeam.team) // 가장 높은 팀 제외
+                        .map(t => `<p value="${t.team}">${t.team}</p>`)
+                        .join('')}
+                        </div>
+                    </div>
+                    <p style="color: gray; margin-left:138px">${sportInfo.location}</p>
+                    <p id="status" style="margin-left: 70px; color: red;">${game.rain ? '우천취소' : ''}</p>
+                `;
+            } else{
                 const homeAbstention = game.home.abstention ? 'color: red;' : homeScoreStyle;
                 const awayAbstention = game.away.abstention ? 'color: red;' : awayScoreStyle;
                 console.log(homeScoreStyle);

@@ -165,7 +165,7 @@ function displayCurrentGame(sportFilter = currentSport, teamFilter = currentTeam
                 gameItem.innerHTML = `
                     <p style="width: 43px; margin-left:66px;">${game.time}</p>
                         <p style="color: gray; width:74px; margin-left:81px;">${sportInfo.sport}</p>
-                    <p style= "width:170px; margin-left:170px; text-align: right;">${highestRankTeam.team}</p>
+                    <p style= "width:170px; margin-left:170px; text-align: right; color:blue;">${highestRankTeam.team}</p>
                     <div class="teamDrop">
                         <div style="width:170px;">
                             <p style="font-size:13px; color: gray;vertical-align:bottom;">　외 7개 학과<p/>
