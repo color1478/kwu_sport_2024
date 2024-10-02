@@ -1169,8 +1169,8 @@ var games = [
             team: "스포츠융합과학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 11,
         result: "-",
         rain: false
     },
@@ -3090,8 +3090,8 @@ var games = [
             team: "전자공학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 1,
         result: "-",
         rain: false
     },
@@ -4627,8 +4627,8 @@ var games = [
             team: "법학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 3,
         result: "-",
         rain: false
     },
