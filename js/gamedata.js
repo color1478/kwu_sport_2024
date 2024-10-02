@@ -2192,8 +2192,8 @@ var games = [
             team: "컴퓨터정보공학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 3,
+        away_score: 1,
         result: "-",
         rain: false
     }, 
@@ -3579,8 +3579,8 @@ var games = [
             team: "로봇학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 3,
+        away_score: 1,
         result: "-",
         rain: false
     },
