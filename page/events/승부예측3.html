@@ -69,9 +69,9 @@
                     </label>
                 </div>
 
-                <!--
+                
                 <div class="shortcut">
-                    <p>피구</p>
+                    <p>탁구</p>
                     <label for="majorC1" class="radio_box">
                         <input type="radio" id="majorC1" name="majorC" value="화학과"/>
                         <span class="on"></span>
@@ -80,10 +80,10 @@
                     <label for="majorC2" class="radio_box">
                         <input type="radio" id="majorC2" name="majorC" value="전자공학과" />
                         <span class="on"></span>
-                        전자공학과
+                        정보융합학부
                     </label>
                 </div>
-                
+                <!--
                 <div class="shortcut">
                     <p>종목 4</p>
                     <label for="majorD1" class="radio_box">
@@ -167,6 +167,7 @@
         // 각 조에서 선택된 값 가져오기
         const majorA = document.querySelector('input[name="majorA"]:checked')?.value;
         const majorB = document.querySelector('input[name="majorB"]:checked')?.value;
+        const majorC = document.querySelector('input[name="majorC"]:checked')?.value;
 
 
         // 필수 항목 검사
