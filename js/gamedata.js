@@ -1193,6 +1193,46 @@ var games = [
         result: "-",
         rain: false
     },
+
+    // 풋살 준결승
+    {
+        date: "2024-10-04",
+        time: "2교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자융합공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        home_score: 1,
+        away_score: 2,
+        result: "-",
+        rain: false
+    },
+    {
+        date: "2024-10-04",
+        time: "3교시",
+        sportId: 1,
+        home: {
+            affiliation: "전자정보공과대학",
+            team: "전자공학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        home_score: 1,
+        away_score: 8,
+        result: "-",
+        rain: false
+    },
     
 
 
@@ -2198,6 +2238,26 @@ var games = [
         rain: false
     }, 
 
+    // 피구 결승
+    {
+        date: "2024-10-04",
+        time: "5교시",
+        sportId: 3,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        home_score: 0,
+        away_score: 3,
+        result: "-",
+        rain: false
+    }, 
 
 
 
@@ -3095,6 +3155,26 @@ var games = [
         result: "-",
         rain: false
     },
+    // 족구 결승
+    {
+        date: "2024-10-04",
+        time: "6교시",
+        sportId: 5,
+        home: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "전자바이오물리학과",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
+        result: "-",
+        rain: false
+    },
 
 
 
@@ -3581,6 +3661,26 @@ var games = [
         },
         home_score: 3,
         away_score: 1,
+        result: "-",
+        rain: false
+    },
+// 탁구 결승
+    {
+        date: "2024-10-04",
+        time: "7교시",
+        sportId: 6,
+        home: {
+            affiliation: "자연과학대학",
+            team: "화학과",
+            abstention: false
+        },
+        away: {
+            affiliation: "인공지능융합대학",
+            team: "정보융합학부",
+            abstention: false
+        },
+        home_score: '-',
+        away_score: '-',
         result: "-",
         rain: false
     },
