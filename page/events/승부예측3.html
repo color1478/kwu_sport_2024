@@ -49,12 +49,12 @@
                             스포츠융합과학과
                         </label>
                         <label for="majorA2" class="radio_box">
-                            <input type="radio" id="majorA2" name="majorA" value="화학과" />
+                            <input type="radio" id="majorA2" name="majorA" value="컴퓨터정보공학부" />
                             <span class="on"></span>
-                            화학과
+                            컴퓨터정보공학부
                         </label>
                 </div>
-                
+                <!--
                 <div class="shortcut">
                     <p>족구</p>
                     <label for="majorB1" class="radio_box">
@@ -83,7 +83,7 @@
                         정보융합학부
                     </label>
                 </div>
-                <!--
+                
                 <div class="shortcut">
                     <p>종목 4</p>
                     <label for="majorD1" class="radio_box">
@@ -166,8 +166,7 @@
         const phonenumber = document.getElementById('phonenumber').value;
         // 각 조에서 선택된 값 가져오기
         const majorA = document.querySelector('input[name="majorA"]:checked')?.value;
-        const majorB = document.querySelector('input[name="majorB"]:checked')?.value;
-        const majorC = document.querySelector('input[name="majorC"]:checked')?.value;
+
 
 
         // 필수 항목 검사
@@ -177,7 +176,7 @@
         }
 
         // 데이터베이스에 입력하기 전에 기존 데이터 존재 여부 확인
-        db.collection("select3").where("studentId", "==", studentId)
+        db.collection("select_fb").where("studentId", "==", studentId)
             .get()
             .then((querySnapshot) => {
                 if (!querySnapshot.empty) {
@@ -185,13 +184,11 @@
                     alert("이미 이 학번으로 입력된 데이터가 있습니다.");
                 } else {
                     // 데이터가 없을 경우 새로 저장
-                    db.collection("select3").add({
+                    db.collection("select_fb").add({
                         name: name,
                         studentId: studentId,
                         phonenumber: phonenumber,
                         majorA: majorA || "선택 안 됨",
-                        majorB: majorB || "선택 안 됨",
-                        majorC: majorC || "선택 안 됨",
                         timestamp: firebase.firestore.FieldValue.serverTimestamp()
                     }).then(() => {
                         alert("선택이 저장되었습니다!");
