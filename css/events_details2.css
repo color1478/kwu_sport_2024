@@ -125,10 +125,8 @@ main {
 }
 
 .category-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    justify-content: stretch;
+    display: flex;
+    justify-content: center;
     justify-items: center;
 }
 
