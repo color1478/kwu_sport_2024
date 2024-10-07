@@ -1233,6 +1233,26 @@ var games = [
         result: "-",
         rain: false
     },
+    // 풋살 결승
+    {
+        date: "2024-10-07",
+        time: "3교시",
+        sportId: 1,
+        home: {
+            affiliation: "인공지능융합대학",
+            team: "컴퓨터정보공학부",
+            abstention: false
+        },
+        away: {
+            affiliation: "자연과학대학",
+            team: "스포츠융합과학과",
+            abstention: false
+        },
+        home_score: 2,
+        away_score: 5,
+        result: "-",
+        rain: false
+    },
     
 
 
@@ -3170,8 +3190,8 @@ var games = [
             team: "전자바이오물리학과",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 2,
+        away_score: 0,
         result: "-",
         rain: false
     },
@@ -3679,8 +3699,8 @@ var games = [
             team: "정보융합학부",
             abstention: false
         },
-        home_score: '-',
-        away_score: '-',
+        home_score: 0,
+        away_score: 3,
         result: "-",
         rain: false
     },
